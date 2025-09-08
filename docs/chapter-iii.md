@@ -1104,11 +1104,11 @@ En esta sección, se presenta el Impact Mapping para cada segmento objetivo. Est
 
 ### Segmento 1: Veterinaria
 
-![Impact Mapping Veterinaria](../assets/impact-mapping-veterinaria.png)
+![Impact Mapping Veterinaria](../assets/img/impact-mapping-veterinaria.png)
 
 ### Segmento 2: Propietario de mascota
 
-![Impact Mapping Propietario de mascota](../assets/impact-mapping-propietario.png)
+![Impact Mapping Propietario de mascota](../assets/img/impact-mapping-propietario.png)
 
 ## 3.3. Product Backlog.
 
