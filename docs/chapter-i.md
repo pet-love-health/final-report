@@ -71,10 +71,10 @@ Nuestra visión es ser líderes en el sector de tecnología para el cuidado de m
             <!-- DATOS del integrante 5-->
             <td > 
             <img src="../assets/img/daiki.jpg" height="100" alt=""> 
-            <br> Piero (U )
+            <br> Daiki Oscar Oshiroo Yamashita (U20201F846 )
             </td>
             <!-- DESCRIPCIÓN del integrante 5-->
-            <td > Descripción.</td>
+            <td > Soy estudiante de la carrera de Ingeniería de Software. Tengo interés en obtener nuevos conocimientos relacionados con mi carrera que me sean de utilidad para el futuro. Cuento con el conocimiento de diversos lenguajes HTML, Python, C++, C# y MySQL. </td>
             <!-- CONOCIMIENTOS del integrante 5-->
         </tr>
     </body>
