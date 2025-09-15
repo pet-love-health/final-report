@@ -96,12 +96,126 @@ En esta sección se presenta el diagrama de contenedores de la solución propues
 
 #### 4.1.3.5. Software Architecture Deployment Diagrams.
 ## 4.2. Tactical-Level Domain-Driven Design
-### 4.2.1. Bounded Context:
-#### 4.2.1.1. Domain Layer.
-#### 4.2.1.2. Interface Layer.
-#### 4.2.1.3. Application Layer.
-#### 4.2.1.4. Infrastructure Layer.
-#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.
-#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.
-##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.
-##### 4.2.1.6.2. Bounded Context Database Design Diagram.
+### 4.2.1. Bounded Context:  Identity and Access Context
+- [Domain Layer](#4211-domain-layer)
+- [Interface Layer](#4212-interface-layer)
+- [Application Layer](#4213-application-layer)
+- [Infrastructure Layer](#4214-infrastructure-layer)
+- [Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+- [Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+
+#### 4.2.1.1. Domain Layer
+#### Models
+| **Clase**        | **Descripción**                                                                                                                                                                                                |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **User**         | Representa la entidad de usuario con atributos como `id`, `name`, `email`, `password`, `userType`, etc. Relacionado con `PetOwner` y `Veterinarian`.                                                           |
+| **PetOwner**     | Representa la entidad de propietario de mascotas con atributos como `id`, `userId`, `numberPhone`, `location`, `subscriptionType`, etc. Relacionado con `User`, `Pet`, y `Review`.                             |
+| **Veterinarian** | Representa la entidad de veterinario con atributos como `id`, `user_id`, `description`, `experience`, `clinic_id`, etc. Relacionado con `User`, `VeterinaryClinic`, `Availability`, `Appointment`, y `Review`. |
+
+#### Enums
+| **Enum**             | **Descripción**                                                   |
+|----------------------|-------------------------------------------------------------------|
+| **UserType**         | Enum para los tipos de usuarios: `Vet`, `Owner`.                  |
+| **SubscriptionType** | Enum para los tipos de suscripciones: `Basic`, `Advanced`, `Pro`. |
+
+#### Validators
+| **Clase**           | **Descripción**                                                                                                       |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **SchemaValidator** | Contiene métodos para validar esquemas, asegurando que los campos requeridos estén presentes en los datos de entrada. |
+
+
+#### 4.2.1.2. Interface Layer
+Description of the design and components of the interface layer for the Identity and Access Context.
+
+#### Schemas
+| **Esquema**                       | **Descripción**                                                                                                                                                                                                   |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **UserSchemaGet**                 | Esquema para la respuesta de la obtención de un usuario. Incluye `id`, `name`, `email`, `userType`, `image_url`, `registered`.                                                                                    |
+| **UserSchemaPost**                | Esquema para la creación de un nuevo usuario. Incluye `name`, `email`, `password`, `userType`.                                                                                                                    |
+| **UserChangeImage**               | Esquema para actualizar la imagen de un usuario. Incluye `image_url`, `role`.                                                                                                                                     |
+| **VeterinarianSchemaPost**        | Esquema para la creación de un nuevo veterinario. Incluye `clinicName`, `otp_password`.                                                                                                                           |
+| **VeterinarianUpdateInformation** | Esquema para la actualización de la información de un veterinario. Incluye `name`, `description`, `experience`.                                                                                                   |
+| **VeterinarianSchemaGet**         | Esquema para la respuesta de la obtención de un veterinario. Incluye `id`, `name`, `clinicId`, `image_url`, `description`, `experience`, `user_id`.                                                               |
+| **VeterinarianProfileSchemaGet**  | Esquema para la respuesta detallada del perfil de un veterinario. Incluye `id`, `name`, `image_url`, `description`, `experience`, `clinicName`, `workingHourStart`, `workingHourEnd`, `clinicAddress`, `reviews`. |
+
+#### 4.2.1.3. Application Layer
+Description of the design and components of the application layer for the Identity and Access Context.
+
+#### Services
+
+| **Servicio**            | **Método**                                                                                       | **Descripción**                                                                                                                                            |
+|-------------------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **UserService**         | `get_user_by_id(user_id: int, db: Session)`                                                      | Recupera un usuario por su ID. Lanza una excepción 404 si el usuario no existe.                                                                            |
+|                         | `change_image(role_id: int, role, image: str, db: Session)`                                      | Cambia la imagen de perfil del usuario según su rol (Owner o Veterinarian). Actualiza la entidad `User` y guarda los cambios.                              |
+| **PetOwnerService**     | `create_new_petowner(user_id: int, petowner: PetOwnerSchemaPost, db: Session = Depends(get_db))` | Crea un nuevo registro de propietario de mascotas. Verifica el tipo de usuario, si ya está registrado y el formato del teléfono. Emite un token de acceso. |
+|                         | `get_petowners(db: Session = Depends(get_db))`                                                   | Recupera todos los propietarios de mascotas, incluyendo sus datos de usuario asociados.                                                                    |
+|                         | `get_petowner_by_user_id(user_id: int, db: Session)`                                             | Recupera un propietario de mascotas por su ID de usuario.                                                                                                  |
+|                         | `get_petOwner_by_id(petOwner_id: int, db: Session) -> PetOwnerSchemaGet`                         | Recupera un propietario de mascotas por su ID.                                                                                                             |
+|                         | `change_Datapetowner(petowner_id: int, petowner: PetOwnerUpdateInformation, db: Session)`        | Actualiza los datos de un propietario de mascotas existente.                                                                                               |
+| **VeterinarianService** | `create_new_veterinarian(user_id: int, veterinarian: VeterinarianSchemaPost, db: Session)`       | Crea un nuevo registro de veterinario. Verifica el tipo de usuario, si ya está registrado, y valida el OTP y la clínica. Emite un token de acceso.         |
+|                         | `get_all_vets(db: Session = Depends(get_db)) -> List[VeterinarianSchemaGet]`                     | Recupera todos los veterinarios, incluyendo sus datos de usuario asociados.                                                                                |
+|                         | `get_vet_by_user_id(user_id: int, db: Session) -> VeterinarianSchemaGet`                         | Recupera un veterinario por su ID de usuario.                                                                                                              |
+|                         | `get_vet_by_id(vet_id: int, db: Session) -> VeterinarianSchemaGet`                               | Recupera un veterinario por su ID.                                                                                                                         |
+|                         | `get_vet_by_id_details(vet_id: int, db: Session) -> VeterinarianProfileSchemaGet`                | Recupera información detallada sobre un veterinario, incluyendo reseñas.                                                                                   |
+|                         | `get_vets_by_clinic_id(clinic_id: int, db: Session) -> List[VeterinarianSchemaGet]`              | Recupera veterinarios por ID de clínica.                                                                                                                   |
+|                         | `get_available_times(vet_id: int, day: date, db: Session)`                                       | Recupera los horarios disponibles para un veterinario en un día específico.                                                                                |
+|                         | `change_DataVet(vet_id: int, vet: VeterinarianUpdateInformation, db: Session)`                   | Actualiza los datos de un veterinario existente.                                                                                                           |
+
+#### 4.2.1.4. Infrastructure Layer
+Description of the design and components of the infrastructure layer for the Identity and Access Context.\
+
+#### **Repositorios**
+
+| Clase/Servicio             | Descripción                                                                                           |
+|----------------------------|-------------------------------------------------------------------------------------------------------|
+| **UserRepository**         | Maneja la interacción con la base de datos para la entidad `User`. Incluye operaciones como crear, leer, actualizar y eliminar usuarios. |
+| **PetOwnerRepository**     | Maneja la interacción con la base de datos para la entidad `PetOwner`. Permite crear, leer, actualizar y eliminar propietarios de mascotas. |
+| **VeterinarianRepository** | Maneja la interacción con la base de datos para la entidad `Veterinarian`. Incluye operaciones de gestión de veterinarios como crear, leer, actualizar y eliminar. |
+
+#### **Mappers**
+
+| Clase/Servicio             | Descripción                                                                                           |
+|----------------------------|-------------------------------------------------------------------------------------------------------|
+| **UserMapper**             | Mapea la entidad `User` a la base de datos usando SQLAlchemy. Define cómo se traducen las propiedades del modelo `User` en columnas de la tabla de base de datos. |
+| **PetOwnerMapper**         | Mapea la entidad `PetOwner` a la base de datos usando SQLAlchemy. Define cómo se traducen las propiedades del modelo `PetOwner` en columnas de la tabla de base de datos. |
+| **VeterinarianMapper**     | Mapea la entidad `Veterinarian` a la base de datos usando SQLAlchemy. Define cómo se traducen las propiedades del modelo `Veterinarian` en columnas de la tabla de base de datos. |
+
+#### Routes
+
+| **Ruta**                                                             | **Método**   | **Descripción**                                                                                                           |
+|----------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
+| **PetOwners**                                                         |              |                                                                                                                           |
+| `/petowners/{user_id}`                                                | POST         | Crear un nuevo propietario de mascotas.                                                                                  |
+| `/petowners`                                                          | GET          | Obtener todos los propietarios de mascotas.                                                                             |
+| `/petowners/users/{user_id}`                                          | GET          | Obtener un propietario de mascotas por ID de usuario.                                                                    |
+| `/petowners/{petOwner_id}`                                            | GET          | Obtener un propietario de mascotas por ID de propietario.                                                                |
+| `/petowners/{petOwner_id}`                                            | PUT          | Actualizar la información de un propietario de mascotas.                                                                 |
+| **Users**                                                             |              |                                                                                                                           |
+| `/users`                                                              | GET          | Obtener todos los usuarios.                                                                                             |
+| `/users/{user_id}`                                                    | GET          | Obtener un usuario por ID.                                                                                              |
+| `/users/{role_id}`                                                    | PUT          | Cambiar la imagen de un usuario.                                                                                        |
+| **Veterinarians**                                                     |              |                                                                                                                           |
+| `/veterinarians/{user_id}`                                            | POST         | Crear un nuevo veterinario.                                                                                             |
+| `/veterinarians`                                                      | GET          | Obtener todos los veterinarios.                                                                                         |
+| `/veterinarians/users/{user_id}`                                      | GET          | Obtener un veterinario por ID de usuario.                                                                               |
+| `/veterinarians/{vet_id}`                                             | GET          | Obtener un veterinario por ID.                                                                                          |
+| `/veterinarians/vets/{clinic_id}`                                    | GET          | Obtener veterinarios por ID de clínica.                                                                                  |
+| `/veterinarians/reviews/{vet_id}`                                    | GET          | Obtener detalles del perfil de un veterinario, incluyendo reseñas.                                                        |
+| `/veterinarians/{vet_id}/available_times`                            | POST         | Obtener los horarios disponibles de un veterinario.                                                                     |
+| `/veterinarians/{vet_id}`                                             | PUT          | Actualizar la información de un veterinario.                                                                            |
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+Component-level diagrams for the Identity and Access Context, showing the internal structure of components.
+
+![Identity and Access Context Code Level Diagrams](https://i.postimg.cc/X7smGXCt/boundend-Identity-and-Access-Context.png)
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+Class diagrams for the domain layer of the Identity and Access Context.
+
+![Identity and Access Context class diagram](https://i.postimg.cc/tJXv7HCX/Identity-and-Access-Context-class-diagram.png)
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+Database design diagram for the Identity and Access Context.
+
+![Identity and Access Context database diagram](https://i.postimg.cc/XN8DmXQX/Identity-and-Access-Context-database-diagram.png)
