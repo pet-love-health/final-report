@@ -219,3 +219,122 @@ Class diagrams for the domain layer of the Identity and Access Context.
 Database design diagram for the Identity and Access Context.
 
 ![Identity and Access Context database diagram](https://i.postimg.cc/XN8DmXQX/Identity-and-Access-Context-database-diagram.png)
+
+
+### 4.2.3. Bounded Context:  Identity and Access Context
+- [Domain Layer](#4231-domain-layer)
+- [Interface Layer](#4232-interface-layer)
+- [Application Layer](#4233-application-layer)
+- [Infrastructure Layer](#4234-infrastructure-layer)
+- [Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+- [Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+
+#### 4.2.3.1. Domain Layer
+
+#### Aggregates
+
+| **Aggregates**               | **Descripción**                                                                                                                                                                |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **AppointmentAggregate**     | Se asegura de la consistencia en la gestión de citas (programación, cancelación, finalización). Contiene las reglas de negocio como validación de horarios, cambios de estado. |
+| **AvailabilityAggregate**    | Agrupa la lógica de los bloques de tiempo de los veterinarios. Se asegura de que no haya solapamiento y que los rangos horarios sean válidos.                                  |
+
+#### Entities
+
+| **Entities**     | **Descripción**                                                                                                           |
+|------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Appointment**  | Entidad raíz del agregado. Representa una cita con atributos: id, petId, veterinarianId, appointmentDate, status, notes.  |
+| **Availability** | Entidad raíz para disponibilidad, con atributos: id, veterinarianId, dayOfWeek, startTime, endTime.                       | 
+| **Review**       | Entidad dependiente, vinculada a Appointment. Contiene id, appointmentId, rating, comment, createdAt.                     |
+
+#### Value Objects
+
+| **Value Objects**    | **Descripción**                                                                                                                |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| **AppointmentData**  | Datos propios de la cita (fecha, estado, notas) que viajan entre capas a través de AppointmentService y AppointmentRepository. |
+| **AvailabilityData** | Datos de disponibilidad (día, rango horario) gestionados por AvailabilityService y persistidos en AvailabilityRepository.      |
+
+#### 4.2.3.2 Interface Layer
+
+Description of the design and components of the interface layer for the Appointment Context.
+
+#### Schemas
+
+| Esquema                      | Descripción                                                                                                                           |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **AppointmentSchemaGet**     | Esquema para la respuesta de la obtención de una cita. Incluye `id`, `petId`, `veterinarianId`, `appointmentDate`, `status`, `notes`. |
+| **AppointmentSchemaPost**    | Esquema para la creación de una cita. Incluye `petId`, `veterinarianId`, `appointmentDate`, `notes`.                                  |
+| **AppointmentSchemaUpdate**  | Esquema para la actualización del estado o detalles de una cita. Incluye `appointmentId`, `status`, `notes`.                          |
+| **AvailabilitySchemaGet**    | Esquema para la respuesta de la obtención de disponibilidad. Incluye `id`, `veterinarianId`, `dayOfWeek`, `startTime`, `endTime`.     |
+| **AvailabilitySchemaPost**   | Esquema para la creación de disponibilidad de un veterinario. Incluye `veterinarianId`, `dayOfWeek`, `startTime`, `endTime`.          |
+| **AvailabilitySchemaUpdate** | Esquema para la actualización de la disponibilidad existente. Incluye `id`, `dayOfWeek`, `startTime`, `endTime`.                      |
+
+#### 4.2.3.3. Application Layer
+
+Description of the design and components of the application layer for the Identity and Access Context.
+
+#### Services
+
+| **Servicio**              | **Método**                                                                                     | **Descripción**                                                                                          |
+| ------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **AppointmentService**    | `get_appointment_by_id(appointment_id: int, db: Session)`                                      | Recupera una cita por su ID. Lanza una excepción 404 si no existe.                                       |
+|                           | `create_new_appointment(appointment: AppointmentSchemaPost, db: Session)`                      | Crea una nueva cita, validando disponibilidad del veterinario y existencia de la mascota.                |
+|                           | `update_appointment(appointment_id: int, appointment: AppointmentSchemaUpdate, db: Session)`   | Actualiza el estado o notas de una cita existente.                                                       |
+|                           | `get_appointments_by_pet(pet_id: int, db: Session)`                                            | Recupera todas las citas asociadas a una mascota específica.                                             |
+|                           | `get_appointments_by_vet(vet_id: int, db: Session)`                                            | Recupera todas las citas asociadas a un veterinario.                                                     |
+| **AvailabilityService**   | `get_availability_by_vet(vet_id: int, db: Session)`                                            | Recupera la disponibilidad de un veterinario.                                                            |
+|                           | `create_availability(availability: AvailabilitySchemaPost, db: Session)`                       | Crea un nuevo registro de disponibilidad para un veterinario.                                            |
+|                           | `update_availability(availability_id: int, availability: AvailabilitySchemaUpdate, db: Session)` | Actualiza una disponibilidad existente.                                                                |
+|                           | `get_available_times(vet_id: int, day: date, db: Session)`                                     | Recupera los horarios disponibles para un veterinario en un día específico.                              |
+
+#### 4.2.3.4. Infrastructure Layer
+
+Description of the design and components of the infrastructure layer for the Appointment Context.
+
+#### **Repositorios**
+
+| **Repositorio**             | **Descripción**                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------- |
+| **AppointmentRepository**   | Implementa la interfaz definida en el Domain Layer para manejar operaciones CRUD sobre citas. Incluye métodos para crear, actualizar, eliminar y consultar citas en la base de datos. |
+| **AvailabilityRepository**  | Implementa la interfaz definida en el Domain Layer para manejar la disponibilidad de los veterinarios. Permite registrar, modificar y consultar horarios en la base de datos.         |
+
+### **Mappers**
+
+| **Mapeador**     | **Descripción**                                                                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **AppointmentMapper**   | Convierte entre modelos de base de datos, entidades de dominio y esquemas (`AppointmentSchemaGet`, `AppointmentSchemaPost`, `AppointmentSchemaUpdate`).                                 |
+| **AvailabilityMapper**  | Maneja la conversión de disponibilidad entre modelos de base de datos, entidades de dominio y esquemas (`AvailabilitySchemaGet`, `AvailabilitySchemaPost`, `AvailabilitySchemaUpdate`). |
+
+#### **Routes**
+
+| **Ruta**                                | **Método HTTP** | **Descripción**                                                                 |
+| --------------------------------------- | --------------- | ------------------------------------------------------------------------------- |
+| `/appointments/{appointment_id}`        | **GET**         | Obtiene una cita por su ID.                                                     |
+| `/appointments`                         | **POST**        | Crea una nueva cita validando disponibilidad del veterinario.                   |
+| `/appointments/{appointment_id}`        | **PUT**         | Actualiza el estado o notas de una cita existente.                              |
+| `/appointments/pet/{pet_id}`            | **GET**         | Obtiene todas las citas asociadas a una mascota.                                |
+| `/appointments/vet/{vet_id}`            | **GET**         | Obtiene todas las citas asociadas a un veterinario.                             |
+| `/availability/vet/{vet_id}`            | **GET**         | Recupera la disponibilidad de un veterinario.                                   |
+| `/availability`                         | **POST**        | Crea un nuevo registro de disponibilidad para un veterinario.                   |
+| `/availability/{availability_id}`       | **PUT**         | Actualiza la disponibilidad existente.                                          |
+| `/availability/vet/{vet_id}/day/{day}`  | **GET**         | Recupera los horarios disponibles de un veterinario en un día específico.       |
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+Component-level diagrams for the Appointment Context, showing the internal structure of components.
+
+<img src="../assets/img/Appointment1.png" height="100%" alt="100%"> 
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+Class diagrams for the domain layer of the Appointment Context.
+
+<img src="../assets/img/Appointment2.png" height="100%" alt="100%"> 
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+Database design diagram for the Appointment Context.
+
+<img src="../assets/img/Appointment3.png" height="100%" alt="100%"> 
+
