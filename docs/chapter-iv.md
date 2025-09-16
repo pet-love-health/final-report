@@ -324,15 +324,15 @@ Component-level diagrams for the Appointment Context, showing the internal struc
 
 <img src="../assets/img/Appointment1.png" height="100%" alt="100%"> 
 
-#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 Class diagrams for the domain layer of the Appointment Context.
 
 <img src="../assets/img/Appointment2.png" height="100%" alt="100%"> 
 
-##### 4.2.1.6.2. Bounded Context Database Design Diagram
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
 
 Database design diagram for the Appointment Context.
 
