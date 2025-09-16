@@ -97,13 +97,6 @@ En esta sección se presenta el diagrama de contenedores de la solución propues
 #### 4.1.3.5. Software Architecture Deployment Diagrams.
 ## 4.2. Tactical-Level Domain-Driven Design
 ### 4.2.1. Bounded Context:  Identity and Access Context
-- [Domain Layer](#4211-domain-layer)
-- [Interface Layer](#4212-interface-layer)
-- [Application Layer](#4213-application-layer)
-- [Infrastructure Layer](#4214-infrastructure-layer)
-- [Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-- [Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-
 #### 4.2.1.1. Domain Layer
 #### Models
 | **Clase**        | **Descripción**                                                                                                                                                                                                |
@@ -221,16 +214,8 @@ Database design diagram for the Identity and Access Context.
 ![Identity and Access Context database diagram](https://i.postimg.cc/XN8DmXQX/Identity-and-Access-Context-database-diagram.png)
 
 
-### 4.2.3. Bounded Context:  Identity and Access Context
-- [Domain Layer](#4231-domain-layer)
-- [Interface Layer](#4232-interface-layer)
-- [Application Layer](#4233-application-layer)
-- [Infrastructure Layer](#4234-infrastructure-layer)
-- [Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-- [Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
-
+### 4.2.3. Bounded Context:  Appointment
 #### 4.2.3.1. Domain Layer
-
 #### Aggregates
 
 | **Aggregates**               | **Descripción**                                                                                                                                                                |
@@ -338,3 +323,118 @@ Database design diagram for the Appointment Context.
 
 <img src="../assets/img/Appointment3.png" height="100%" alt="100%"> 
 
+### 4.2.4. Bounded Context:  Veterinaries
+#### 4.2.4.1. Domain Layer
+#### Models
+| **Clase**        | **Descripción**                                                                                                                                                                                                |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Veterinarian** | Representa la entidad de veterinario con atributos como `id`, `user_id`, `description`, `experience`, `clinic_id`, etc. Relacionado con `User`, `VeterinaryClinic`, `Availability`, `Appointment`, y `Review`. |
+| **VeterinaryClinic**     | Representa la entidad de clínica veterinaria con atributos como `id`, `user_id`, `clinic_id`, `services`, `office_hours_start`, `office_hours_end`, `phone_number`, `description`, `image_url`, etc. Relacionado con `Veterinarian` y `Favorite Clinic`.                             |
+| **Favorite Clinic** | Representa la entidad de clínica favorita con atributos como `id`, `user_id`, `clinic_id`, etc. Relacionado con `User` y `Clinic`. |
+
+#### Enums
+| **Enum**             | **Descripción**                                                   |
+|----------------------|-------------------------------------------------------------------|
+| **UserType**         | Enum para los tipos de usuarios: `Vet`, `Owner`.                  |
+
+#### Validators
+| **Clase**           | **Descripción**                                                                                                       |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **SchemaValidator** | Contiene métodos para validar esquemas, asegurando que los campos requeridos estén presentes en los datos de entrada. |
+
+
+#### 4.2.4.2. Interface Layer
+Description of the design and components of the interface layer for the Identity and Access Context.
+
+#### Schemas
+| **Esquema**                       | **Descripción**                                                                                                                                                                                                   |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **VeterinarianSchemaPost**        | Esquema para la creación de un nuevo veterinario. Incluye `clinicName`, `otp_password`.                                                                                                                           |
+| **VeterinarianUpdateInformation** | Esquema para la actualización de la información de un veterinario. Incluye `name`, `description`, `experience`.                                                                                                   |
+| **VeterinarianSchemaGet**         | Esquema para la respuesta de la obtención de un veterinario. Incluye `id`, `name`, `clinicId`, `image_url`, `description`, `experience`, `user_id`.                                                               |
+| **VeterinarianProfileSchemaGet**  | Esquema para la respuesta detallada del perfil de un veterinario. Incluye `id`, `name`, `image_url`, `description`, `experience`, `clinicName`, `workingHourStart`, `workingHourEnd`, `clinicAddress`, `reviews`. |
+| **VeterinaryclinicSchemaPost**        | Esquema para la creación de una nueva clínica. Incluye `name`, `location`,`phone_number`, `description`,`office_hours_start`, `office_hours_end`.                                                                                                                           |
+| **AvailabilitySchemaPost**        | Esquema para la creación de horarios disponibles. Incluye `date`.                                                                                                                           |
+| **VeterinaryClinicSchemaGet**         | Esquema para la respuesta de la obtención de una clínica. Incluye `id`, `name`, `location`, `services`, `image_url`,`phone_number`, `description`,`office_hours_start`, `office_hours_end`.                                                             |
+| **VeterinaryClinicSchemaGet**         | Esquema para la respuesta de la obtención de una clínica favorita. Incluye `id`, `clinics`.                                                             |
+
+#### 4.2.4.3. Application Layer
+Description of the design and components of the application layer for the Identity and Access Context.
+
+#### Services
+
+| **Servicio**            | **Método**                                                                                       | **Descripción**                                                                                                                                            |
+|-------------------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **VeterinarianService** | `create_new_veterinarian(user_id: int, veterinarian: VeterinarianSchemaPost, db: Session)`       | Crea un nuevo registro de veterinario. Verifica el tipo de usuario, si ya está registrado, y valida el OTP y la clínica. Emite un token de acceso.         |
+|                         | `get_all_vets(db: Session = Depends(get_db)) -> List[VeterinarianSchemaGet]`                     | Recupera todos los veterinarios, incluyendo sus datos de usuario asociados.                                                                                |
+|                         | `get_vet_by_user_id(user_id: int, db: Session) -> VeterinarianSchemaGet`                         | Recupera un veterinario por su ID de usuario.                                                                                                              |
+|                         | `get_vet_by_id(vet_id: int, db: Session) -> VeterinarianSchemaGet`                               | Recupera un veterinario por su ID.                                                                                                                         |
+|                         | `get_vet_by_id_details(vet_id: int, db: Session) -> VeterinarianProfileSchemaGet`                | Recupera información detallada sobre un veterinario, incluyendo reseñas.                                                                                   |
+|                         | `get_vets_by_clinic_id(clinic_id: int, db: Session) -> List[VeterinarianSchemaGet]`              | Recupera veterinarios por ID de clínica.                                                                                                                   |
+|                         | `get_available_times(vet_id: int, day: date, db: Session)`                                       | Recupera los horarios disponibles para un veterinario en un día específico.                                                                                |
+|                         | `change_DataVet(vet_id: int, vet: VeterinarianUpdateInformation, db: Session)`                   | Actualiza los datos de un veterinario existente.                                                                                                           |
+| **VeterinaryClinicService** | `create_veterinary_clinic(clinic: VeterinaryClinicSchemaPost, db: Session)`       | Crea una nueva clínica veterinaria. Verifica que las horas de servicio tengan lógica.         |
+|                         | `get_veterinary_clinics(db: Session) -> list[VeterinaryClinicSchemaGet]`                     | Recupera todas las clínicas veterinarias.                                                                                |
+|                         | `generate_unique_password( clinic_id: int, db: Session)`                         | Genera el One Time Password de la clínica.                                                                                                              |
+|                         | `verify_veterinarian_register(clinic_name: str, otp_password: str, db: Session)`                               | Verifica el One Time Password, y devuelve el id de la clínica relacionada.                                                                                                                         |
+|                         | `get_veterinary_clinic_by_id(clinic_id: int, db: Session)`                | Recupera clínica por ID de veterinairo.                                                                                   |
+| **FavoriteClinicService** | `get_favorite_clinics(user_id, db:Session = Depends(get_db)) -> list[VeterinaryClinicSchemaGet]`       | Recupera las clínicas favprotas de un usuario.         |
+|                         | `toggle_favorite_clinic(user_id: int, clinic_id: int, db: Session = Depends(get_db)) -> bool`                     | Añade o elimina una clínica de la lista de favoritos.                                                                                |
+
+#### 4.2.4.4. Infrastructure Layer
+Description of the design and components of the infrastructure layer for the Identity and Access Context.\
+
+#### **Repositorios**
+
+| Clase/Servicio             | Descripción                                                                                           |
+|----------------------------|-------------------------------------------------------------------------------------------------------|
+| **VeterinarianRepository** | Maneja la interacción con la base de datos para la entidad `Veterinarian`. Incluye operaciones de gestión de veterinarios como crear, leer, actualizar y eliminar. |
+| **VeterinaryClinicRepository** | Maneja la interacción con la base de datos para la entidad `VeterinaryClinic`. Incluye operaciones de gestión de clínicas como crear, leer, actualizar y eliminar. |
+| **FavoriteClinicRepository** | Maneja la interacción con la base de datos para la entidad `FavoriteClinic`. Incluye operaciones de gestión de clínicas favoritas como crear, leer, actualizar y eliminar. |
+
+#### **Mappers**
+
+| Clase/Servicio             | Descripción                                                                                           |
+|----------------------------|-------------------------------------------------------------------------------------------------------|
+| **VeterinarianMapper**     | Mapea la entidad `Veterinarian` a la base de datos usando SQLAlchemy. Define cómo se traducen las propiedades del modelo `Veterinarian` en columnas de la tabla de base de datos. |
+| **VeterinaryCliniMapper**             | Mapea la entidad `VeterinaryClinic` a la base de datos usando SQLAlchemy. Define cómo se traducen las propiedades del modelo `VeterinaryClinic` en columnas de la tabla de base de datos. |
+| **FavoriteClinicMapper**         | Mapea la entidad `FavoriteClinic` a la base de datos usando SQLAlchemy. Define cómo se traducen las propiedades del modelo `FavoriteClinic` en columnas de la tabla de base de datos. |
+
+
+#### Routes
+
+| **Ruta**                                                             | **Método**   | **Descripción**                                                                                                           |
+|----------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Veterinarians**                                                     |              |                                                                                                                           |
+| `/veterinarians/{user_id}`                                            | POST         | Crear un nuevo veterinario.                                                                                             |
+| `/veterinarians`                                                      | GET          | Obtener todos los veterinarios.                                                                                         |
+| `/veterinarians/users/{user_id}`                                      | GET          | Obtener un veterinario por ID de usuario.                                                                               |
+| `/veterinarians/{vet_id}`                                             | GET          | Obtener un veterinario por ID.                                                                                          |
+| `/veterinarians/vets/{clinic_id}`                                    | GET          | Obtener veterinarios por ID de clínica.                                                                                  |
+| `/veterinarians/reviews/{vet_id}`                                    | GET          | Obtener detalles del perfil de un veterinario, incluyendo reseñas.                                                        |
+| `/veterinarians/{vet_id}/available_times`                            | POST         | Obtener los horarios disponibles de un veterinario.                                                                     |
+| `/veterinarians/{vet_id}`                                             | PUT          | Actualizar la información de un veterinario.                                                                            |
+| **Veterinary Clinics**                                                     |              |                                                                                                                           |
+| `/veterinary_clinics`                                            | POST         | Crear una nueva clínica.                                                                                             |
+| `/veterinary_clinics`                                                      | GET          | Obtener todas las clínicas.                                                                                         |
+| `/veterinary_clinics/generate_password/{clinic_id}`                                      | GET          | Generar un One Time Password por ID de clínica.                                                                               |
+| `/veterinary_clinics/{clinic_id}`                                             | GET          | Obtener una clínica por ID.                                                                                          |
+| **FavoriteClinics**                                                     |              |                                                                                                                           |
+| `/favoriteClinics/userId/{user_id}/clinicId/{clinic_id}`                                    | POST          | Cambiar el estado de una clínica como favorita o no de un usuario por ID.                                                        |
+| `/favoriteClinics/userId/{user_id}`                            | GET         | Obtener las clínicas favoritas por ID de usuaro.                                                                     |
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+Component-level diagrams for the Veterinary, showing the internal structure of components.
+
+![Veterinary Context Code Level Diagrams](../assets/img/Vet1.png)
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+Class diagrams for the domain layer of the Veterinary Context.
+
+![Veterinary Context class diagram](../assets/img/Vet2.png)
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+Database design diagram for the Veterinary Context.
+
+![Veterinary Context database diagram](../assets/img/Vet3.png)
