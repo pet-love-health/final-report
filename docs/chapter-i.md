@@ -60,11 +60,11 @@ Nuestra visión es ser líderes en el sector de tecnología para el cuidado de m
         <tr>
             <!-- DATOS del integrante 4-->
             <td > 
-            <img src="../assets/img/piero" height="100" alt=""> 
-            <br> Piero (U )
+            <img src="../assets/img/piero.jpg" height="100" alt=""> 
+            <br> Piero Stephano Miranda Sinarahua (U )
             </td>
             <!-- DESCRIPCIÓN del integrante 4-->
-            <td > Descripción.</td>
+            <td > Estudiante de la carrera de Ingeniería de Software. Considero que soy una persona responsable y que puedo aportar al equipo en cualquier aspecto que se requiera. De igual manera, siento que los conocimientos que he ido adquiriendo en ciclos anteriores serán de gran ayuda para llevar a cabo el presente trabajo.</td>
             <!-- CONOCIMIENTOS del integrante 4-->
         </tr>
       <tr>
