@@ -214,6 +214,108 @@ Database design diagram for the Identity and Access Context.
 ![Identity and Access Context database diagram](https://i.postimg.cc/XN8DmXQX/Identity-and-Access-Context-database-diagram.png)
 
 
+### 4.2.2. Bounded Context:  Pets
+#### 4.2.2.1. Domain Layer
+#### Aggregate
+| **Aggregates**               | **Descripción**                                                                                                                                                                |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Pet**     | Representa a la entidad de Pet. Tiene atributos como: `id`, `name`, `petOwnerId`, `breed`, `species`, `weight`, `birthdate`, `image_url`, `gender`. Esta relacionado con PetOwner, Appointments, SmartCollars. |
+
+
+#### Enums 
+| **Enums**               | **Descripción**                                                                                                                                                                |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **SpeciesEnum**     | Enum para los tipos de especies `Dog`, `Cat`, `Bird`, `Fish`, `Reptile`, `Rodent`, `Rabbit, Other`. |
+
+
+#### Validators
+| **Clase**           | **Descripción**                                                                                                       |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **SchemaValidator** | Contiene métodos para validar esquemas, asegurando que los campos requeridos estén presentes en los datos de entrada. |
+
+
+#### 4.2.3.2 Interface Layer
+
+Description of the design and components of the interface layer for the Pet Context.
+
+#### Schemas
+
+| Esquema                      | Descripción                                                                                                                           |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **PetSchemaPost**     | Esquema para la creación de un Pet. Incluye `name`, `breed`, `species`, `weight`, `birthdate`, `image_url, gender`. |
+| **PetSchemaGet**    | Esquema para la respuesta al obtener información de un Pet. Incluye `id`, `name`, `petowner`, `breed`, `species`, `weight`, `birthdate`, `image_url, gender`.  |
+| **PetSchemaUpdate**  | Esquema para actualizar información de un Pet. Incluye `name`, `breed`, `species`, `weight`, `birthdate`, `image_url, gender`. |
+
+
+#### 4.2.2.2 Application Layer
+
+Description of the design and components of the application layer for the Pet Context
+
+#### Services
+
+| **Servicio**              | **Método**                                                                                     | **Descripción**                                                                                          |
+| ------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **PetService**            |  `create_new_pet(petowner_id: int, pet: PetSchemaPost, db: Session)`                          | Crea un nuevo Pet segun el esuqema post para Pet.   |
+|                           | `get_pet_by_user_id(pet_id: int, db: Session)`                                                 | Obtiene un Pet segun el id del user      |
+|                           | `get_pets_by_petOwnerid(petOwner_id: int, db: Session)`                                        | Obtiene una lista de Pets segun el pet owner.         |
+|                           | `update_pet(pet_id: int, pet: PetSchemaPost, db: Session)`                                     | Actualiza informacion de un pet.      |
+|                           | `get_pet_by_id(pet_id: int, db: Session))`                                                     | Obtiene pet segun su id.          |
+|                           | `delete_pet(pet_id: int, db: Session)`                                                         | Elimina un pet.                                             |
+|                           | `get_petowners(db: Session)`                                                                   | Obtiene los pet owners.        |
+
+
+#### 4.2.2.4. Infrastructure Layer
+
+Description of the design and components of the infrastructure layer for the Pet Context.
+
+#### **Repositorios**
+
+| **Repositorio**             | **Descripción**                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------- |
+| **PetRepository**   | Maneja la interaccion con la base de datos para la entidad Pet. Incluye operaciones para la gestion de Pets como crear, leer, actualizar y eliminar.  |
+
+
+### **Mappers**
+
+| **Mapeador**     | **Descripción**                                                                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **PetMapper**   | Mapea la entidad Pet a la base de datos usando SQLAlchemy. Define cómo se traducen las propiedades del modelo Pet en columnas de la tabla de base de datos.                                 |
+
+
+#### **Routes**
+
+| **Ruta**                                | **Método HTTP** | **Descripción**                                                                 |
+| --------------------------------------- | --------------- | ------------------------------------------------------------------------------- |
+| `/pets/{petowner_id}`        | **POST**           | Crea un nuevo Pet para un PetOwner segun su ID                                            |
+| `/pets`                         | **GET**         | Obtiene una lista de PetOwners.                         |
+| `/pets/{petowner_id}`        | **GET**           | Obtiene una lista de Pets segun el ID del PetOwner.                                    |
+| `/pets/{pet_id}`            | **PUT**            | Actualiza la informacion de un Pet segun su ID.                                        |
+| `/pets/pet/{pet_id}`            | **GET**        | Obtiene un Pet segun su ID.                                  |
+| `/pets/{pet_id}`            | **DELETE**         | Elimina un pet segun su ID.                                  |
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+Component-level diagrams for Pets, showing internal structure of components. 
+
+<img src="../assets/img/PetBC.png" height="100%" alt="100%"> 
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+Class diagrams for the domain layer of the Pet Context.
+
+<img src="../assets/img/PetCD.png" height="100%" alt="100%"> 
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+Database design diagram for the Pet Context.
+
+<img src="../assets/img/PetDB.png" height="100%" alt="100%"> 
+
+
+
+
 ### 4.2.3. Bounded Context:  Appointment
 #### 4.2.3.1. Domain Layer
 #### Aggregates
