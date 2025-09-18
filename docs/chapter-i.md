@@ -50,11 +50,11 @@ Nuestra visión es ser líderes en el sector de tecnología para el cuidado de m
         <tr>
             <!-- DATOS del integrante 3-->
             <td > 
-            <img src="../assets/img/diego.jpg" height="100" alt=""> 
+            <img src="../assets/img/diego.png" height="100" alt=""> 
             <br> Diego Alonso (u)
             </td>
             <!-- DESCRIPCIÓN del integrante 3-->
-            <td > Descripción.</td>
+            <td >Soy Diego Alonso, estudiante de la carrera Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Tengo conocimiento en el uso de programas de edición como Photoshop y también sobre el uso de algunos lenguajes de programación. Por lo general siempre busco dar lo necesario para realizar un buen trabajo y presentar correctamente algún proyecto.</td>
             <!-- CONOCIMIENTOS del integrante 3-->
         </tr>
         <tr>
