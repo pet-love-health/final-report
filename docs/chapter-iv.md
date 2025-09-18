@@ -540,3 +540,132 @@ Class diagrams for the domain layer of the Veterinary Context.
 Database design diagram for the Veterinary Context.
 
 ![Veterinary Context database diagram](../assets/img/Vet3.png)
+
+
+### 4.2.5. Bounded Context: Medical History
+#### 4.2.5.1. Domain Layer
+
+#### Models
+| **Clase**             | **Descripción**                                                                                                                                                                           |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **MedicalHistory**     | Representa la historia médica de una mascota. Contiene información general y está relacionada con `Pet`, además de agrupar entidades como `Disease`, `Surgery`, `Vaccine` y `MedicalResult`. |
+| **Disease**            | Representa una enfermedad registrada en la historia médica. Incluye atributos como `id`, `name`, `diagnosis_date`, `treatment`, etc. Relacionado con `MedicalHistory`.                      |
+| **Surgery**            | Representa una cirugía realizada a la mascota. Incluye atributos como `id`, `name`, `date`, `description`, etc. Relacionado con `MedicalHistory`.                                         |
+| **Vaccine**            | Representa una vacuna aplicada a la mascota. Incluye atributos como `id`, `name`, `application_date`, `next_dose_date`, etc. Relacionado con `MedicalHistory`.                             |
+| **MedicalResult**      | Representa resultados médicos (análisis, laboratorios, exámenes clínicos). Incluye atributos como `id`, `type`, `date`, `description`, `result`, etc. Relacionado con `MedicalHistory`.     |
+
+#### Enums
+| **Enum**       | **Descripción**                                                                 |
+|----------------|---------------------------------------------------------------------------------|
+| **ResultType** | Enum para los tipos de resultados médicos: `LabTest`, `XRay`, `Ultrasound`, etc. |
+
+#### Validators
+| **Clase**           | **Descripción**                                                                                                       |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **SchemaValidator** | Valida los esquemas de entrada y asegura que los campos requeridos estén presentes en los datos enviados al sistema.  |
+
+
+---
+
+#### 4.2.5.2. Interface Layer
+Description of the design and components of the interface layer for the Medical History Context.
+
+#### Schemas
+| **Esquema**                       | **Descripción**                                                                                                                           |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| **MedicalHistorySchemaPost**      | Esquema para la creación de una historia médica. Incluye `pet_id`, `general_notes`.                                                        |
+| **MedicalHistorySchemaGet**       | Esquema para la respuesta de la obtención de una historia médica. Incluye `id`, `pet_id`, `general_notes`, `diseases`, `surgeries`, `vaccines`, `medical_results`. |
+| **DiseaseSchemaPost**             | Esquema para registrar una enfermedad dentro de una historia médica. Incluye `name`, `diagnosis_date`, `treatment`.                        |
+| **DiseaseSchemaGet**              | Esquema de respuesta con la información de una enfermedad asociada a una historia médica.                                                   |
+| **SurgerySchemaPost**             | Esquema para registrar una cirugía dentro de una historia médica. Incluye `name`, `date`, `description`.                                   |
+| **SurgerySchemaGet**              | Esquema de respuesta con los datos de una cirugía asociada a la historia médica.                                                           |
+| **VaccineSchemaPost**             | Esquema para registrar una vacuna aplicada. Incluye `name`, `application_date`, `next_dose_date`.                                          |
+| **VaccineSchemaGet**              | Esquema de respuesta con los datos de una vacuna aplicada en la historia médica.                                                           |
+| **MedicalResultSchemaPost**       | Esquema para registrar un resultado médico. Incluye `type`, `date`, `description`, `result`.                                                |
+| **MedicalResultSchemaGet**        | Esquema de respuesta con los datos de un resultado médico registrado en la historia médica.                                                 |
+
+
+---
+
+#### 4.2.5.3. Application Layer
+Description of the design and components of the application layer for the Medical History Context.
+
+#### Services
+| **Servicio**              | **Método**                                                                                                                           | **Descripción**                                                                                                      |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **MedicalHistoryService** | `add_medical_history(medical_history: MedicalHistorySchemaPost, db: Session)`                                                        | Crea una nueva historia médica asociada a una mascota.                                                                |
+|                           | `get_all_medical_histories(db: Session)`                                                                                             | Obtiene todas las historias médicas registradas en el sistema.                                                        |
+|                           | `get_medical_history_by_pet_id(pet_id: int, db: Session)`                                                                            | Recupera la historia médica asociada a un ID de mascota.                                                              |
+|                           | `get_medical_history(medical_history_id: int, db: Session)`                                                                          | Recupera una historia médica específica por su ID.                                                                    |
+|                           | `add_medical_result(medical_history_id: int, medical_result: MedicalResultSchemaPost, db: Session)`                                  | Agrega un nuevo resultado médico a una historia.                                                                      |
+|                           | `add_disease(medical_history_id: int, disease: DiseaseSchemaPost, db: Session)`                                                      | Agrega una enfermedad a la historia médica.                                                                           |
+|                           | `add_surgery(medical_history_id: int, surgery: SurgerySchemaPost, db: Session)`                                                      | Registra una cirugía en la historia médica.                                                                           |
+|                           | `add_vaccine(medical_history_id: int, vaccine: VaccineSchemaPost, db: Session)`                                                      | Registra una vacuna aplicada en la historia médica.                                                                   |
+|                           | `get_all_medical_results_by_id(medical_history_id: int, db: Session)`                                                                | Recupera todos los resultados médicos de una historia.                                                                |
+|                           | `get_all_diseases_by_id(medical_history_id: int, db: Session)`                                                                       | Recupera todas las enfermedades asociadas a una historia.                                                             |
+|                           | `get_all_surgeries_by_id(medical_history_id: int, db: Session)`                                                                      | Recupera todas las cirugías asociadas a una historia.                                                                 |
+|                           | `get_all_vaccines_by_id(medical_history_id: int, db: Session)`                                                                       | Recupera todas las vacunas aplicadas en una historia.                                                                 |
+
+
+---
+
+#### 4.2.5.4. Infrastructure Layer
+Description of the design and components of the infrastructure layer for the Medical History Context.
+
+#### **Repositorios**
+| Clase/Servicio                 | Descripción                                                                                           |
+|--------------------------------|-------------------------------------------------------------------------------------------------------|
+| **MedicalHistoryRepository**   | Maneja la interacción con la base de datos para la entidad `MedicalHistory`. Incluye CRUD y consultas específicas. |
+| **DiseaseRepository**          | Maneja la interacción con la base de datos para la entidad `Disease`. Incluye operaciones de gestión de enfermedades. |
+| **SurgeryRepository**          | Maneja la interacción con la base de datos para la entidad `Surgery`. Incluye operaciones de gestión de cirugías. |
+| **VaccineRepository**          | Maneja la interacción con la base de datos para la entidad `Vaccine`. Incluye operaciones de gestión de vacunas. |
+| **MedicalResultRepository**    | Maneja la interacción con la base de datos para la entidad `MedicalResult`. Incluye operaciones de gestión de resultados médicos. |
+
+#### **Mappers**
+| Clase/Servicio              | Descripción                                                                                           |
+|-----------------------------|-------------------------------------------------------------------------------------------------------|
+| **MedicalHistoryMapper**    | Mapea la entidad `MedicalHistory` con SQLAlchemy. Define cómo se traducen las propiedades a columnas de la tabla. |
+| **DiseaseMapper**           | Mapea la entidad `Disease` con SQLAlchemy. |
+| **SurgeryMapper**           | Mapea la entidad `Surgery` con SQLAlchemy. |
+| **VaccineMapper**           | Mapea la entidad `Vaccine` con SQLAlchemy. |
+| **MedicalResultMapper**     | Mapea la entidad `MedicalResult` con SQLAlchemy. |
+
+---
+
+#### Routes
+| **Ruta**                                                                      | **Método** | **Descripción**                                                                                  |
+|-------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------|
+| **MedicalHistories**                                                          |            |                                                                                                  |
+| `/medicalhistories`                                                           | POST       | Crear una nueva historia médica.                                                                 |
+| `/medicalhistories`                                                           | GET        | Obtener todas las historias médicas.                                                             |
+| `/medicalhistories/pet/{pet_id}`                                              | GET        | Obtener la historia médica asociada a un ID de mascota.                                          |
+| `/medicalhistories/{medical_history_id}`                                      | GET        | Obtener una historia médica por su ID.                                                           |
+| `/medicalhistories/{medical_history_id}/medicalresults`                       | POST       | Agregar un resultado médico a una historia.                                                      |
+| `/medicalhistories/{medical_history_id}/diseases`                             | POST       | Agregar una enfermedad a una historia.                                                           |
+| `/medicalhistories/{medical_history_id}/surgeries`                            | POST       | Agregar una cirugía a una historia.                                                              |
+| `/medicalhistories/{medical_history_id}/vaccines`                             | POST       | Agregar una vacuna a una historia.                                                               |
+| `/medicalhistories/{medical_history_id}/medicalresults`                       | GET        | Obtener todos los resultados médicos de una historia.                                            |
+| `/medicalhistories/{medical_history_id}/diseases`                             | GET        | Obtener todas las enfermedades de una historia.                                                  |
+| `/medicalhistories/{medical_history_id}/surgeries`                            | GET        | Obtener todas las cirugías de una historia.                                                      |
+| `/medicalhistories/{medical_history_id}/vaccines`                             | GET        | Obtener todas las vacunas de una historia.                                                       |
+
+---
+
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+Component-level diagrams for the Medical History, showing the internal structure of components.
+
+![Medical History Context Code Level Diagrams](../assets/img/MedicalHistory1.png)
+
+---
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+Class diagrams for the domain layer of the Medical History Context.
+
+![Medical History Context class diagram](../assets/img/MedicalHistory2.png)
+
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
+Database design diagram for the Medical History Context.
+
+![Medical History Context database diagram](../assets/img/MedicalHistory3.png)
+
