@@ -669,3 +669,66 @@ Database design diagram for the Medical History Context.
 
 ![Medical History Context database diagram](../assets/img/MedicalHistory3.png)
 
+### 4.2.6. Bounded Context: Notifications and Reviews
+
+#### 4.2.6.1. Domain Layer
+Description of the design and components of the domain layer for the User Experience Context.
+### Models
+| **Clase**       | **Descripción**  |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Notification**| Representa una notificación para un propietario de mascotas. Atributos: `id`, `petOwnerId`, `type`, `message`, `datetime`. Relacionado con `PetOwner`. |
+| **Review**      | Representa una reseña de un veterinario realizada por un propietario de mascotas. Atributos: `id`, `stars`, `description`, `review_time`, `petowner_id`, `veterinarian_id`. Relacionado con `PetOwner` y `Veterinarian`. |
+
+
+#### 4.2.6.2. Interface Layer
+Description of the design and components of the interface layer for the User Experience Context.
+### Schemas
+| **Esquema**                 | **Descripción**                                                                                                           |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **NotificationSchemaPost**  | Esquema para la creación de una notificación. Atributos: `petOwnerId`, `type`, `message`, `datetime`.                     |
+| **NotificationSchemaGet**   | Esquema para la obtención de una notificación. Atributos: `id`, `petOwnerId`, `type`, `message`, `datetime`.               |
+| **ReviewSchemaPost**        | Esquema para la creación de una reseña. Atributos: `description`, `stars`, `veterinarian_id`. Método `to_model` para convertir el esquema en una instancia de `Review`. |
+| **ReviewSchemaGet**         | Esquema para la obtención de una reseña. Atributos: `id`, `description`, `stars`, `review_time`, `image_url`, `pet_owner_name`. Método `from_orm` para convertir una instancia de `Review` en el esquema. |
+
+#### 4.2.6.3. Application Layer
+Description of the design and components of the application layer for the User Experience Context.
+### Services
+| **Servicio**                            | **Método**                                                    | **Descripción**                                                                                                              |
+|-----------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| **ReviewService**                       | `create_new_review(petowner_id: int, review: ReviewSchemaPost, db: Session)` | Crea una nueva reseña. Valida que el propietario de la mascota exista, luego crea y guarda la reseña en la base de datos. Devuelve la reseña creada como `ReviewSchemaGet`. |
+|                                         | `get_all_reviews(db: Session)`                                | Recupera todas las reseñas. Incluye las relaciones con `PetOwner` y `User`, y devuelve una lista de reseñas como `ReviewSchemaGet`. |
+|                                         | `get_reviews_by_veterinarian_id(vet_id: int, db: Session)`   | Obtiene todas las reseñas asociadas a un veterinario específico. Filtra por `veterinarian_id`, incluye relaciones con `PetOwner` y `User`, y devuelve una lista de reseñas como `ReviewSchemaGet`. |
+
+
+#### 4.2.6.4. Infrastructure Layer
+Description of the design and components of the infrastructure layer for the User Experience Context.
+
+### Routes
+| **Ruta**                                                               | **Método**   | **Descripción**                                                                                                           |
+|------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Notifications**                                                       |              |                                                                                                                           |
+| `/notifications`                                                        | POST         | Crea una nueva notificación. Valida la existencia del propietario de la mascota antes de guardar la notificación. Devuelve la notificación creada como `NotificationSchemaGet`. |
+| `/notifications`                                                        | GET          | Obtiene todas las notificaciones almacenadas en la base de datos. Devuelve una lista de notificaciones como `NotificationSchemaGet`. |
+| `/notifications/petowner/{petowner_id}`                                 | GET          | Obtiene todas las notificaciones asociadas a un propietario de mascota específico. Valida la existencia del propietario y devuelve las notificaciones correspondientes. |
+| **Reviews**                                                             |              |                                                                                                                           |
+| `/reviews`                                                              | POST         | Crea una nueva reseña para un propietario de mascota específico. Utiliza `ReviewService` para validar y guardar la reseña. Devuelve la reseña creada como `ReviewSchemaGet`. |
+| `/reviews`                                                              | GET          | Obtiene todas las reseñas almacenadas en la base de datos. Utiliza `ReviewService` para recuperar y devolver una lista de reseñas como `ReviewSchemaGet`. |
+
+#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+Component-level diagrams for the Notification and review Context, showing the internal structure of components.
+
+![Notification and Review Context data base diagram](/assets/img/Notifications-Component-D.png)
+
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+Code-level diagrams for the Notification and Review Context, detailing the classes and code structure.
+
+![Notification and Review Context data base diagram](/assets/img/Notifications-Context-Diagram.png)
+
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+Class diagrams for the domain layer of the Notification and review Context.
+![Notification and Review Context data base diagram](/assets/img/Notifications-Class-Diagram.png)
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+Database design diagram for the Notification and Review.
+
+![Notification and Review Context data base diagram](/assets/img/Notifications-BC-Diagram.png)
