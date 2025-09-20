@@ -855,20 +855,11 @@ Entrevistas: Veterinarias
         </div>
 </ul>
 
-### 2.3.5. As-Is Scenario Mapping.
+## 2.4. Big Picture EventStorming.
+![Event Storming](https://i.postimg.cc/hj83SGny/collect-domain-events.png)
+Nos reunimos para realizar una lluvia de ideas preliminar sobre los eventos que tendría nuestro proyecto. Desde el IAM, agendado de citas, registro de historial y notificaciones.
 
-<ul>
-    <li><strong>Segmento 1: </strong> Propietarios de mascotas</li>
-        <div>
-            <img src="https://i.postimg.cc/zXDtGBdm/as-is-propietarios.jpg" alt="owner empathy map"/>
-        </div>
-    <li><strong>Segmento 2: </strong> Veterinarios</li>
-    <div>
-            <img src="https://i.postimg.cc/tRNvbPNt/as-is-veterinarios.jpg" alt="veterinario as-is scenario map"/>
-        </div>
-</ul>
-
-## 2.4. Ubiquitous Language.
+## 2.5. Ubiquitous Language.
 
 Es un conjunto de términos y conceptos que se utilizarán de manera uniforme a lo largo de la documentación, las conversaciones y el desarrollo del proyecto. Su objetivo es mantener la coherencia y facilitar la comunicación efectiva dentro del equipo, asegurando que todos los miembros compartan una comprensión común del dominio del problema y del sistema.
 <table>
