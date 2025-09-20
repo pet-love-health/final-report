@@ -128,16 +128,16 @@ A continuación se presentan los gráficos de colaboración de los integrantes d
 
 <table> <tr> <th colspan="2">Criterio Específico</th> <th colspan="10">Acciones Realizadas</th> <th colspan="2">Conclusiones</th> </tr>
     <tr> <td colspan="2">Trabaja en equipo para proporcionar liderazgo en forma conjunta</td> <td colspan="10">
-        <b>Héctor Marcelo Rentería Puga</b> <br>TB1:<br>
-        <b>Diego Alonso Garay</b><br>TB1:<br>
+        <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en liderar a mi equipo para avanzar equitativamente cada parte necesaria para cubrir las bases del proyecto. Mantuve comunicación constante y gestioné el tiempo adecuadamente.<br>
+        <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos. <br>
-        <b>Fabricio Apaza Morales</b> <br>TB1:<br>
-      <b>Piero Miranda Sinarahua</b> <br>TB1:<br></td>
+        <b>Fabricio Apaza Morales</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
+      <b>Piero Miranda Sinarahua</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br></td>
         <td colspan="2"> La colaboración activa y la comunicación constante permiten que el equipo avance de manera coordinada y eficiente. El intercambio de ideas y el apoyo mutuo fortalecen la ejecución de las tareas y contribuyen al logro de los objetivos del proyecto.</td>
     </tr> <tr> <td colspan="2">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td> <td colspan="10">
-        <b>Héctor Marcelo Rentería Puga</b> <br>TB1:<br>
-        <b>Diego Alonso Garay</b><br>TB1:<br>
+        <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos. <br>
+        <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1:En este avance del proyecto, me enfoqué en contribuir a un entorno de trabajo colaborativo, compartiendo ideas y respetando las opiniones de todos los miembros del equipo. Participé en la planificación de tareas y en el establecimiento de metas claras, asegurándome de cumplir con mis responsabilidades para que el equipo lograra los objetivos de manera organizada y eficiente. <br>
-        <b>Fabricio Apaza Morales</b> <br>TB1:<br>
-      <b>Piero Miranda Sinarahua</b> <br>TB1:<br></td>
+        <b>Fabricio Apaza Morales</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
+      <b>Piero Miranda Sinarahua</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br></td>
         <td colspan="2">Un entorno inclusivo y organizado, acompañado de la planificación clara de metas y tareas, facilita la efectividad del equipo. La participación de todos los miembros y el respeto por las opiniones promueven un desempeño ordenado y la consecución de resultados de calidad. </td> </tr> </table>
