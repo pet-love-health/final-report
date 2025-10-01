@@ -732,3 +732,123 @@ Class diagrams for the domain layer of the Notification and review Context.
 Database design diagram for the Notification and Review.
 
 ![Notification and Review Context data base diagram](/assets/img/Notifications-BC-Diagram.png)
+
+### 4.2.7. Bounded Context: IoT Monitoring
+
+#### 4.2.7.1. Domain Layer
+
+Description of the design and components of the domain layer for the IoT Monitoring Context.
+
+##### Aggregates
+| **Aggregates**           | **Descripción**                                                                                         |
+|--------------------------|-------------------------------------------------------------------------------------------------------|
+| **DeviceAggregate**       | Asegura la consistencia en la gestión de dispositivos IoT (registro, actualización, estado). Contiene reglas de negocio como validación de estado y tipos. |
+| **SensorDataAggregate**   | Agrupa la lógica relacionada con la gestión de datos de sensores. Asegura la validez y coherencia de los datos recibidos y procesados. |
+| **AlertAggregate**        | Gestiona la creación, resolución y seguimiento de alertas generadas por eventos anómalos en los datos de sensores. |
+
+##### Entities
+| **Entities**             | **Descripción**                                                                                         |
+|--------------------------|-------------------------------------------------------------------------------------------------------|
+| **Device**               | Entidad raíz del agregado. Representa un dispositivo IoT con atributos: `id`, `petId`, `type`, `location`, `status`. |
+| **SensorData**           | Entidad raíz para datos de sensores, con atributos: `id`, `deviceId`, `timestamp`, `temperature`, `humidity`, `batteryLevel`. |
+| **Alert**                | Entidad dependiente, vinculada a `Device` y `SensorData`. Contiene `id`, `deviceId`, `alertType`, `message`, `triggeredAt`, `resolved`. |
+
+##### Value Objects
+| **Value Objects**        | **Descripción**                                                                                         |
+|--------------------------|-------------------------------------------------------------------------------------------------------|
+| **SensorReading**        | Representa una lectura individual del sensor (valor, unidad, timestamp) que se transfiere entre capas mediante `SensorDataService` y `SensorDataRepository`. |
+| **DeviceStatus**         | Describe el estado operativo del dispositivo (activo, inactivo, en mantenimiento), utilizado en las operaciones de `DeviceService` y persistido en `DeviceRepository`. |
+| **AlertDetails**         | Contiene información detallada de una alerta (tipo, mensaje, nivel de prioridad), usada en `AlertService` para procesamiento y notificación. |
+
+#### 4.2.7.2. Interface Layer
+
+Description of the design and components of the interface layer for the Iot Monitoring Context.
+
+### Schemas
+| **Esquema**                | **Descripción**                                                                                         |
+|----------------------------|-------------------------------------------------------------------------------------------------------|
+| **DeviceSchemaGet**         | Esquema para la respuesta de la obtención de un dispositivo IoT. Incluye `id`, `petId`, `type`, `location`, `status`. |
+| **DeviceSchemaPost**        | Esquema para la creación de un dispositivo IoT. Incluye `petId`, `type`, `location`.                    |
+| **DeviceSchemaUpdate**      | Esquema para la actualización del estado o detalles del dispositivo. Incluye `id`, `status`, `location`. |
+| **SensorDataSchemaGet**     | Esquema para la respuesta de la obtención de datos de sensores. Incluye `id`, `deviceId`, `timestamp`, `temperature`, `humidity`, `batteryLevel`. |
+| **SensorDataSchemaPost**    | Esquema para la creación o envío de datos de sensores. Incluye `deviceId`, `timestamp`, `temperature`, `humidity`, `batteryLevel`. |
+| **SensorDataSchemaUpdate**  | Esquema para la actualización de datos de sensores (si aplica). Incluye `id`, `temperature`, `humidity`, `batteryLevel`. |
+| **AlertSchemaGet**          | Esquema para la respuesta de la obtención de alertas. Incluye `id`, `deviceId`, `alertType`, `message`, `triggeredAt`, `resolved`. |
+| **AlertSchemaPost**         | Esquema para la creación de una alerta. Incluye `deviceId`, `alertType`, `message`, `triggeredAt`.    |
+| **AlertSchemaUpdate**       | Esquema para la actualización del estado de una alerta. Incluye `id`, `resolved`.                     |
+
+#### 4.2.7.3. Application Layer
+
+Description of the design and components of the application layer for the Iot Monitoring Context.
+
+### Services
+| **Servicio**             | **Método**                                                                                         | **Descripción**                                                                                                   |
+|-------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **DeviceService**        | `get_device_by_id(device_id: int, db: Session)`                                                  | Recupera un dispositivo IoT por su ID. Lanza una excepción 404 si no existe.                                      |
+|                         | `create_new_device(device: DeviceSchemaPost, db: Session)`                                       | Crea un nuevo dispositivo IoT, validando que el `petId` exista y que el tipo sea válido.                          |
+|                         | `update_device(device_id: int, device: DeviceSchemaUpdate, db: Session)`                         | Actualiza el estado o detalles de un dispositivo existente.                                                       |
+|                         | `get_devices_by_pet(pet_id: int, db: Session)`                                                  | Recupera todos los dispositivos asociados a una mascota específica.                                              |
+| **SensorDataService**    | `get_sensor_data_by_id(sensor_data_id: int, db: Session)`                                       | Recupera una lectura de sensor por su ID.                                                                        |
+|                         | `create_sensor_data(sensor_data: SensorDataSchemaPost, db: Session)`                            | Registra una nueva lectura de sensor, validando formato y rango de datos.                                        |
+|                         | `get_sensor_data_by_device(device_id: int, db: Session)`                                       | Recupera todas las lecturas de sensor asociadas a un dispositivo.                                                |
+| **AlertService**         | `get_alert_by_id(alert_id: int, db: Session)`                                                  | Recupera una alerta por su ID.                                                                                    |
+|                         | `create_alert(alert: AlertSchemaPost, db: Session)`                                            | Crea una nueva alerta basada en datos anómalos detectados.                                                       |
+|                         | `update_alert(alert_id: int, alert: AlertSchemaUpdate, db: Session)`                           | Actualiza el estado de una alerta, por ejemplo, marcarla como resuelta.                                          |
+|                         | `get_alerts_by_device(device_id: int, db: Session)`                                            | Recupera todas las alertas asociadas a un dispositivo específico.                                                |
+
+#### 4.2.7.4. Infrastructure Layer
+
+Description of the design and components of the infrastructure layer for the Iot Monitoring Context.
+
+### Repositories
+| **Repositorio**            | **Descripción**                                                                                          |
+|---------------------------|--------------------------------------------------------------------------------------------------------|
+| **DeviceRepository**        | Implementa la interfaz definida en el Domain Layer para manejar operaciones CRUD sobre dispositivos IoT. Incluye métodos para crear, actualizar, eliminar y consultar dispositivos en la base de datos. |
+| **SensorDataRepository**    | Implementa la interfaz para gestionar datos de sensores. Permite registrar, modificar y consultar lecturas en la base de datos.                          |
+| **AlertRepository**         | Gestiona la persistencia de alertas, incluyendo creación, actualización y consulta de alertas generadas por eventos anómalos.                             |
+
+### Mappers
+| **Mapeador**              | **Descripción**                                                                                          |
+|---------------------------|--------------------------------------------------------------------------------------------------------|
+| **DeviceMapper**           | Convierte entre modelos de base de datos, entidades de dominio y esquemas (`DeviceSchemaGet`, `DeviceSchemaPost`, `DeviceSchemaUpdate`).                |
+| **SensorDataMapper**       | Maneja la conversión de datos de sensores entre modelos de base de datos, entidades de dominio y esquemas (`SensorDataSchemaGet`, `SensorDataSchemaPost`).|
+| **AlertMapper**            | Convierte alertas entre modelos de base de datos, entidades de dominio y esquemas (`AlertSchemaGet`, `AlertSchemaPost`, `AlertSchemaUpdate`).            |
+
+### Routes
+| **Ruta**                                    | **Método HTTP** | **Descripción**                                                                                   |
+|---------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------|
+| `/devices/{device_id}`                       | GET             | Obtiene un dispositivo IoT por su ID.                                                           |
+| `/devices`                                  | POST            | Crea un nuevo dispositivo IoT.                                                                   |
+| `/devices/{device_id}`                       | PUT             | Actualiza detalles o estado de un dispositivo existente.                                         |
+| `/devices/pet/{pet_id}`                      | GET             | Obtiene todos los dispositivos asociados a una mascota.                                         |
+| `/sensordata/{sensor_data_id}`               | GET             | Obtiene una lectura de sensor por su ID.                                                        |
+| `/sensordata/device/{device_id}`             | GET             | Obtiene todas las lecturas de sensor asociadas a un dispositivo específico.                      |
+| `/sensordata`                               | POST            | Registra una nueva lectura de sensor.                                                           |
+| `/alerts/{alert_id}`                         | GET             | Obtiene una alerta por su ID.                                                                    |
+| `/alerts`                                   | POST            | Crea una nueva alerta.                                                                           |
+| `/alerts/{alert_id}`                         | PUT             | Actualiza el estado de una alerta (por ejemplo, marcar como resuelta).                           |
+| `/alerts/device/{device_id}`                 | GET             | Obtiene todas las alertas asociadas a un dispositivo específico.                                 |
+
+#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+Component-level diagrams for the Iot Monitoring Context, showing the internal structure of components.
+
+<img src="../assets/img/Monitoring1.png" height="100%" alt="100%"> 
+
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+Code-level diagrams for the Iot Monitoring Context, detailing the classes and code structure.
+
+<img src="../assets/img/Monitoring2.png" height="100%" alt="100%"> 
+
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+Class diagrams for the domain layer of the Iot Monitoring Context.
+
+<img src="../assets/img/Monitoring3.png" height="100%" alt="100%"> 
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+Database design diagram for the Iot Monitoring Context.
+
+<img src="../assets/img/Monitoring4.png" height="100%" alt="100%"> 
