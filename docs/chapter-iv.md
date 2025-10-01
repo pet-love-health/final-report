@@ -837,18 +837,14 @@ Component-level diagrams for the Iot Monitoring Context, showing the internal st
 
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
 
-Code-level diagrams for the Iot Monitoring Context, detailing the classes and code structure.
-
-<img src="../assets/img/Monitoring2.png" height="100%" alt="100%"> 
-
 ##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 Class diagrams for the domain layer of the Iot Monitoring Context.
 
-<img src="../assets/img/Monitoring3.png" height="100%" alt="100%"> 
+<img src="../assets/img/Monitoring2.png" height="100%" alt="100%"> 
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
 
 Database design diagram for the Iot Monitoring Context.
 
-<img src="../assets/img/Monitoring4.png" height="100%" alt="100%"> 
+<img src="../assets/img/Monitoring3.png" height="100%" alt="100%"> 
