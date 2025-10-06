@@ -601,6 +601,132 @@ Cuando los usuarios utilicen el rastreo GPS de su mascota, la navegación cambia
 - Modo Pantalla Completa: El mapa se expandirá a pantalla completa para que el usuario pueda visualizar claramente la ubicación de la mascota.
 - Notificaciones en Tiempo Real: Las alertas de ubicación se mostrarán en la parte superior del mapa, y los usuarios podrán hacer clic en ellas para ver la ruta exacta de su mascota.
 
+## 5.3. Landing Page UI Design.
+
+### 5.3.1. Landing Page Wireframe.
+
+En esta sección, presentamos los wireframes de la landing page de Upet, una plataforma innovadora diseñada para conectar a dueños de mascotas con veterinarios de confianza. Los wireframes proporcionan una visión estructural de la página, destacando la disposición y funcionalidad de cada sección clave.
+
+*Sección Home*
+![Home](https://i.postimg.cc/dQ8sFwpz/home-lp.png)
+
+*Sección About*
+![About](https://i.postimg.cc/B620JBYx/proposito.png)
+
+*Sección Dueños de mascotas*
+![Dueños de mascotas](https://i.postimg.cc/13418Q7R/seccion-pet.png)
+
+*Sección Veterinarios*
+![Veterinarios](https://i.postimg.cc/rsqvMXtk/seccion-vet.png)
+
+*Sección Review*
+![Review](https://i.postimg.cc/rsqvMXtk/seccion-vet.png)
+
+*Sección Download*
+![Download](https://i.postimg.cc/59qVGpFJ/seccion-download.png)
+
+*Sección Contact*
+![Contact](https://i.postimg.cc/MGQkYY8h/seccion-sendamessage.png)
+
+*Sección Footer*
+![Footer](https://i.postimg.cc/8PZVk5Hn/seccion-footer.png)
+
+Enlace: https://www.figma.com/design/1S78nWoDziNLXLZov0LHaO/IOT---LandingPage?node-id=0-1&t=TQJZTBEcEyWMmmIQ-1
+
+### 5.3.2. Landing Page Mock-up.
+
+En esta sección, presentamos los mockups de la landing page de Upet, que ofrecen una representación visual detallada y estilizada de la interfaz final. Los mockups permiten visualizar el diseño estético y la experiencia de usuario, proporcionando una imagen clara de cómo se verá y funcionará la página.
+
+*Sección Home*
+![Home](https://i.postimg.cc/vZmb59Ts/home-mk.png)
+
+*Sección About*
+![About](https://i.postimg.cc/rscLsR37/proposito-mk.png)
+
+*Sección Dueños de mascotas*
+![Dueños de mascotas](https://i.postimg.cc/zfbNcrT2/pet-mk.png)
+
+*Sección Veterinarios*
+![Veterinarios](https://i.postimg.cc/5N7Zdr4h/vet-mk.png)
+
+*Sección Review*
+![Review](https://i.postimg.cc/prZMFXtr/review-mk.png)
+
+*Sección Download*
+![Download](https://i.postimg.cc/FzgNVV09/download-mk.png)
+
+*Sección Contact*
+![Contact](https://i.postimg.cc/MT7hCKH5/sendamessage-mk.png)
+
+*Sección Footer*
+![Footer](https://i.postimg.cc/B6FqX06P/footer-mk.png)
+
+Enlace: https://www.figma.com/design/1S78nWoDziNLXLZov0LHaO/IOT---LandingPage?node-id=9-201&t=TQJZTBEcEyWMmmIQ-1
+## 5.3. Landing Page UI Design.
+
+### 5.3.1. Landing Page Wireframe.
+
+En esta sección, presentamos los wireframes de la landing page de Upet, una plataforma innovadora diseñada para conectar a dueños de mascotas con veterinarios de confianza. Los wireframes proporcionan una visión estructural de la página, destacando la disposición y funcionalidad de cada sección clave.
+
+*Sección Home*
+![Home](https://i.postimg.cc/dQ8sFwpz/home-lp.png)
+
+*Sección About*
+![About](https://i.postimg.cc/B620JBYx/proposito.png)
+
+*Sección Dueños de mascotas*
+![Dueños de mascotas](https://i.postimg.cc/13418Q7R/seccion-pet.png)
+
+*Sección Veterinarios*
+![Veterinarios](https://i.postimg.cc/rsqvMXtk/seccion-vet.png)
+
+*Sección Review*
+![Review](https://i.postimg.cc/rsqvMXtk/seccion-vet.png)
+
+*Sección Download*
+![Download](https://i.postimg.cc/59qVGpFJ/seccion-download.png)
+
+*Sección Contact*
+![Contact](https://i.postimg.cc/MGQkYY8h/seccion-sendamessage.png)
+
+*Sección Footer*
+![Footer](https://i.postimg.cc/8PZVk5Hn/seccion-footer.png)
+
+Enlace: https://www.figma.com/design/1S78nWoDziNLXLZov0LHaO/IOT---LandingPage?node-id=0-1&t=TQJZTBEcEyWMmmIQ-1
+
+### 5.3.2. Landing Page Mock-up.
+
+En esta sección, presentamos los mockups de la landing page de Upet, que ofrecen una representación visual detallada y estilizada de la interfaz final. Los mockups permiten visualizar el diseño estético y la experiencia de usuario, proporcionando una imagen clara de cómo se verá y funcionará la página.
+
+*Sección Home*
+![Home](https://i.postimg.cc/vZmb59Ts/home-mk.png)
+
+*Sección About*
+![About](https://i.postimg.cc/rscLsR37/proposito-mk.png)
+
+*Sección Dueños de mascotas*
+![Dueños de mascotas](https://i.postimg.cc/zfbNcrT2/pet-mk.png)
+
+*Sección Veterinarios*
+![Veterinarios](https://i.postimg.cc/5N7Zdr4h/vet-mk.png)
+
+*Sección Review*
+![Review](https://i.postimg.cc/prZMFXtr/review-mk.png)
+
+*Sección Download*
+![Download](https://i.postimg.cc/FzgNVV09/download-mk.png)
+
+*Sección Contact*
+![Contact](https://i.postimg.cc/MT7hCKH5/sendamessage-mk.png)
+
+*Sección Footer*
+![Footer](https://i.postimg.cc/B6FqX06P/footer-mk.png)
+
+Enlace: https://www.figma.com/design/1S78nWoDziNLXLZov0LHaO/IOT---LandingPage?node-id=9-201&t=TQJZTBEcEyWMmmIQ-1
+
+
+
+
 
 
 
