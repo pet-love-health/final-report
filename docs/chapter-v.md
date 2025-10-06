@@ -724,6 +724,137 @@ En esta sección, presentamos los mockups de la landing page de Upet, que ofrece
 
 Enlace: https://www.figma.com/design/1S78nWoDziNLXLZov0LHaO/IOT---LandingPage?node-id=9-201&t=TQJZTBEcEyWMmmIQ-1
 
+## 5.4. Applications UX/UI Design.
+
+### 5.4.1. Applications Wireframes.
+
+
+Mobile application:
+
+<div style="text-align: center;">
+
+  ![Create Account](https://i.postimg.cc/90JBy9B6/image.png)  
+  [Enlace de los wireframes](https://www.figma.com/design/HG5VxSXVvjfVC0BGdiWywi/IOT---Mobile-Application?node-id=10-723&t=UXfnAD20vDHaldKx-1)
+
+</div>
+
+Web application:
+
+<div style="text-align: center;">
+
+  ![Create Account](https://i.postimg.cc/s24FfXYG/Create-account.png)  
+  ![Create Account 1](https://i.postimg.cc/0QkTzsnW/Create-account-1.png)  
+  ![Home 1](https://i.postimg.cc/GtNVgsCV/Home-w-1.png)  
+  ![Edit Pet](https://i.postimg.cc/Hx6f5hPp/Edit-Pet-w.png)  
+  ![Appointment](https://i.postimg.cc/mgMfqVhw/appointment.png)  
+  ![Register Pet](https://i.postimg.cc/KYSFvwCw/register-pet-w.png)  
+  ![Care](https://i.postimg.cc/8CSQVW6V/Care-w.png)  
+  ![Profile Veterinary](https://i.postimg.cc/y8SsKsp0/profile-veterinary.png)  
+  ![Add Info](https://i.postimg.cc/J4sW3RLS/add-info.png)  
+  ![Settings Subscription](https://i.postimg.cc/1zGSgMQt/settings-suscription.png)  
+  ![Supervise](https://i.postimg.cc/k47mW8Jy/Supervise.png)  
+  ![View Info](https://i.postimg.cc/tC8G28RJ/view-info.png)  
+
+</div>
+
+### 5.4.2. Applications Wireflow Diagrams.
+
+<div style="text-align: start;">
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 001: </strong>Registrar mascota</label>
+    </div>
+    <img src="https://i.postimg.cc/vH44N19z/Group-1000003199.jpg" alt="Group 1000003199" style="height: 150px;"/>  
+  </div>
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 002: </strong>Editar informaciòn de la mascota</label>
+    </div>    <img src="https://i.postimg.cc/yxv0X2M8/Group-1000003201.jpg" alt="Group 1000003201" style="height: 150px;"/>  
+  </div>
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 003: </strong>Agendar cita con la veterinaria</label>
+    </div>    <img src="https://i.postimg.cc/QNbg3WFZ/Group-1000003202.jpg" alt="Group 1000003202" style="height: 150px;"/>  
+  </div>
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 004: </strong>Integraciòn de datos del collar al historial mèdico</label>
+    </div>    <img src="https://i.postimg.cc/VN85vDhG/Group-1000003205.jpg" alt="Group 1000003205" style="height: 150px;"/>  
+  </div>
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 005: </strong>Monitoreo de ubicaiòn en tiempo real</label>
+    </div>    <img src="https://i.postimg.cc/c19Kh7KC/Group-1000003206.jpg" alt="Group 1000003206" style="height: 150px;"/>  
+  </div>
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 006: </strong>Subir foto de la mascota al registrarla</label>
+    </div>    <img src="https://i.postimg.cc/wx4XMRpK/Group-1000003200.jpg" alt="Group 1000003200" style="height: 150px;"/>  
+  </div>
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 007: </strong>Registrar vacunas de las mascotas</label>
+    </div>    <img src="https://i.postimg.cc/GttvzdvS/Group-1000003203.jpg" alt="Group 1000003203" style="height: 150px;"/>  
+  </div>
+
+  <div style="text-align: left;">
+    <div>
+    <label><strong>Wireflow diagram 008: </strong>Registrar resultados de los diágnosticos de las mascotas</label>
+    </div>    <img src="https://i.postimg.cc/RhYKDyRC/Group-1000003204.jpg" alt="Group 1000003204" style="height: 150px;"/>  
+  </div>
+
+</div>
+
+Mobile Application:
+
+
+### 5.4.3. Applications Mock-ups.
+
+Mobile application:
+
+<div style="text-align: center;">
+
+  ![Create Account](https://i.postimg.cc/QdHr9kbr/image.png)  
+  [Enlace de los wireframes](https://www.figma.com/design/HG5VxSXVvjfVC0BGdiWywi/IOT---Mobile-Application?node-id=10-723&t=UXfnAD20vDHaldKx-1)
+
+</div>
+
+Web application:
+
+<div style="text-align: center;">
+  
+  ![Login](https://i.postimg.cc/2SRjdWLL/Login.png)  
+  ![Make Appointment](https://i.postimg.cc/vZrY0m5q/Make-Appointment.png)  
+  ![Activities](https://i.postimg.cc/rmKzZkVD/Activities.png)  
+  ![Add Members](https://i.postimg.cc/T25prfNS/Add-Members.png)  
+  ![Add Cards](https://i.postimg.cc/prjrxJnx/Add-Cards.png)  
+  ![Add Info](https://i.postimg.cc/63gqDmqY/Add-Info.png)  
+  ![Care](https://i.postimg.cc/qMfgwS97/Care.png)  
+  ![Confirm Plan](https://i.postimg.cc/m2Qk5Vsy/Confirm-Plan.png)  
+  ![Create Account](https://i.postimg.cc/9QC05TX5/Create-Account.png)  
+  ![Edit Pet](https://i.postimg.cc/zG7BJB3L/Edit-Pet.png)  
+  ![Home](https://i.postimg.cc/s2221rZT/Home.png)  
+  ![Home 1](https://i.postimg.cc/d0SVyx2w/Home-1.png)  
+  ![Plan Updated](https://i.postimg.cc/rpq83LJ8/Plan-Updated.png)  
+  ![Profile](https://i.postimg.cc/nLTHtwRq/Profile.png)  
+  ![Profile Pet](https://i.postimg.cc/Hn8HXWpt/Profile-Pet.png)  
+  ![Profile Veterinary](https://i.postimg.cc/wx1s0hMw/Profile-Veterinary.png)  
+  ![Register Pet](https://i.postimg.cc/dQgZXLTw/Register-Pet.png)  
+  ![Reminders](https://i.postimg.cc/gkRLPmvR/Reminders.png)  
+  ![Settings](https://i.postimg.cc/DwTJvHgN/Settings.png)  
+  ![Supervise](https://i.postimg.cc/Hk9JVzvk/Supervise.png)  
+  ![Update Plan](https://i.postimg.cc/Ls4JfPGB/Update-Plan.png)  
+  ![View Info Pet](https://i.postimg.cc/s2nvJXrF/View-Info-Pet.png)  
+
+</div>
+
 
 
 
