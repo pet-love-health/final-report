@@ -855,6 +855,24 @@ Web application:
 
 </div>
 
+### 5.4.4. Applications User Flow Diagrams.
+Web application: 
+<div style="text-align: center;">
+
+  ![Create Account](https://i.postimg.cc/rwv7d6sS/image.png)  
+  [Enlace de los user flow](https://www.figma.com/design/YLw0Ul43ixFzCgbO0J63md/IOT---Web-Application?node-id=2-2&node-type=canvas&t=X4DilrqX6D9f77E0-0)
+
+</div>
+
+## 5.5. Applications Prototyping.
+Web application:
+<div style="text-align: center;">
+
+  ![Create Account](https://i.postimg.cc/TwxS9rr1/image.png)  
+  [Enlace al prototipo](https://www.figma.com/design/YLw0Ul43ixFzCgbO0J63md/IOT---Web-Application?node-id=2-2&node-type=canvas&t=X4DilrqX6D9f77E0-0)
+
+</div>
+
 
 
 
