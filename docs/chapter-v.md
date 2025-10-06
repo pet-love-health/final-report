@@ -95,5 +95,72 @@ Divertido/Cercano: "¡Tu mascota está en perfectas condiciones! Relájate y sig
 
 Serio/Informativo: "Hemos detectado una irregularidad en los signos vitales de tu mascota. Por favor, revisa su estado."
 
+### 5.1.2. Web, Mobile and IoT Style Guidelines.
+
+En la siguiente sección se aborda los estándares visuales y de interacción que deben seguirse al diseñar interfaces web responsivas, aplicaciones móviles y las interfaces de usuario vinculadas a dispositivos IoT. La consistencia en las experiencias visuales y de interacción es clave para garantizar que los usuarios perciban Upet como una marca confiable, moderna y accesible. A continuación, se detallan las decisiones y estándares aplicables a cada plataforma, con un enfoque particular en la experiencia del usuario y la integración fluida entre web, móvil e IoT.
+
+### **Responsive Web Interface**
+
+**Diseño Responsive**
+
+En la web, el diseño responsive es esencial para garantizar que Upet sea accesible y funcional en cualquier dispositivo, desde pantallas de escritorio hasta móviles. Esto implica que los elementos de la interfaz se adapten fluidamente a diferentes tamaños de pantalla, manteniendo siempre la coherencia visual y funcional.
+
+- Layouts flexibles: El diseño debe adaptarse utilizando grids flexibles y elementos que cambian de tamaño proporcionalmente. Para pantallas de escritorio grandes, se opta por un grid de 12 columnas, mientras que en pantallas más pequeñas (como tablets y móviles), el diseño puede ajustarse a 8 o 4 columnas.
+
+- Tipografía adaptativa: Los tamaños de fuente deben ajustarse según el tamaño de la pantalla para asegurar legibilidad. En pantallas grandes, se utilizan fuentes más grandes para encabezados (24px o más), mientras que en móviles, los encabezados pueden reducirse a 18px para optimizar el espacio.
+
+- Imágenes y gráficos responsivos: Las imágenes, gráficos y elementos visuales deben redimensionarse y recortarse automáticamente para que siempre se muestren correctamente sin comprometer la estética o el rendimiento. Las imágenes SVG son preferibles por su capacidad de escalado sin pérdida de calidad.
+
+**Interacciones Web**
+
+La experiencia de interacción en la web para Upet debe ser fluida y fácil de navegar, brindando al usuario acceso inmediato a las funciones clave como el monitoreo de la salud de la mascota, la gestión de citas y la visualización de datos del collar IoT.
+
+- Navegación sencilla: El menú de navegación debe ser accesible en todo momento, permitiendo a los usuarios moverse entre secciones sin esfuerzo. En móviles, se opta por un menú tipo hamburger, mientras que en escritorio se utiliza una barra de navegación fija.
+
+- Microinteracciones: El uso de microinteracciones, como cambios de color en los botones cuando se colocan sobre ellos (hover), o animaciones suaves al cargar datos del collar IoT, mejora la experiencia del usuario. Estas interacciones deben ser sutiles y no intrusivas, garantizando que la atención del usuario se mantenga en las funcionalidades clave.
+
+**Diseño Mobile-First**
+
+El enfoque mobile-first asegura que la experiencia en dispositivos móviles sea prioritaria, optimizando cada elemento visual y de interacción para pantallas pequeñas.
+
+- Componentes clave en móviles: Las funcionalidades más utilizadas, como el monitoreo de la salud, las alertas y el GPS, deben ser accesibles en la parte superior de la pantalla para evitar desplazamientos innecesarios.
+
+- Gestos e interacciones táctiles: El diseño móvil de Upet debe aprovechar las interacciones táctiles, como deslizamientos para navegar entre secciones, tocar para expandir detalles de la salud de la mascota, y presionar prolongadamente para acceder a acciones rápidas, como compartir la ubicación de la mascota.
+
+### **Mobile Application Interface**
+
+La interfaz de la aplicación móvil para Upet está diseñada para maximizar la usabilidad en pantallas pequeñas, optimizando las interacciones y ofreciendo una experiencia centrada en el usuario que es tanto funcional como atractiva.
+
+**Diseño Visual en Móvil**
+
+- Espaciado y jerarquía visual: En pantallas móviles, es crucial aprovechar al máximo el espacio limitado. El espaciado sigue la regla de 8px para mantener el orden y facilitar la navegación. La jerarquía visual debe ser clara, con los encabezados en Poppins Bold destacándose frente a los textos descriptivos más pequeños y menos prominentes.
+
+- Botones de acción claros: Los botones principales, como agendar cita, monitorear salud o rastrear ubicación, deben ser grandes y fácilmente accesibles con el pulgar. Se recomienda un mínimo de 44x44px para garantizar una interacción precisa sin errores.
+
+- Paleta de colores: La paleta de colores en móviles debe mantenerse coherente con el diseño web. Los tonos vibrantes como #F15C5D (Rojo Coral) se utilizan para elementos interactivos importantes, mientras que los colores más suaves como #F0F6FF (Azul Claro) se emplean para fondos y secciones informativas.
+
+**Interacción y Flujo de Usuario**
+
+- Navegación intuitiva: La navegación debe ser directa, con íconos grandes y menús fácilmente comprensibles. El uso de pestañas en la parte inferior de la pantalla para las secciones clave (Salud, Citas, GPS) asegura que el usuario pueda moverse rápidamente entre funciones.
+
+- Alertas y notificaciones: Las notificaciones emergentes deben ser discretas pero visibles. Por ejemplo, cuando el collar IoT detecta un problema de salud, la notificación debe utilizar tanto el color #F15C5D como una animación suave para captar la atención del usuario sin ser intrusiva.
+
+- Acciones por gestos: Además de las interacciones básicas, la aplicación móvil debe permitir gestos como deslizar hacia la derecha para ver más detalles sobre la salud de la mascota o hacia la izquierda para acceder a la configuración del collar IoT.
+
+### **IoT Application User Interface**
+
+El diseño de la interfaz de usuario para la parte de IoT se centra en la visualización eficiente de los datos recolectados por el collar IoT y cómo estos se presentan en la aplicación para proporcionar información útil a los propietarios y veterinarios.
+
+**Visualización de Datos IoT**
+
+- Datos en tiempo real: La información del collar IoT, como la frecuencia cardíaca, la temperatura corporal y la ubicación, debe mostrarse en tiempo real en un formato claro y fácil de entender. Gráficos simples y visualizaciones con códigos de color (verde para normal, rojo para alerta) ayudarán a los usuarios a identificar rápidamente cualquier anomalía.
+
+- Alertas en el dashboard: Las alertas críticas deben aparecer en la parte superior del dashboard de la aplicación, con una interfaz clara y sencilla que permita a los usuarios actuar rápidamente. Por ejemplo, si la temperatura de la mascota es anormal, la aplicación debe mostrar un gráfico de tendencia con un fondo de color #F15C5D para resaltar la emergencia.
+
+- Historial de datos: Además de los datos en tiempo real, los usuarios deben poder acceder a un historial de la salud de su mascota a través del IoT. Esto incluye gráficos de tendencia para ver cómo han variado los signos vitales a lo largo del tiempo, presentados en colores suaves como #F0F1DA (Beige Claro) para mejorar la legibilidad.
+
+**Interacción IoT**
+
+- Notificaciones inteligentes: Las notificaciones provenientes del collar IoT deben ser personalizables. Los usuarios pueden elegir recibir alertas críticas en la app o por SMS/WhatsApp, dependiendo de sus preferencias. Las notificaciones de baja prioridad pueden ser silenciosas, pero aparecerán en el panel principal para ser consultadas cuando el usuario lo desee.
 
 
