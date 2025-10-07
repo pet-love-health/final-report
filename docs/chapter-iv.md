@@ -83,16 +83,13 @@ En esta sección, se describe la Arquitectura de Software de la solución utiliz
 
 A continuación mostramos el diagrama de contexto de la arquitectura de software de la solución propuesta. En este diagrama se presentan los actores externos que interactúan con el sistema y los sistemas externos con los que se comunica.
 
-![c4-context-diagram](https://i.postimg.cc/gjDvmyvD/c4-upet-2.png)
-![c4-context-diagram](https://i.postimg.cc/gjDvmyvD/c4-upet-2.png)
-![c4-context-diagram](https://i.postimg.cc/gjDvmyvD/c4-upet-2.png)
-![c4-context-diagram](https://i.postimg.cc/gjDvmyvD/c4-upet-2.png)
+![c4-context-diagram](https://i.postimg.cc/SRMBc4VJ/diagram-context-iot.png)
 
 #### 4.1.3.4. Software Architecture Container Level Diagrams.
 
 En esta sección se presenta el diagrama de contenedores de la solución propuesta. Este diagrama detalla los contenedores de software y sus interrelaciones, proporcionando una visión general de la estructura interna del sistema.
 
-![c4-containers-diagram](https://i.postimg.cc/QMKNbVW8/containers-dise-oyexperimentos.png)
+![c4-containers-diagram](https://i.postimg.cc/tg6F0mrq/diagram-container-iot.png)
 
 #### 4.1.3.5. Software Architecture Deployment Diagrams.
 ## 4.2. Tactical-Level Domain-Driven Design
