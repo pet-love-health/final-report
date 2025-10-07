@@ -137,6 +137,17 @@ En esta sección, se presentan los requisitos definidos junto con el conjunto de
                 <td>-</td>
             </tr>
             <tr>
+                <td>EPIC-12</td>
+                <td>Gestión de dispositivos IoT</td>
+                <td>
+                    <strong>Como</strong> desarrollador, 
+                    <strong>quiero</strong> implementar la gestión de dispositivos IoT
+                    <strong>para</strong> integrar dispositivos IoT en la aplicación.
+                </td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
                   <td>US-001</td>
                   <td>Registrar Mascota</td>
                   <td>
@@ -1094,6 +1105,226 @@ En esta sección, se presentan los requisitos definidos junto con el conjunto de
                     <strong>Entonces</strong> el sistema no lo deja acceder.
                 </td>
                 <td>EPIC-10</td>
+            </tr>
+            <tr>
+                <td>TS-006</td>
+                <td>Implementación de la API de monitoreo de ubicación</td>
+                <td>
+                    <strong>Como</strong> desarrollador,
+                    <strong>necesito</strong> crear una API RESTful para gestionar la comunicación entre la aplicación y el collar IoT,
+                    <strong>para</strong> permitir la actualización y consulta de la ubicación GPS en tiempo real.
+                </td>
+                <td>
+                    <h5>Escenario 1: Endpoint de consulta de ubicación</h5>
+                    <strong>Dado</strong> el cliente desea obtener la ubicación de la mascota,
+                    <strong>Cuando</strong> se envía una solicitud GET al endpoint /location/{petId},
+                    <strong>Entonces</strong> la API responde con la ubicación actual de la mascota en formato JSON, incluyendo latitud, longitud, y hora de la última actualización.
+                    <br>
+                    <h5>Escenario 2: Error en la conexión con el dispositivo</h5>
+                    <strong>Dado</strong> el dispositivo está desconectado o fuera de rango,
+                    <strong>Cuando</strong> se envía una solicitud GET al endpoint /location/{petId},
+                    <strong>Entonces</strong> la API devuelve un código de estado 503 (Service Unavailable) indicando la imposibilidad de obtener la ubicación en ese momento.
+                    <br>
+                    <h5>Escenario 3: Actualización de ubicación desde el collar IoT</h5>
+                    <strong>Dado</strong> el dispositivo envía periódicamente la ubicación,
+                    <strong>Cuando</strong> se recibe una solicitud POST desde el dispositivo IoT al endpoint /location/update,
+                    <strong>Entonces</strong> la API actualiza la base de datos con la nueva ubicación y devuelve un código de estado 200 (OK).
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>TS-007</td>
+                <td>Integración de signos vitales en el historial médico</td>
+                <td>
+                    <strong>Como</strong> desarrollador,
+                    <strong>necesito</strong> implementar una API que permita recibir los datos de los signos vitales desde el collar IoT y almacenarlos en el historial médico de la mascota,
+                    <strong>para</strong> mantener un registro completo y actualizado de la salud de la mascota.
+                </td>
+                <td>
+                    <h5>Escenario 1: Recepción de datos de signos vitales</h5>
+                    <strong>Dado</strong> el collar envía los signos vitales de la mascota,
+                    <strong>Cuando</strong> se realiza una solicitud POST al endpoint /health/update,
+                    <strong>Entonces</strong> los datos de ritmo cardiaco y temperatura se almacenan en la base de datos con su respectivo timestamp.
+                    <br>
+                    <h5>Escenario 2: Fallo en la sincronización de datos</h5>
+                    <strong>Dado</strong> los datos no se han recibido correctamente,
+                    <strong>Cuando</strong> el dispositivo IoT envía una solicitud POST con un formato de datos incorrecto,
+                    <strong>Entonces</strong> la API devuelve un código de estado 400 (Bad Request) y un mensaje de error describiendo el problema.
+                    <br>
+                    <h5>Escenario 3: Consulta de historial médico</h5>
+                    <strong>Dado</strong> el veterinario desea consultar los signos vitales,
+                    <strong>Cuando</strong> se envía una solicitud GET al endpoint /medical-history/{petId},
+                    <strong>Entonces</strong> la API responde con un JSON que incluye los valores de ritmo cardiaco y temperatura registrados desde el collar IoT, junto con otros datos clínicos.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+            <td>US-035</td>
+                <td>Vincular el collar IoT con el perfil de la mascota</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> poder vincular el collar inteligente con el perfil de mi mascota en la aplicación 
+                    <strong>para</strong> que los datos del dispositivo se asocien automáticamente con la mascota correspondiente.
+                </td>
+                <td>
+                    <h5>Escenario 01: Vinculación exitosa del collar IoT</h5>
+                    <strong>Dado</strong> que el propietario se encuentra en el perfil de su mascota, 
+                    <strong>cuando</strong> selecciona la opción para vincular un nuevo collar e ingresa el código del dispositivo correctamente, 
+                    <strong>Entonces</strong> el sistema valida la información, vincula el collar a la mascota y muestra un mensaje de confirmación.
+                    <br>
+                    <h5>Escenario 02: Intento de vincular un collar ya asociado</h5>
+                    <strong>Dado</strong> que el propietario intenta registrar un collar IoT, 
+                    <strong>cuando</strong> ingresa el código de un collar que ya está vinculado a otra mascota, 
+                    <strong>Entonces</strong> el sistema muestra un mensaje de error indicando que el collar ya está en uso.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>US-036</td>
+                <td>Visualizar signos vitales en tiempo real</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> ver los datos de temperatura y ritmo cardiaco de mi mascota en tiempo real 
+                    <strong>para</strong> conocer su estado de salud actual.
+                </td>
+                <td>
+                    <h5>Escenario 01: Visualización exitosa de signos vitales</h5>
+                    <strong>Dado</strong> que el propietario tiene el collar vinculado y en funcionamiento, 
+                    <strong>cuando</strong> accede a la sección de monitoreo en la aplicación, 
+                    <strong>Entonces</strong> se muestran en pantalla los valores actuales de temperatura y ritmo cardiaco actualizados cada pocos segundos.
+                    <br>
+                    <h5>Escenario 02: Fallo de conexión con el collar IoT</h5>
+                    <strong>Dado</strong> que el propietario intenta visualizar los signos vitales, 
+                    <strong>cuando</strong> el collar está desconectado o fuera de rango, 
+                    <strong>Entonces</strong> la aplicación muestra un mensaje de error indicando que no se puede obtener la información en tiempo real.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>US-037</td>
+                <td>Recibir alertas por anomalías</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> recibir alertas automáticas cuando el collar detecte valores anormales de temperatura o ritmo cardíaco 
+                    <strong>para</strong> poder actuar rápidamente ante posibles emergencias.
+                </td>
+                <td>
+                    <h5>Escenario 01: Alerta generada exitosamente</h5>
+                    <strong>Dado</strong> que el collar IoT detecta un valor de temperatura fuera del rango normal, 
+                    <strong>cuando</strong> el evento es reportado al servidor, 
+                    <strong>Entonces</strong> el sistema genera una alerta y la muestra al propietario mediante notificación push y correo electrónico.
+                    <br>
+                    <h5>Escenario 02: Error al generar la alerta</h5>
+                    <strong>Dado</strong> que el collar IoT detecta un valor anómalo, 
+                    <strong>cuando</strong> el servidor edge no logra procesar la alerta correctamente, 
+                    <strong>Entonces</strong> la aplicación registra el fallo y muestra un mensaje indicando que la alerta no pudo generarse.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>US-038</td>
+                <td>Monitorear ubicación de la mascota</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> conocer la ubicación actual de mi mascota 
+                    <strong>para</strong> rastrear su posición en caso de pérdida o paseo.
+                </td>
+                <td>
+                    <h5>Escenario 01: Visualización correcta de la ubicación</h5>
+                    <strong>Dado</strong> que el collar IoT está encendido y transmitiendo datos GPS, 
+                    <strong>cuando</strong> el propietario accede a la aplicación, 
+                    <strong>Entonces</strong> el sistema muestra la ubicación actual de la mascota y la hora de la última actualización.
+                    <br>
+                    <h5>Escenario 02: Fallo en la obtención de ubicación</h5>
+                    <strong>Dado</strong> que el propietario intenta ver la ubicación de su mascota, 
+                    <strong>cuando</strong> el collar no puede enviar coordenadas por falta de señal GPS, 
+                    <strong>Entonces</strong> la aplicación muestra la última ubicación registrada y un mensaje de advertencia.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>US-039</td>
+                <td>Sincronizar datos con el servidor edge</td>
+                <td>
+                    <strong>Como</strong> desarrollador IoT 
+                    <strong>quiero</strong> que los datos del collar se procesen primero en el servidor edge 
+                    <strong>para</strong> reducir la latencia y mejorar el rendimiento de las actualizaciones en tiempo real.
+                </td>
+                <td>
+                    <h5>Escenario 01: Sincronización exitosa con el servidor edge</h5>
+                    <strong>Dado</strong> que el collar envía los datos de ritmo cardiaco y temperatura, 
+                    <strong>cuando</strong> estos son recibidos por el servidor edge, 
+                    <strong>Entonces</strong> el servidor procesa y reenvía la información al backend correctamente.
+                    <br>
+                    <h5>Escenario 02: Falla en la sincronización edge-backend</h5>
+                    <strong>Dado</strong> que el collar envía datos al servidor edge, 
+                    <strong>cuando</strong> el servidor edge no logra conectarse al backend, 
+                    <strong>Entonces</strong> se almacena temporalmente la información y se reintenta la sincronización.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>US-040</td>
+                <td>Consultar histórico de signos vitales</td>
+                <td>
+                    <strong>Como</strong> veterinario 
+                    <strong>quiero</strong> consultar los registros históricos de signos vitales de una mascota 
+                    <strong>para</strong> analizar tendencias y tomar decisiones médicas informadas.
+                </td>
+                <td>
+                    <h5>Escenario 01: Consulta exitosa del historial</h5>
+                    <strong>Dado</strong> que el veterinario está autenticado y accede al perfil de una mascota, 
+                    <strong>cuando</strong> selecciona la opción “Historial de signos vitales”, 
+                    <strong>Entonces</strong> la aplicación muestra un gráfico con los valores de temperatura y ritmo cardiaco registrados.
+                    <br>
+                    <h5>Escenario 02: No existen registros históricos disponibles</h5>
+                    <strong>Dado</strong> que el veterinario consulta el historial de signos vitales, 
+                    <strong>cuando</strong> la mascota no tiene datos registrados, 
+                    <strong>Entonces</strong> el sistema muestra un mensaje indicando que no hay información disponible.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>US-041</td>
+                <td>Alertas automáticas al veterinario</td>
+                <td>
+                    <strong>Como</strong> veterinario 
+                    <strong>quiero</strong> recibir alertas de mis pacientes cuando el collar detecte anomalías 
+                    <strong>para</strong> evaluar la situación y contactar al propietario si es necesario.
+                </td>
+                <td>
+                    <h5>Escenario 01: Recepción correcta de alerta</h5>
+                    <strong>Dado</strong> que el collar IoT de una mascota vinculada detecta un ritmo cardiaco anómalo, 
+                    <strong>cuando</strong> el sistema procesa la alerta, 
+                    <strong>Entonces</strong> el veterinario asignado recibe una notificación con el detalle del evento.
+                    <br>
+                    <h5>Escenario 02: Error en la entrega de alerta al veterinario</h5>
+                    <strong>Dado</strong> que el sistema genera una alerta, 
+                    <strong>cuando</strong> el veterinario asignado no tiene conexión activa, 
+                    <strong>Entonces</strong> la alerta se almacena en el servidor y se reenvía automáticamente cuando esté disponible.
+                </td>
+                <td>EPIC-12</td>
+            </tr>
+            <tr>
+                <td>US-042</td>
+                <td>Ver nivel de batería del collar</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> conocer el nivel de batería del collar IoT 
+                    <strong>para</strong> evitar que se quede sin energía durante su uso.
+                </td>
+                <td>
+                    <h5>Escenario 01: Visualización de batería exitosa</h5>
+                    <strong>Dado</strong> que el collar está vinculado y activo, 
+                    <strong>cuando</strong> el propietario accede a la sección de estado del dispositivo, 
+                    <strong>Entonces</strong> el sistema muestra el nivel de batería en porcentaje y el tiempo estimado restante.
+                    <br>
+                    <h5>Escenario 02: Error al leer el nivel de batería</h5>
+                    <strong>Dado</strong> que el propietario intenta consultar la batería del collar, 
+                    <strong>cuando</strong> el dispositivo no envía información, 
+                    <strong>Entonces</strong> la aplicación muestra un mensaje indicando que no se pudo obtener el estado actual de la batería.
+                </td>
+                <td>EPIC-12</td>
             </tr>
       </tbody>
 </table>
