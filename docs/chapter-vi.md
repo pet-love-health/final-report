@@ -1216,3 +1216,83 @@ En el Sprint Planning 1, se llevó a cabo una sesión de planificación para la 
     <td>Done</td>
   </tr>
 </table>
+
+#### 6.2.1.4. Development Evidence for Sprint Review.
+Landing
+
+| Repository                                        | Branch            | Commit Id                                | Commit Message                               | Committed on (Date) |
+|---------------------------------------------------|-------------------|------------------------------------------|----------------------------------------------|---------------------|
+| https://github.com/pet-love-health/Landing-page-upet | main           | 327b0ea1c7d3003c24b7863bf3cc32732280e514 | inital commit                                | 19/04/2025          |
+|                                                   | main              | 34978e207e793b36abfc5f28b8420b0aa742f759 | feat: Added HTML, CSS and JS files.          | 22/04/2025          |
+|                                                   | main | 868dd733d78af9476b74d4503b9cbbb000737503 | fix: Fix Call-To-Action. | 24/04/2025           |
+
+Front
+
+| Repository                                        | Branch            | Commit Id                                | Commit Message                               | Committed on (Date) |
+|---------------------------------------------------|-------------------|------------------------------------------|----------------------------------------------|---------------------|
+| https://github.com/pet-love-health/Frontend-app-upet | main              | 5be48a443506abedc00c158d573268d279845fef | inital commit                             | 20/04/2025       |
+|                                                   | main              | f658fcbe7ff18c1d18a2bd2b742f4de5f1ed6c5d | fix: Backend-related fixes.                  | 21/04/2025          |
+|                                                   | main              | 362d03c701534f50872a018a17871d0e95c633a9 | feat(catpcha): added captcha to login        | 11/05/2025          |
+|                                                   | main              | cbc1995a5128ba35321722b8872fba1d39358afc | feat: added darkmode                         | 08/07/2025           |
+|                                                   | main              | 8fb68015802cf9d22e0c00e728f359c79992dda9 | feat: I18n additions.   | 08/07/2025           |
+
+#### 6.2.1.6 Execution Evidence for Sprint Review.
+Para la entrega de este Sprint, se completó con éxito el despliegue de la Landing page
+
+LANDING PAGE
+
+![landing-picture](https://i.postimg.cc/bJpCW7Mf/landing-picture1.png)
+![landing-picture](https://i.postimg.cc/yYd5VzNV/landing-picture2.png)
+![landing-picture](https://i.postimg.cc/vmRSLgtB/landing-picture3.png)
+![landing-picture](https://i.postimg.cc/vmRSLgtB/landing-picture3.png)
+![landing-picture](https://i.postimg.cc/BQXhrchb/landing-picture5.png)
+![landing-picture](https://i.postimg.cc/pLjsTVMt/landing-picture6.png)
+![landing-picture](https://i.postimg.cc/3rLSfbFz/landing-picture7.png)
+![landing-picture](https://i.postimg.cc/zvMkz6dB/landing-picture8.png)
+
+#### 6.2.1.7 Services Documentation Evidence for Sprint Review. 
+Se documentaron endpoints esenciales para UPet. Esto implicó detallar y especificar las rutas y funcionalidades de la API que permitirán la comunicación e intercambio de datos entre el frontend y el backend de la aplicación. Además de documentar estos endpoints cruciales, el equipo realizó confirmaciones (commits) en el repositorio del proyecto para registrar los cambios y avances realizados en el código fuente. A continuación, se muestra los endpoints documentados y los commits: 
+
+| Endpoint                                        | Verbo HTTP | Parámetros        | Ejemplo de Llamada                           |
+|-------------------------------------------------|------------|-------------------|----------------------------------------------|
+| /api/v1/auth/sign-up                           | POST       | -                 | /api/v1/auth/sign-up                        |
+| /api/v1/auth/sign-in                           | POST       | -                 | /api/v1/auth/sign-in                        |
+| /api/v1/auth/current-user                      | GET        | -                 | /api/v1/auth/current-user                   |
+| /api/v1/users                                  | GET        | -                 | /api/v1/users                               |
+| /api/v1/veterinary_clinics                    | GET        | -                 | /api/v1/veterinary_clinics                 |
+| /api/v1/veterinary_clinics                    | POST       | -                 | /api/v1/veterinary_clinics                 |
+| /api/v1/pets/{petowner_id}                    | POST       | petowner_id       | /api/v1/pets/{petowner_id}                 |
+| /api/v1/pets/{petowner_id}                    | GET        | petowner_id       | /api/v1/pets/{petowner_id}                 |
+| /api/v1/pets                                    | GET        | -                 | /api/v1/pets                                |
+| /api/v1/appointments                           | GET        | -                 | /api/v1/appointments                        |
+| /api/v1/appointments                           | POST       | -                 | /api/v1/appointments                        |
+| /api/v1/appointments/pet/{pet_id}             | GET        | pet_id            | /api/v1/appointments/pet/{pet_id}          |
+| /api/v1/appointments/veterinarian/{veterinarian_id} | GET    | veterinarian_id   | /api/v1/appointments/veterinarian/{veterinarian_id} |
+| /api/v1/notifications                          | GET        | -                 | /api/v1/notifications                       |
+| /api/v1/notifications                          | POST       | -                 | /api/v1/notifications                       |
+| /api/v1/notifications/petowner/{petowner_id} | GET        | petowner_id       | /api/v1/notifications/petowner/{petowner_id} |
+| /api/v1/medical_historys                       | GET        | -                 | /api/v1/medical_historys                    |
+| /api/v1/medical_historys                       | POST       | -                 | /api/v1/medical_historys                    |
+| /api/v1/medical_historys/{medical_history_id}/diseases/ | GET | medical_history_id | /api/v1/medical_historys/{medical_history_id}/diseases/ |
+| /api/v1/medical_historys/{medicalHistory_id}  | POST       | medicalHistory_id  | /api/v1/medical_historys/{medicalHistory_id} |
+| /api/v1/medical_historys/{medical_history_id}/vaccinations/ | GET | medical_history_id | /api/v1/medical_historys/{medical_history_id}/vaccinations/ |
+| /api/v1/medical_historys/{medicalHistoryId}   | PUT        | medicalHistory_id  | /api/v1/medical_historys/{medicalHistoryId} |
+| /api/v1/users/petowner/{user_id}              | POST       | user_id           | /api/v1/users/petowner/{user_id}           |
+| /api/v1/users/petowner                         | GET        | -                 | /api/v1/users/petowner                      |
+| /api/v1/users/veterinarians/{user_id}         | POST       | user_id           | /api/v1/users/veterinarians/{user_id}      |
+| /api/v1/users/veterinarians                    | GET        | -                 | /api/v1/users/veterinarians                 |
+| /api/v1/diseases                               | GET        | -                 | /api/v1/diseases                            |
+| /api/v1/diseases                               | POST       | -                 | /api/v1/diseases                            |
+| /api/v1/vaccinations                           | GET        | -                 | /api/v1/vaccinations                        |
+| /api/v1/vaccinations                           | POST       | -                 | /api/v1/vaccinations                        |
+
+#### 6.2.1.8 Software Deployment Evidence for Sprint Review. 
+A continuación, se evidenciará el enlace de acuerdo a los software desplegados para este Sprint:
+
+- Landing Page: https://pet-love-health.github.io/Landing-page-upet/
+- Web Application: 
+
+#### 6.2.1.9 Team Collaboration Insights during Sprint. 
+Durante el sprint 1, el equipo trabajo activamente en la implementación de la landing page y el web application.
+
+
