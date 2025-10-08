@@ -1785,5 +1785,115 @@ Utilizamos la escala de Fibonacci para la estimación de los Story Points.
                 </td>
                 <td>2</td>
             </tr>
+              <tr>
+                    <td>40</td>
+                <td>TS-006</td>
+                <td>Implementación de la API de monitoreo de ubicación</td>
+                <td>
+                    <strong>Como</strong> desarrollador,
+                    <strong>necesito</strong> crear una API RESTful para gestionar la comunicación entre la aplicación y el collar IoT,
+                    <strong>para</strong> permitir la actualización y consulta de la ubicación GPS en tiempo real.
+                </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                  <td>41</td>
+                <td>TS-007</td>
+                <td>Integración de signos vitales en el historial médico</td>
+                <td>
+                    <strong>Como</strong> desarrollador,
+                    <strong>necesito</strong> implementar una API que permita recibir los datos de los signos vitales desde el collar IoT y almacenarlos en el historial médico de la mascota,
+                    <strong>para</strong> mantener un registro completo y actualizado de la salud de la mascota.
+                </td>
+                <td>2</td>
+            </tr>
+            <tr>
+                  <td>42</td>
+            <td>US-035</td>
+                <td>Vincular el collar IoT con el perfil de la mascota</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> poder vincular el collar inteligente con el perfil de mi mascota en la aplicación 
+                    <strong>para</strong> que los datos del dispositivo se asocien automáticamente con la mascota correspondiente.
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                  <td>43</td>
+                <td>US-036</td>
+                <td>Visualizar signos vitales en tiempo real</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> ver los datos de temperatura y ritmo cardiaco de mi mascota en tiempo real 
+                    <strong>para</strong> conocer su estado de salud actual.
+                </td>
+                <td>7</td>
+            </tr>
+            <tr>
+                  <td>44</td>
+                <td>US-037</td>
+                <td>Recibir alertas por anomalías</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> recibir alertas automáticas cuando el collar detecte valores anormales de temperatura o ritmo cardíaco 
+                    <strong>para</strong> poder actuar rápidamente ante posibles emergencias.
+                </td>
+                <td>7</td>
+            </tr>
+            <tr>
+                  <td>45</td>
+                <td>US-038</td>
+                <td>Monitorear ubicación de la mascota</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> conocer la ubicación actual de mi mascota 
+                    <strong>para</strong> rastrear su posición en caso de pérdida o paseo.
+                </td>
+                <td>7</td>
+            </tr>
+            <tr>
+                  <td>46</td>
+                <td>US-039</td>
+                <td>Sincronizar datos con el servidor edge</td>
+                <td>
+                    <strong>Como</strong> desarrollador IoT 
+                    <strong>quiero</strong> que los datos del collar se procesen primero en el servidor edge 
+                    <strong>para</strong> reducir la latencia y mejorar el rendimiento de las actualizaciones en tiempo real.
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                  <td>47</td>
+                <td>US-040</td>
+                <td>Consultar histórico de signos vitales</td>
+                <td>
+                    <strong>Como</strong> veterinario 
+                    <strong>quiero</strong> consultar los registros históricos de signos vitales de una mascota 
+                    <strong>para</strong> analizar tendencias y tomar decisiones médicas informadas.
+                </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                  <td>48</td>
+                <td>US-041</td>
+                <td>Alertas automáticas al veterinario</td>
+                <td>
+                    <strong>Como</strong> veterinario 
+                    <strong>quiero</strong> recibir alertas de mis pacientes cuando el collar detecte anomalías 
+                    <strong>para</strong> evaluar la situación y contactar al propietario si es necesario.
+                </td>
+                <td>7</td>
+            </tr>
+            <tr>
+                  <td>49</td>
+                <td>US-042</td>
+                <td>Ver nivel de batería del collar</td>
+                <td>
+                    <strong>Como</strong> propietario de una mascota 
+                    <strong>quiero</strong> conocer el nivel de batería del collar IoT 
+                    <strong>para</strong> evitar que se quede sin energía durante su uso.
+                </td>
+                <td>5</td>
+            </tr>
         </tbody>
 </table>
