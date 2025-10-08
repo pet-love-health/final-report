@@ -1239,7 +1239,7 @@ Front
 #### 6.2.1.6 Execution Evidence for Sprint Review.
 Para la entrega de este Sprint, se completó con éxito el despliegue de la Landing page
 
-LANDING PAGE
+**LANDING PAGE**
 
 ![landing-picture](https://i.postimg.cc/bJpCW7Mf/landing-picture1.png)
 ![landing-picture](https://i.postimg.cc/yYd5VzNV/landing-picture2.png)
@@ -1249,6 +1249,13 @@ LANDING PAGE
 ![landing-picture](https://i.postimg.cc/pLjsTVMt/landing-picture6.png)
 ![landing-picture](https://i.postimg.cc/3rLSfbFz/landing-picture7.png)
 ![landing-picture](https://i.postimg.cc/zvMkz6dB/landing-picture8.png)
+
+**Web Application**
+![web-app](https://raw.githubusercontent.com/pet-heart-health/Project-Report-UPet/refs/heads/chapter-v/assets/frontend-picture2.png)
+![web-app](https://raw.githubusercontent.com/pet-heart-health/Project-Report-UPet/refs/heads/chapter-v/assets/frontend-picture1.png)
+![web-app](https://raw.githubusercontent.com/pet-heart-health/Project-Report-UPet/chapter-v/assets/frontend-picture3.png)
+![web-app](https://raw.githubusercontent.com/pet-heart-health/Project-Report-UPet/chapter-v/assets/frontend-picture4.png)
+![web-app](https://raw.githubusercontent.com/pet-heart-health/Project-Report-UPet/chapter-v/assets/frontend-picture5.png)
 
 #### 6.2.1.7 Services Documentation Evidence for Sprint Review. 
 Se documentaron endpoints esenciales para UPet. Esto implicó detallar y especificar las rutas y funcionalidades de la API que permitirán la comunicación e intercambio de datos entre el frontend y el backend de la aplicación. Además de documentar estos endpoints cruciales, el equipo realizó confirmaciones (commits) en el repositorio del proyecto para registrar los cambios y avances realizados en el código fuente. A continuación, se muestra los endpoints documentados y los commits: 
@@ -1290,9 +1297,12 @@ Se documentaron endpoints esenciales para UPet. Esto implicó detallar y especif
 A continuación, se evidenciará el enlace de acuerdo a los software desplegados para este Sprint:
 
 - Landing Page: https://pet-love-health.github.io/Landing-page-upet/
-- Web Application: 
+- Web Application: https://upet-frontend.netlify.app/
+- Backend: https://web-production-b53d4.up.railway.app/docs
 
 #### 6.2.1.9 Team Collaboration Insights during Sprint. 
 Durante el sprint 1, el equipo trabajo activamente en la implementación de la landing page y el web application.
 
 
+![Commits](https://i.postimg.cc/j5J8XDZh/Captura-de-pantalla-2025-10-08-101811.png)
+![Network Graph](https://i.postimg.cc/jdVjvBd8/Captura-de-pantalla-2025-10-08-102329.png)
