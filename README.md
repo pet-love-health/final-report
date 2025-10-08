@@ -15,13 +15,15 @@ Nombre del StartUp: Pet-Love-Health <br>
 Nombre del Producto: UPet<br>
 Relación de Integrantes:
 
-- Alonso Garay, Diego Jesus - U20221d014
-- Apaza Morales, Fabricio  - U201922146
-- Rentería Puga, Héctor Marcelo - U202216558
-- Oshiiro Yamashita, Daiki Oscar - U20201f846
-- Miranda Sinarahua, Piero Stephano - u20181g752
+- U20221d014 - Alonso Garay, Diego Jesus
+- U201922146 - Apaza Morales, Fabricio
+- U202216558 - Rentería Puga, Héctor Marcelo
+- U20201f846 - Oshiiro Yamashita, Daiki Oscar
+- u20181g752 - Miranda Sinarahua, Piero Stephano
 
-Septiembre, 2025.
+Octubre, 2025.
+
+<br pagebreak="always">
 
 ## Historial de Versiones
 
@@ -39,6 +41,15 @@ Septiembre, 2025.
      - Primera versión<br>
      - Creación del informe<br>
      - Capítulo 1 al 4<br>
+  </tr>
+    <tr>
+    <td colspan="3">2da</td>
+    <td colspan="3">8/10/2024</td>
+    <td colspan="10">Marcelo Rentería Puga, Diego Alonso Garay, Fabricio Apaza Morales, Daiki Oshiiro Yamashita, Piero Miranda Sinarahua.</td>
+    <td colspan="5">
+     - Segunda versión<br>
+     - Correcciones del informe<br>
+     - Capítulo 5 al 6<br>
   </tr>
   </table>
 
@@ -105,6 +116,43 @@ Capítulo I: Introducción<br>
 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.<br>
 4.2.1.6.2. Bounded Context Database Design Diagram.](https://github.com/pet-love-health/final-report/blob/chapter-iv/docs/chapter-iv.md)
 
+[Capítulo V: Solution UI/UX Design<br>
+5.1. Style Guidelines.<br>
+5.1.1. General Style Guidelines.<br>
+5.1.2. Web, Mobile and IoT Style Guidelines.<br>
+5.2. Information Architecture.<br>
+5.2.1. Organization Systems.<br>
+5.2.2. Labeling Systems.<br>
+5.2.3. SEO Tags and Meta Tags<br>
+5.2.4. Searching Systems.<br>
+5.2.5. Navigation Systems.<br>
+5.3. Landing Page UI Design.<br>
+5.3.1. Landing Page Wireframe.<br>
+5.3.2. Landing Page Mock-up.<br>
+5.4. Applications UX/UI Design.<br>
+5.4.1. Applications Wireframes.<br>
+5.4.2. Applications Wireflow Diagrams.<br>
+5.4.2. Applications Mock-ups.<br>
+5.4.3. Applications User Flow Diagrams.<br>
+5.5. Applications Prototyping.](https://github.com/pet-love-health/final-report/blob/chapter-v/docs/chapter-v.md)
+
+[Capítulo VI: Product Implementation, Validation & Deployment<br>
+6.1. Software Configuration Management.<br>
+6.1.1. Software Development Environment Configuration.<br>
+6.1.2. Source Code Management.<br>
+6.1.3. Source Code Style Guide & Conventions.<br>
+6.1.4. Software Deployment Configuration.<br>
+6.2. Landing Page, Services & Applications Implementation.<br>
+6.2.1. Sprint 1<br>
+6.2.1.1. Sprint Planning 1.<br>
+6.2.1.2. Aspect Leaders and Collaborators.<br>
+6.2.1.3. Sprint Backlog 1.<br>
+6.2.1.4. Development Evidence for Sprint Review.<br>
+6.2.1.5. Testing Suite Evidence for Sprint Review.<br>
+6.2.1.6. Execution Evidence for Sprint Review.<br>
+6.2.1.7. Services Documentation Evidence for Sprint Review.<br>
+6.2.1.8. Software Deployment Evidence for Sprint Review.<br>
+6.2.1.9. Team Collaboration Insights during Sprint.](https://github.com/pet-love-health/final-report/blob/chapter-vi/docs/chapter-vi.md)
 
 ## Project Report Collaboration Insights
 
@@ -119,24 +167,31 @@ Se divieron las siguientes ramas para la colaboración en el proyecto:
 - chapter-ii
 - chapter-iii
 - chapter-iv
+- chapter-v
+- chapter-vi
 
 A continuación se presentan los gráficos de colaboración de los integrantes del equipo en el repositorio de nuestro primera entrega. Estos gráficos ofrecen una representación visual de la cantidad de contribuciones realizadas por cada miembro del equipo, junto con la fecha en que se llevaron a cabo. Además, se presenta información sobre la cantidad de líneas de código que se han modificado en cada uno de los commits.
 
-![alt-text](assets/img/contribution-report.png)
+![contributions1](assets/img/contribution-report.png)
+![contributions2](https://i.postimg.cc/j5J8XDZh/Captura-de-pantalla-2025-10-08-101811.png)
 
 # Student Outcome
 
 <table> <tr> <th colspan="2">Criterio Específico</th> <th colspan="10">Acciones Realizadas</th> <th colspan="2">Conclusiones</th> </tr>
     <tr> <td colspan="2">Trabaja en equipo para proporcionar liderazgo en forma conjunta</td> <td colspan="10">
         <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en liderar a mi equipo para avanzar equitativamente cada parte necesaria para cubrir las bases del proyecto. Mantuve comunicación constante y gestioné el tiempo adecuadamente.<br>
+        TP: En este avance del proyecto, me enfoqué en liderar las correcciones y avances correspondientes, mientras organizaba cada acción para entregar un producto coherente.<br>
         <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
+        TP: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos.<br><br>TP1: En este avance del proyecto, participé activamente en el trabajo en equipo, cumpliendo mis tareas y apoyando a mis compañeros. La comunicación constante y el intercambio de ideas permitieron un progreso coordinado hacia los objetivos planteados.<br>
         <b>Fabricio Apaza Morales</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br><br>TP1: En este avance, participé activamente con mi equipo, colaborando en el desarrollo del Chapter VI. Por otro lado, hice correcciones en el Chapter IV con respecto a los lineamientos enfocados para un proyecto IoT<br>
       <b>Piero Miranda Sinarahua</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br><br> TP:Para este entrega, colabore con mis compañeros de grupo para designar las secciones en las que se trabajaría durante el primer Sprint, al igual que el desarrollo de nuevos capítulos para el informe, y redacción de historias de usuario faltantes, demostrando liderazgo de manera conjunta con mis compañeros.<br></td>
         <td colspan="2"> La colaboración activa y la comunicación constante permiten que el equipo avance de manera coordinada y eficiente. El intercambio de ideas y el apoyo mutuo fortalecen la ejecución de las tareas y contribuyen al logro de los objetivos del proyecto.</td>
     </tr> <tr> <td colspan="2">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td> <td colspan="10">
         <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos. <br>
+        TP: En esta entrega, en enfoqué en colaborar con mi equipo para que nuestras partes puedan avanzar de forma organizada, asegurando que la parte de uno no se adelante o atrase a la de otros.<br>
         <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
+        TP: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1:En este avance del proyecto, me enfoqué en contribuir a un entorno de trabajo colaborativo, compartiendo ideas y respetando las opiniones de todos los miembros del equipo. Participé en la planificación de tareas y en el establecimiento de metas claras, asegurándome de cumplir con mis responsabilidades para que el equipo lograra los objetivos de manera organizada y eficiente.<br><br>TP1: En este avance del proyecto, promoví un entorno colaborativo al compartir ideas y respetar las opiniones del equipo. Participé en la planificación de tareas y en la definición de metas, cumpliendo mis responsabilidades para contribuir al logro eficiente de los objetivos.<br>
         <b>Fabricio Apaza Morales</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br><br>TP1: En este avance, participé activamente con mi equipo, colaborando en el desarrollo del Chapter VI. Por otro lado, hice correcciones en el Chapter IV con respecto a los lineamientos enfocados para un proyecto IoT<br>
       <b>Piero Miranda Sinarahua</b> <br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br><br>TP: Para esta entrega, comparti un entorno colaborativo en el cual contribui con el equipo en lo requerido para alcanzar lo establecido para este avance del proyecto. Se planificaron tareas en conjunto, de las cuales estuve a cargo de la implementación del capitulo v y correcciones en relación a la entrega pasada. Todo lo realizado fue teniendo en cuenta los objetivos planeados por el equipo.<br></td>
