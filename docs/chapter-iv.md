@@ -7,7 +7,7 @@ proceso, se siguieron los pasos que se describen a continuación:
 Collect Domain Events 
 
 Se plantean eventos importantes de todos los grupos funcionales en tiempo pasado y nomenclatura en inglés.
-![Collect Domain Events](https://i.postimg.cc/hj83SGny/collect-domain-events.png)
+<img src="../assets/img/collect-domain-events2.png" height="100%" alt="100%"> 
 
 Timeline
 
