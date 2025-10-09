@@ -152,7 +152,10 @@ Capítulo I: Introducción<br>
 6.2.1.6. Execution Evidence for Sprint Review.<br>
 6.2.1.7. Services Documentation Evidence for Sprint Review.<br>
 6.2.1.8. Software Deployment Evidence for Sprint Review.<br>
-6.2.1.9. Team Collaboration Insights during Sprint.](https://github.com/pet-love-health/final-report/blob/chapter-vi/docs/chapter-vi.md)
+6.2.1.9. Team Collaboration Insights during Sprint.<br>
+Capítulo VII: Conclusiones<br>
+Capítulo VIII: Referencias Bibliográficas<br>
+Capítulo IX: Anexos](https://github.com/pet-love-health/final-report/blob/chapter-vi/docs/chapter-vi.md)
 
 ## Project Report Collaboration Insights
 
