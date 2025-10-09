@@ -1306,3 +1306,30 @@ Durante el sprint 1, el equipo trabajo activamente en la implementación de la l
 
 ![Commits](https://i.postimg.cc/j5J8XDZh/Captura-de-pantalla-2025-10-08-101811.png)
 ![Network Graph](https://i.postimg.cc/jdVjvBd8/Captura-de-pantalla-2025-10-08-102329.png)
+
+## Capítulo VII: Conclusiones
+
+1. **Optimización de la gestión de citas veterinarias:** El proyecto permitió digitalizar y simplificar el proceso de agendamiento, reprogramación y cancelación de citas, ofreciendo a los usuarios una forma más eficiente de gestionar el cuidado de sus mascotas.
+
+2. **Innovación en el monitoreo de mascotas:** La integración de collares inteligentes destacó como un avance significativo, brindando herramientas para el monitoreo continuo de la salud de las mascotas, lo que facilita un cuidado preventivo y mejora la comunicación entre veterinarios y propietarios.
+
+3. **Impacto en la calidad del cuidado de mascotas:** La combinación de dispositivos IoT con la plataforma desarrollada promueve un cuidado más informado y personalizado, lo que contribuye al bienestar general de las mascotas y reduce riesgos asociados con la falta de seguimiento veterinario.
+
+4. **Desarrollo de una solución escalable:** La plataforma establece una base tecnológica sólida que puede evolucionar, incorporando nuevas funcionalidades y dispositivos IoT para responder a futuras necesidades del mercado y mejorar la experiencia de los usuarios.
+
+5. **Promoción de la adopción tecnológica:** 
+El proyecto fomenta el uso de tecnología en un contexto cotidiano, demostrando cómo herramientas avanzadas pueden integrarse de manera efectiva en la vida diaria para solucionar problemas prácticos.
+
+
+## Capítulo VIII: Bibliografía
+
+1. **Tull Soriano, Luis Federico.** *Prototipo de monitor de signos vitales en pacientes veterinarios de especie canina utilizando IoT.* Universidad Nacional Pedro Henríquez Ureña, 2021. [https://repositorio.unphu.edu.do/handle/123456789/3485](https://repositorio.unphu.edu.do/handle/123456789/3485)
+
+2. **Grados Denegri, Felipe Alfredo, y Freddy Hernan Rodriguez Vega.** *Aplicativo móvil para la gestión de servicios clínicos veterinarios en Lima - Metropolitana.* Universidad Autónoma del Perú, 2021. [https://repositorio.autonoma.edu.pe/handle/20.500.13067/1079](https://repositorio.autonoma.edu.pe/handle/20.500.13067/1079)
+
+## Capítulo IX: Anexo
+
+- **Landing Page:** [Enlace al landing page](https://pet-love-health.github.io/Landing-page-upet/)
+- **Web Frontend:** [Enlace al proyecto web](https://upet-frontend.netlify.app/)
+- **Backend:** [Enlace al backend]([https://upetbackendapi.onrender.com/docs#/](https://web-production-b53d4.up.railway.app/docs))
+- **Vídeo TP:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/ETu139i30A9Is8IdPikgjE0BkkmvLc8zLRFu8ohGY_0zbA?e=lfIeiZ)
