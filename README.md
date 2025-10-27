@@ -1,16 +1,20 @@
-# INFORME DEL TRABAJO FINAL
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo"/>
-
+<p align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo" />
+</p>
+    
 ### UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
 ### INGENIERÍA DE SOFTWARE
 
 ### CICLO 2025-02
 
+Código del curso: 1ASI0572
 Nombre del curso: Desarrollo de Soluciones IOT<br>
 NRC: 3475<br>
 Nombre del Profesor: Marco Antonio Leon Baca<br>
+
+# INFORME DEL TRABAJO FINAL
+
 Nombre del StartUp: Pet-Love-Health <br>
 Nombre del Producto: UPet<br>
 Relación de Integrantes:
