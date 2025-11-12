@@ -1307,6 +1307,261 @@ Durante el sprint 1, el equipo trabajo activamente en la implementación de la l
 ![Commits](https://i.postimg.cc/j5J8XDZh/Captura-de-pantalla-2025-10-08-101811.png)
 ![Network Graph](https://i.postimg.cc/jdVjvBd8/Captura-de-pantalla-2025-10-08-102329.png)
 
+
+### 6.2.2. Sprint 2
+
+#### 6.2.2.1. Sprint Planning 2.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center">Sprint #</th>
+      <th style="text-align:center">Sprint 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Date</td>
+      <td style="text-align:center">26-10-2025</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Time</td>
+      <td style="text-align:center">06:00 pm</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Location</td>
+      <td style="text-align:center">Discord</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Prepared By</td>
+      <td style="text-align:center">Marcelo Renteria</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Attendees</td>
+      <td style="text-align:center">Marcelo Rentería, Fabricio Apaza, Daiki Oshiro, Diego Alonso y Piero Miranda</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 1 Review Summary</td>
+      <td style="text-align:center">Se logro implementar correctamente el frontend web, backend y landing page. </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 1 Retrospective Summary</td>
+      <td style="text-align:center">El trabajo en equipo y la delegacion de tareas asignadas a los miembros del equipo nos permitio desarrollar el sprint de manera efectiva.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Sprint Goal & User Stories</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 2 Goal</td>
+      <td style="text-align:center">Desarrollar la version movil de la aplicacion, realizar un nuevo despliegue del backend, implementar la primera version del sistema embebido IoT en wokwi. </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 2 Velocity</td>
+      <td style="text-align:center">.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sum of Story Points</td>
+      <td style="text-align:center"> . </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.2.2. Sprint Backlog 2.
+
+
+<table>
+  <tr>
+    <td> <strong>Sprint #</strong></td>
+    <td   colspan="7"> <strong>Sprint 2</strong> </td>
+  </tr>
+   <tr>
+    <td   colspan="2"> <strong>User Story</strong></td>
+    <td   colspan="6"> <strong>Work-item/Task</strong></td>
+  </tr>
+  <tr>
+    <td  > <strong>ID</strong> </td>
+    <td  > <strong>Title</strong></td>
+    <td  > <strong>ID</strong> </td>
+    <td  > <strong>Title</strong></td>
+    <td  > <strong>Description</strong></td>
+    <td  > <strong>Estimation (Hours)</strong></td>
+    <td  > <strong>Assigned To</strong></td>
+    <td  > <strong> Status (To-do/In-Process/To-Review/Done) </strong></td>
+  </tr>
+  <!---------------------------------------------------------------------- -->
+  <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-000</td>
+    <td rowspan="2"> .</td>
+    <td>TA01</td>
+    <td> . </td>
+    <td>. </td>
+    <td>.</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td>.</td>
+    <td> .</td>
+    <td>1</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-000</td>
+    <td rowspan="2"> .</td>
+    <td>TA01</td>
+    <td> . </td>
+    <td>. </td>
+    <td>.</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td>.</td>
+    <td> .</td>
+    <td>1</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-000</td>
+    <td rowspan="2"> .</td>
+    <td>TA01</td>
+    <td> . </td>
+    <td>. </td>
+    <td>.</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td>.</td>
+    <td> .</td>
+    <td>1</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-000</td>
+    <td rowspan="2"> .</td>
+    <td>TA01</td>
+    <td> . </td>
+    <td>. </td>
+    <td>.</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td>.</td>
+    <td> .</td>
+    <td>1</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-000</td>
+    <td rowspan="2"> .</td>
+    <td>TA01</td>
+    <td> . </td>
+    <td>. </td>
+    <td>.</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td>.</td>
+    <td> .</td>
+    <td>1</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-000</td>
+    <td rowspan="2"> .</td>
+    <td>TA01</td>
+    <td> . </td>
+    <td>. </td>
+    <td>.</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td>.</td>
+    <td> .</td>
+    <td>1</td>
+    <td>. </td>
+    <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+</table>
+
+
+#### 6.2.1.3. Development Evidence for Sprint Review.
+
+En la siguientes tablas se muestran el historial de commits realizados durante el Sprint 2 en el repositorio relacionado al proyecto del dispositivo embebido en wokwi y su primera versión. Además de los repositorios de la aplicación web y móvil.
+
+**Wokwi**
+
+| Repository                                   | Branch | Commit Id                                | Commit Message                             | Committed on (Date) |
+|----------------------------------------------|--------|------------------------------------------|--------------------------------------------|---------------------|
+| https://github.com/SW71-devpaw/wokwi-project | master | 64711adb48597cb59745930598cb5a60790f24d1 | inital commit                              | 27/10/2024          |
+|                                              | master | e8d3b40c25a117679fd63b545da8305944bab4ac | feat: add libraries                        | 27/10/2024          |
+|                                              | master | 55c174d2102b6cd994dbfa46d4afb3652f0512ee | feat: add Wi-Fi connection                 | 27/10/2024          |
+|                                              | master | d93e66be2ee2d39c1a64b819c6a87f5623cecbae | feat: add temperature sensor configuration | 27/10/2024          |
+|                                              | master | c10d0cb8808a00f6ac1b23d18ad291277d469ca8 | feat: add location configuration           | 27/10/2024          |
+
+
+
+**Mobile application**
+
+| Repository                                        | Branch                  | Commit Id                                | Commit Message                                                            | Committed on (Date)  |
+|---------------------------------------------------|-------------------------|------------------------------------------|---------------------------------------------------------------------------|----------------------|
+| https://github.com/pet-heart-health/mobile-app-upet    | main                    | 749b1f2e0b5ae64d48cdb89e88cd95590bf6eb0f | first commit                                                              | 20/10/2024           |
+|                                                   | feature/auth            | fa261d293e3ef7c03308c181935e6ce1fedba0e7 | feat(auth): implemented auth feature.                                     | 21/10/2024           |
+|                                                   | feature/pet-owner       | 1f0795a5be578d79866190b0818d7f3bccb98db6 | feat(pet-owner): implemented pet owner feature.                           | 22/10/2024           |
+|                                                   | feature/vet             | 490ebffd97f325d9b0a7e62edf3af0f30641ed77 | feat(vet): implemented vet feature.                                       | 22/10/2024           |
+|                                                   | feature/pet             | 5386fc3a43eeb647a324f858053cef507138f99e | feat(pet): implemented pet feature.                                       | 23/10/2024           |
+|                                                   | feature/vet-clinic      | d1cbcfd7eeeaf5a4bcf4873a16f867063187f2f9 | feat(vet-clinic): implemented vet clinic feature.                         | 23/10/2024           |
+|                                                   | feature/appointment     | 7bc48b2fc7abb06a70ed399df10eb2bccea0e62c | feat(appointment): implemented appointment feature.                       | 23/10/2024           |
+|                                                   | feature/medical-history | 4ea300a0bc8f4565f402789f6797de1fd7fc5cca | feat(medical-history): implemented medical history feature.               | 23/10/2024           |
+|                                                   | feature/review          | ddc42b3e25ed6d7e47914aa43e0bcbd19c2bbc7a | feat(review): implemented review feature.                                 | 23/10/2024           |
+|                                                   | feature/notification    | 4e14ba02dfef5e06792cbb1e59343a5f1c3a7692 | feat(notification): implemented notification feature.                     | 23/10/2024           |
+|                                                   | feature/release         | aa25531795aa5b5d6072da35eeea022511e5f6ab | feat(release): implemented subscription feature and upgrade clinics view. | 27/10/2024           |
+|                                                   | feature/release         | 7c7e64287d8161d0104711187b0505e8a3bec06e | feat(release): implemented tracked design and upgrade views.              | 28/10/2024           |
+|                                                   | feature/release         | c34b33378cc04282b04861ec2226c49026637c5b | feat(release): fixed design and upgrade views.                            | 01/11/2024           |
+
+
+#### 6.2.2.4. Testing Suite Evidence for Sprint Review.
+
+#### 6.2.2.5. Execution Evidence for Sprint Review.
+
+#### 6.2.2.6. Services Documentation Evidence for Sprint Review.
+
+#### 6.2.2.7. Software Deployment Evidence for Sprint Review.
+
+#### 6.2.2.8. Team Collaboration Insights during Sprint.
+
+
+
 ## Capítulo VII: Conclusiones
 
 1. **Optimización de la gestión de citas veterinarias:** El proyecto permitió digitalizar y simplificar el proceso de agendamiento, reprogramación y cancelación de citas, ofreciendo a los usuarios una forma más eficiente de gestionar el cuidado de sus mascotas.
