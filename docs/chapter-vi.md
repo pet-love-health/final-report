@@ -1391,6 +1391,43 @@ Entrevistas: Propietarios de mascotas
         </tbody>
 </table>
 
+<table>
+        <thead>
+            <tr>
+                <th>Entrevistado</th>
+                <th>Julio Reyes</th>
+            </tr>
+            <tr>
+                <th>Entrevistador</th>
+                <th>Enzo Trujillo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edad</td>
+                <td>20 </td>
+            </tr>
+            <tr>
+                <td>Distrito</td>
+                <td>Los Olivos</td>
+            </tr>
+            <tr>
+                <td><img src="https://i.postimg.cc/7LtGVBTn/image.png" alt="Foto de la entrevista"></td>
+                <td><strong>Resumen:</strong><br>
+                   El entrevistado expresó que el prototipo de IoT para monitoreo de signos vitales fue bien recibido. También destacó que la gestión de citas veterinarias era muy eficiente y rápida.
+                </td>
+            </tr>
+            <tr>
+                <td>Timing de la entrevista</td>
+                <td> 02:24 </td>
+            </tr>
+            <tr>
+                <td>URL de la entrevista</td>
+                <td>https://youtu.be/qJxjZNYhkA4</td>
+            </tr>
+        </tbody>
+</table>
+
 ## Capítulo VII: Conclusiones
 
 1. **Optimización de la gestión de citas veterinarias:** El proyecto permitió digitalizar y simplificar el proceso de agendamiento, reprogramación y cancelación de citas, ofreciendo a los usuarios una forma más eficiente de gestionar el cuidado de sus mascotas.
