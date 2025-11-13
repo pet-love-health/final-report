@@ -1369,7 +1369,42 @@ Durante el sprint 1, el equipo trabajo activamente en la implementación de la l
   </tbody>
 </table>
 
-#### 6.2.2.2. Sprint Backlog 2.
+#### 6.2.2.2. Aspect Leaders and Collaborators.
+
+<table>
+  <tr>
+    <td> <strong>Team Member </td>
+    <td> <strong>Github Username </td>
+    <td> <strong>Sprint 1 Leader (L) / Collaborator (C) </td> 
+  </tr>
+  <tr>
+    <td> Marcelo Renteria </td>
+    <td> MarceloRenteriaUPC </td>
+    <td> Leader (L) </td>
+  </tr>
+  <tr>
+    <td> Fabricio Apaza </td>
+    <td> Fabricio011001 </td>
+    <td> Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Daiki Oshiro </td>
+    <td> DaikiOY </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Diego Alonso </td>
+    <td> DiegoAlonso04 </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Piero Miranda </td>
+    <td> PieroMiranda </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+</table>
+
+#### 6.2.2.3. Sprint Backlog 2.
 
 
 <table>
@@ -1394,140 +1429,200 @@ Durante el sprint 1, el equipo trabajo activamente en la implementación de la l
   <!---------------------------------------------------------------------- -->
   <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2">US-000</td>
-    <td rowspan="2"> .</td>
+    <td rowspan="2">US-001</td>
+    <td rowspan="2"> Registrar mascota</td>
     <td>TA01</td>
-    <td> . </td>
-    <td>. </td>
-    <td>.</td>
-    <td>. </td>
+    <td> Realizar diseño </td>
+    <td> Diseño de boton de registro de mascota </td>
+    <td> 1 </td>
+    <td> Daiki Oshiro </td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TA02</td>
-    <td>.</td>
-    <td> .</td>
-    <td>1</td>
-    <td>. </td>
+    <td> Implementar boton y formulario</td>
+    <td> Agregar boton y formulario para registrar mascota en app movil</td>
+    <td> 3 </td>
+    <td> Fabricio Apaza  </td>
     <td>Done</td>
   </tr>
    <!---------------------------------------------------------------------- -->
    <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2">US-000</td>
-    <td rowspan="2"> .</td>
+    <td rowspan="2">US-003</td>
+    <td rowspan="2"> Ver listado de mis mascotas </td>
     <td>TA01</td>
-    <td> . </td>
-    <td>. </td>
-    <td>.</td>
-    <td>. </td>
+    <td> Lista de mascotas </td>
+    <td> Poder visualizar la lista de mascotas registradas en app movil </td>
+    <td> 3 </td>
+    <td> Piero Miranda </td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TA02</td>
-    <td>.</td>
-    <td> .</td>
-    <td>1</td>
-    <td>. </td>
+    <td> Boton para ampliar informacion</td>
+    <td> Opcion para mejor visualizacion de una mascota de la lista en app movil</td>
+    <td> 2 </td>
+    <td> Marcelo Rentería </td>
     <td>Done</td>
   </tr>
    <!---------------------------------------------------------------------- -->
    <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2">US-000</td>
-    <td rowspan="2"> .</td>
+    <td rowspan="2">US-004</td>
+    <td rowspan="2"> Editar información de la mascota </td>
     <td>TA01</td>
-    <td> . </td>
-    <td>. </td>
-    <td>.</td>
-    <td>. </td>
+    <td> Boton de edicion </td>
+    <td> Agregar boton para editar mascota en app movil</td>
+    <td> 3</td>
+    <td> Diego Alonso </td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TA02</td>
-    <td>.</td>
-    <td> .</td>
-    <td>1</td>
-    <td>. </td>
+    <td> Actualizar informacion </td>
+    <td> Guardar correctamente la informacion actualizada en el backend </td>
+    <td> 2</td>
+    <td> Fabricio Apaza </td>
     <td>Done</td>
   </tr>
    <!---------------------------------------------------------------------- -->
    <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2">US-000</td>
-    <td rowspan="2"> .</td>
+    <td rowspan="2">US-005</td>
+    <td rowspan="2"> Registrar vacunas</td>
     <td>TA01</td>
-    <td> . </td>
-    <td>. </td>
-    <td>.</td>
-    <td>. </td>
+    <td> Boton para agregar vacuna </td>
+    <td> Implementar boton de vacunas aplicadas a mascotas en app movil. </td>
+    <td> 3</td>
+    <td> Marcelo Rentería  </td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TA02</td>
-    <td>.</td>
-    <td> .</td>
-    <td>1</td>
-    <td>. </td>
+    <td> Visualizar historial de vacunas</td>
+    <td> Lista de vacunas registradas en una mascota en app movil.</td>
+    <td> 2</td>
+    <td> Daiki Oshiro </td>
     <td>Done</td>
   </tr>
    <!---------------------------------------------------------------------- -->
    <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2">US-000</td>
-    <td rowspan="2"> .</td>
+    <td rowspan="2">US-008</td>
+    <td rowspan="2"> Registrar enfermedades </td>
     <td>TA01</td>
-    <td> . </td>
-    <td>. </td>
-    <td>.</td>
-    <td>. </td>
+    <td> Boton de registro enfermedad </td>
+    <td> Opcion para registrar una enfermedad detectada en una mascota en app movil </td>
+    <td> 3</td>
+    <td> Piero Miranda</td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TA02</td>
-    <td>.</td>
-    <td> .</td>
-    <td>1</td>
-    <td>. </td>
+    <td> Lista de registros</td>
+    <td> Visualizar una lista de enfermedades registradas en app movil</td>
+    <td> 2 </td>
+    <td> Diego Alonso</td>
     <td>Done</td>
   </tr>
    <!---------------------------------------------------------------------- -->
    <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2">US-000</td>
-    <td rowspan="2"> .</td>
+    <td rowspan="2">US-018</td>
+    <td rowspan="2"> Ver las valoraciones y comentarios de la veterinaria </td>
     <td>TA01</td>
-    <td> . </td>
-    <td>. </td>
-    <td>.</td>
-    <td>. </td>
+    <td> Boton agregar reseña </td>
+    <td> Opcion para agregar una reseña/comentario acerca de una veterinaria </td>
+    <td> 3</td>
+    <td> Marcelo Rentería </td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TA02</td>
-    <td>.</td>
-    <td> .</td>
-    <td>1</td>
-    <td>. </td>
+    <td> Visualizacion reseñas</td>
+    <td> Listado de reseñas acerca de una veterinaria</td>
+    <td> 3 </td>
+    <td> Fabricio Apaza </td>
     <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-036</td>
+    <td rowspan="2"> Visualizar signos vitales en tiempo real</td>
+    <td>TA01</td>
+    <td> Signos vitales proveniente de collar </td>
+    <td> Opcion para obtener signos vitales del collar inteligente</td>
+    <td> 2</td>
+    <td> Daiki Oshiro </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td> Exponer datos en api</td>
+    <td> Enviar datos obtenidos por medio de api</td>
+    <td> 1</td>
+    <td> Daiki Oshiro </td>
+    <td>Done</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-038</td>
+    <td rowspan="2"> Monitorear ubicación de la mascota</td>
+    <td>TA01</td>
+    <td> Obtener localizacion de mascota</td>
+    <td> Obtener coordenadas de la posicion en la que se encuentre la mascota</td>
+    <td> 2</td>
+    <td> Marcelo Rentería </td>
+    <td> In Process</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td> Exponer datos en api </td>
+    <td> Enviar datos por medio de api</td>
+    <td> 1</td>
+    <td> Piero Miranda </td>
+    <td> In Process</td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2">US-040</td>
+    <td rowspan="2"> Consultar histórico de signos vitales </td>
+    <td>TA01</td>
+    <td> Historial de signos vitales </td>
+    <td> Consultar un historial de los signos vitales obtenidos del collar</td>
+    <td> 1 </td>
+    <td> Fabricio Apaza </td>
+    <td> In Process</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td> Exponer datos en api </td>
+    <td> Enviar datos por medio de api</td>
+    <td> 1</td>
+    <td> Diego Alonso </td>
+    <td> In Process</td>
   </tr>
    <!---------------------------------------------------------------------- -->
 </table>
 
 
-#### 6.2.1.3. Development Evidence for Sprint Review.
+#### 6.2.1.4. Development Evidence for Sprint Review.
 
-En la siguientes tablas se muestran el historial de commits realizados durante el Sprint 2 en el repositorio relacionado al proyecto del dispositivo embebido en wokwi y su primera versión. Además de los repositorios de la aplicación web y móvil.
+En la siguientes tablas se muestran el historial de commits realizados durante el Sprint 2 en el repositorio relacionado al proyecto del dispositivo embebido en wokwi y su primera versión. Además de los repositorios de la aplicación móvil.
 
 **Wokwi**
 
 | Repository                                   | Branch | Commit Id                                | Commit Message                             | Committed on (Date) |
 |----------------------------------------------|--------|------------------------------------------|--------------------------------------------|---------------------|
-| https://github.com/SW71-devpaw/wokwi-project | master | 64711adb48597cb59745930598cb5a60790f24d1 | inital commit                              | 27/10/2024          |
-|                                              | master | e8d3b40c25a117679fd63b545da8305944bab4ac | feat: add libraries                        | 27/10/2024          |
-|                                              | master | 55c174d2102b6cd994dbfa46d4afb3652f0512ee | feat: add Wi-Fi connection                 | 27/10/2024          |
-|                                              | master | d93e66be2ee2d39c1a64b819c6a87f5623cecbae | feat: add temperature sensor configuration | 27/10/2024          |
-|                                              | master | c10d0cb8808a00f6ac1b23d18ad291277d469ca8 | feat: add location configuration           | 27/10/2024          |
+| https://github.com/pet-love-health/Prototype-Wokwi                                    | main | d7360f1a45dd142dc8341229d2452165d933b7f3 | initial commit   | 12/11/2025  |
+|                                              | main| cda6c35237f83fe90b346212eb9beb2347541139 |  create sketch.ino |    12/11/2025       |
+|                                              | main | 15d4a26fcd8c07a1f5bc712c38fc86e31b9210aa | create smart-upet-chip.chip.c     | 12/11/2025          |
+|                                              | main | 32b796d4c19df3b537cedad8b8a58f1cdb9b98ba | Create smart-upet-chip.chip.json | 12/11/2025    |
+
 
 
 
@@ -1535,31 +1630,143 @@ En la siguientes tablas se muestran el historial de commits realizados durante e
 
 | Repository                                        | Branch                  | Commit Id                                | Commit Message                                                            | Committed on (Date)  |
 |---------------------------------------------------|-------------------------|------------------------------------------|---------------------------------------------------------------------------|----------------------|
-| https://github.com/pet-heart-health/mobile-app-upet    | main                    | 749b1f2e0b5ae64d48cdb89e88cd95590bf6eb0f | first commit                                                              | 20/10/2024           |
-|                                                   | feature/auth            | fa261d293e3ef7c03308c181935e6ce1fedba0e7 | feat(auth): implemented auth feature.                                     | 21/10/2024           |
-|                                                   | feature/pet-owner       | 1f0795a5be578d79866190b0818d7f3bccb98db6 | feat(pet-owner): implemented pet owner feature.                           | 22/10/2024           |
-|                                                   | feature/vet             | 490ebffd97f325d9b0a7e62edf3af0f30641ed77 | feat(vet): implemented vet feature.                                       | 22/10/2024           |
-|                                                   | feature/pet             | 5386fc3a43eeb647a324f858053cef507138f99e | feat(pet): implemented pet feature.                                       | 23/10/2024           |
-|                                                   | feature/vet-clinic      | d1cbcfd7eeeaf5a4bcf4873a16f867063187f2f9 | feat(vet-clinic): implemented vet clinic feature.                         | 23/10/2024           |
-|                                                   | feature/appointment     | 7bc48b2fc7abb06a70ed399df10eb2bccea0e62c | feat(appointment): implemented appointment feature.                       | 23/10/2024           |
-|                                                   | feature/medical-history | 4ea300a0bc8f4565f402789f6797de1fd7fc5cca | feat(medical-history): implemented medical history feature.               | 23/10/2024           |
-|                                                   | feature/review          | ddc42b3e25ed6d7e47914aa43e0bcbd19c2bbc7a | feat(review): implemented review feature.                                 | 23/10/2024           |
-|                                                   | feature/notification    | 4e14ba02dfef5e06792cbb1e59343a5f1c3a7692 | feat(notification): implemented notification feature.                     | 23/10/2024           |
-|                                                   | feature/release         | aa25531795aa5b5d6072da35eeea022511e5f6ab | feat(release): implemented subscription feature and upgrade clinics view. | 27/10/2024           |
-|                                                   | feature/release         | 7c7e64287d8161d0104711187b0505e8a3bec06e | feat(release): implemented tracked design and upgrade views.              | 28/10/2024           |
-|                                                   | feature/release         | c34b33378cc04282b04861ec2226c49026637c5b | feat(release): fixed design and upgrade views.                            | 01/11/2024           |
+| https://github.com/pet-heart-health/mobile-app-upet    | main                    | 749b1f2e0b5ae64d48cdb89e88cd95590bf6eb0f | first commit                                                              | 20/10/2025           |
+|                                                   | feature/auth            | fa261d293e3ef7c03308c181935e6ce1fedba0e7 | feat(auth): implemented auth feature.                                     | 21/10/2025           |
+|                                                   | feature/pet-owner       | 1f0795a5be578d79866190b0818d7f3bccb98db6 | feat(pet-owner): implemented pet owner feature.                           | 22/10/2025           |
+|                                                   | feature/vet             | 490ebffd97f325d9b0a7e62edf3af0f30641ed77 | feat(vet): implemented vet feature.                                       | 22/10/2025           |
+|                                                   | feature/pet             | 5386fc3a43eeb647a324f858053cef507138f99e | feat(pet): implemented pet feature.                                       | 23/10/2025           |
+|                                                   | feature/vet-clinic      | d1cbcfd7eeeaf5a4bcf4873a16f867063187f2f9 | feat(vet-clinic): implemented vet clinic feature.                         | 23/10/2025           |
+|                                                   | feature/appointment     | 7bc48b2fc7abb06a70ed399df10eb2bccea0e62c | feat(appointment): implemented appointment feature.                       | 23/10/2025           |
+|                                                   | feature/medical-history | 4ea300a0bc8f4565f402789f6797de1fd7fc5cca | feat(medical-history): implemented medical history feature.               | 23/10/2025           |
+|                                                   | feature/review          | ddc42b3e25ed6d7e47914aa43e0bcbd19c2bbc7a | feat(review): implemented review feature.                                 | 23/10/2025           |
+|                                                   | feature/notification    | 4e14ba02dfef5e06792cbb1e59343a5f1c3a7692 | feat(notification): implemented notification feature.                     | 23/10/2025           |
+|                                                   | feature/release         | aa25531795aa5b5d6072da35eeea022511e5f6ab | feat(release): implemented subscription feature and upgrade clinics view. | 27/10/2025           |
+|                                                   | feature/release         | 7c7e64287d8161d0104711187b0505e8a3bec06e | feat(release): implemented tracked design and upgrade views.              | 28/10/2025           |
+|                                                   | feature/release         | c34b33378cc04282b04861ec2226c49026637c5b | feat(release): fixed design and upgrade views.                            | 01/11/2025           |
 
 
-#### 6.2.2.4. Testing Suite Evidence for Sprint Review.
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
-#### 6.2.2.5. Execution Evidence for Sprint Review.
+- **Funcionamiento de endpoints del backend de UPet:**
 
-#### 6.2.2.6. Services Documentation Evidence for Sprint Review.
+Sign in:
 
-#### 6.2.2.7. Software Deployment Evidence for Sprint Review.
+![sign_in](https://i.postimg.cc/h4pcm2Dz/Captura-de-pantalla-2025-11-13-003640.png)
 
-#### 6.2.2.8. Team Collaboration Insights during Sprint.
 
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+
+- **Nueva version de Backend:**
+
+![backend](https://i.postimg.cc/HLstrWBX/Captura_de_pantalla_2025_11_13_002759.png)
+![backend](https://i.postimg.cc/k5Xy2Mfb/Captura_de_pantalla_2025_11_13_002819.png)
+![backend](https://i.postimg.cc/vmHv4835/Captura_de_pantalla_2025_11_13_002837.png)
+![backend](https://i.postimg.cc/mr2SPZ8F/Captura_de_pantalla_2025_11_13_002854.png)
+
+- **Aplicacion movil:**
+
+![mobile_app](https://i.postimg.cc/qq8KmW13/Captura_de_pantalla_2025_11_12_185714.png)
+![mobile_app](https://i.postimg.cc/x8KmsB6b/Captura_de_pantalla_2025_11_12_190951.png)
+![mobile_app](https://i.postimg.cc/j2zf8BMw/Captura_de_pantalla_2025_11_12_191012.png)
+![mobile_app](https://i.postimg.cc/j2zf8BML/Captura_de_pantalla_2025_11_12_191126.png)
+![mobile_app](https://i.postimg.cc/D0qGCRxs/Captura_de_pantalla_2025_11_12_191144.png)
+![mobile_app](https://i.postimg.cc/rsS4h7f5/Captura_de_pantalla_2025_11_12_191359.png)
+![mobile_app](https://i.postimg.cc/0jpSthVY/Captura_de_pantalla_2025_11_12_191936.png)
+![mobile_app](https://i.postimg.cc/mkQ9dKm3/Captura_de_pantalla_2025_11_12_191958.png)
+![mobile_app](https://i.postimg.cc/FzjSPwTV/Captura_de_pantalla_2025_11_12_192015.png)
+![mobile_app](https://i.postimg.cc/bYb1N2pW/Captura_de_pantalla_2025_11_12_192033.png)
+
+- **Prototipo Wokwi:**
+
+![prototype.png](https://i.postimg.cc/s2Rcs9hj/prototype.png)
+![output.png](https://i.postimg.cc/g0PDmqZc/output.png)
+
+
+#### 6.2.2.7 Services Documentation Evidence for Sprint Review. 
+Se documentaron y reformularon endpoints esenciales para UPet . Esto implicó detallar y especificar las rutas y funcionalidades de la API que permitirán la comunicación e intercambio de datos entre el frontend, tanto de la aplicacion movil como web, y el backend. A continuación, se muestra los endpoints documentados: 
+
+| Endpoint                                        | Verbo HTTP | Parámetros        | Ejemplo de Llamada                           |
+|-------------------------------------------------|------------|-------------------|----------------------------------------------|
+| /api/v1/auth/sign-up                           | POST       | -                 | /api/v1/auth/sign-up                        |
+| /api/v1/auth/sign-in                           | POST       | -                 | /api/v1/auth/sign-in                        |
+| /api/v1/auth/forgot-password                  | POST        | -                 | /api/v1/auth/forgot-password                   |
+| /api/v1/auth/verify_code                     | POST        | -                 | /api/v1/auth/verify_code                               |
+| /api/v1/auth/change-password/{user_id}        | PUT       | {user_id}                 | /api/v1/auth/change-password/{user_id}                       |
+| /api/v1/auth/change-password-by-role/{role_id}  | PUT       | {role_id}            | /api/v1/auth/change-password-by-role/{role_id}                   |
+| /api/v1/users                         | GET        | -                 | /api/v1/users                   |
+| /api/v1/users/{user_id}                         | GET        | -                 | /api/v1/users/{user_id}                   |
+| /api/v1/users/{role_id}                    | PUT        | -                 | /api/v1/users/{role_id}                   |
+| /api/v1/veterinary_clinics                    | GET        | -                 | /api/v1/veterinary_clinics                 |
+| /api/v1/veterinary_clinics                    | POST       | -                 | /api/v1/veterinary_clinics                 |
+| /api/v1/veterinary_clinics/generate_password/{clinic_id}   | GET  |{clinic_id}   | /api/v1/veterinary_clinics/generate_password/{clinic_id}|
+| /api/v1/veterinary_clinics/{clinic_id}  | GET       |{clinic_id}   | /api/v1/veterinary_clinics/{clinic_id}                |
+| /api/v1/pets/{petowner_id}                    | POST       | petowner_id       | /api/v1/pets/{petowner_id}                 |
+| /api/v1/pets/{petowner_id}                    | GET        | petowner_id       | /api/v1/pets/{petowner_id}                 |
+| /api/v1/pets/{pet_id}                                    | PUT        | {pet_id}  | /api/v1/pets/{pet_id}       |
+| /api/v1/pets/{pet_id}                 | DELETE        |{pet_id}         | /api/v1/pets/{pet_id}              |
+| /api/v1/pets                                    | GET        |          | /api/v1/pets                                |
+| /api/v1/appointments                           | GET        | -                 | /api/v1/appointments                        |
+| /api/v1/appointments                           | POST       | -                 | /api/v1/appointments                        |
+| /api/v1/appointments/pet/{pet_id}             | GET        | pet_id            | /api/v1/appointments/pet/{pet_id}          |
+| /api/v1/appointments/veterinarian/{veterinarian_id} | GET    | veterinarian_id   | /api/v1/appointments/veterinarian/{veterinarian_id} |
+| /api/v1/appointments/owner/{owner_id}         | GET        | owner_id  | /api/v1/appointments/owner/{owner_id}                     |
+| /api/v1/appointments/{apointment_id}    | GET        | {apointment_id} | /api/v1/appointments/{apointment_id}                       |
+| /api/v1/appointments/{apointment_id}          | PUT        | {apointment_id} | /api/v1/appointments/{apointment_id}                        |
+| /api/v1/appointments/owner/{owner_id}/upcoming    | GET        | {owner_id}  | /api/v1/appointments/owner/{owner_id}/upcoming                      |
+| /api/v1/appointments/owner/{owner_id}/past     | GET        | {owner_id}  | /api/v1/appointments/owner/{owner_id}/past                       |
+| /api/v1/appointments/owner/{owner_id}/cancelled     | GET        | {owner_id}  | /api/v1/appointments/owner/{owner_id}/cancelled                       |
+| /api/v1/appointments/veterinarian/{veterinarian_id}/upcoming| GET  | -     | /api/v1/appointments/veterinarian/{veterinarian_id}/upcoming |
+| /api/v1/appointments/{veterinarian_id}/past    | GET  |{veterinarian_id}|  /api/v1/appointments/{veterinarian_id}/past                       |
+| /api/v1/appointments/{veterinarian_id}/cancelled      | GET        | {veterinarian_id}| /api/v1/appointments/{veterinarian_id}/cancelled  |
+| /api/v1/appointments/{apointment_id}/cancel         | PUT        | -         | /api/v1/appointments/{apointment_id}                       |
+| /api/v1/notifications                    | GET        | -            | /api/v1/notifications                       |
+| /api/v1/notifications/veterinarian/{veterenarian_id}    | POST |   {veterenarian_id}| /api/v1/notifications/veterinarian/{veterenarian_id}     |
+| /api/v1/notifications/petowner/{petowner_id} | GET   | petowner_id       | /api/v1/notifications/petowner/{petowner_id} |
+| /api/v1/medical_historys                       | GET        | -                 | /api/v1/medical_historys                    |
+| /api/v1/medical_historys                       | POST       | -                 | /api/v1/medical_historys                    |
+| /api/v1/medical_historys/{medical_history_id}/diseases/ | GET | medical_history_id | /api/v1/medical_historys/{medical_history_id}/diseases/ |
+| /api/v1/medical_historys/{medicalHistory_id}  | POST       | medicalHistory_id  | /api/v1/medical_historys/{medicalHistory_id} |
+| /api/v1/medical_historys/{medical_history_id}/vaccinations/ | GET | medical_history_id | /api/v1/medical_historys/{medical_history_id}/vaccinations/ |
+| /api/v1/medical_historys/{medicalHistoryId}   | PUT        | medicalHistory_id  | /api/v1/medical_historys/{medicalHistoryId} |
+| /api/v1/petowner/{user_id}     | POST       | user_id           | /api/v1/users/petowner/{user_id}           |
+| /api/v1/petowners                | GET        | -                 | /api/v1/users/petowner                      |
+| /api/v1/petowners/users/{user_id}      | GET       | user_id           | /api/v1/users/veterinarians/{user_id}      |
+| /api/v1/petowners/{petowner_id}       | GET        | {petowner_id}  | /api/v1/users/veterinarians                 |
+| /api/v1/petowners/{petowner_id}    | PUT        |{petowner_id}  | /api/v1/users/veterinarians                 |
+| /api/v1/veterinarians/{user_id}               | POST        |{user_id}     | /api/v1/veterinarians/{user_id}                       |
+| /api/v1/veterinarians             | GET        | -                 | /api/v1/veterinarians                      |
+| /api/v1/veterinarians/users/{vet_id}     | GET        |{vet_id}  |/api/v1/veterinarians/users/{vet_id}          |
+| /api/v1/veterinarians/{vet_id}             | GET        | {vet_id}  | /api/v1/veterinarians/{vet_id}            |
+| /api/v1/veterinarians/{vet_id}             | PUT        | {vet_id}  | /api/v1/veterinarians/{vet_id}       |
+| /api/v1/veterinarians/vets/{clinic_id}   | GET        | {clinic_id}  |/api/v1/veterinarians/vets/{clinic_id}     |
+| /api/v1/veterinarians/reviews/{vet_id}   | GET        | {vet_id}   |/api/v1/veterinarians/reviwes/{vet_id}   |
+| /api/v1/veterinarians/{vet_id}/available-items   | POST        | {vet_id}   |/api/v1/veterinarians/{vet_id}/available-items  |
+| /api/v1/reviews/{petowner_id}    | POST   |  | /api/v1/reviews/{petowner_id}         |
+| /api/v1/reviews   | POST   |  | /api/v1/reviews        |
+| /api/v1/reviews/{vet_id}    | GET   |  | /api/v1/reviews/{vet_id}          |
+| /api/v1/availabilities   | GET   |  | /api/v1/availabilities        |
+| /api/v1/pets/{pet_id}/medical-report   | GET   |  | /api/v1/pets/{pet_id}/medical-report   |
+| /api/v1/pets/{pet_id}/medical-report/preview   | GET   |  | /api/v1/pets/{pet_id}/medical-report/preview   |
+| /api/v1/favoriteClinics/userId/{user_id}/clinicId/{clinic_id}  | POST   |  | /api/v1/favoriteClinics/userId/{user_id}/clinicId/{clinic_id}|
+| /api/v1/favoriteClinics/userId/{user_id}  | GET   |  | /api/v1/favoriteClinics/userId/{user_id}|
+| /api/v1/reminders  | GET   |  | /api/v1/reminders |
+| /api/v1/reminders  | POST   |  | /api/v1/reminders |
+| /api/v1/reminders/userId/{user_id}  | GET   |  | /api/v1/reminders/userId/{user_id} |
+
+
+
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+
+- Nuevo despliegue del backend: https://upet-backend-production.up.railway.app/docs 
+- Landing Page: https://pet-love-health.github.io/Landing-page-upet/
+- Web Application: https://upet-frontend.netlify.app/
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
+
+Para el sprint 2, el equipo trabajo en la implementación de la nueva version del backend, mobile app, documentacion, y prototipo inicial de wokwi.
+
+![Commits](https://i.postimg.cc/j5J8XDZh/Captura-de-pantalla-2025-10-08-101811.png)
+![Network Graph](https://i.postimg.cc/jdVjvBd8/Captura-de-pantalla-2025-10-08-102329.png)
 
 
 ## Capítulo VII: Conclusiones
