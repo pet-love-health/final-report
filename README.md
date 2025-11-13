@@ -25,7 +25,7 @@ Relación de Integrantes:
 - U20201f846 - Oshiiro Yamashita, Daiki Oscar
 - u20181g752 - Miranda Sinarahua, Piero Stephano
 
-Octubre, 2025.
+Noviembre, 2025.
 
 <br pagebreak="always">
 
@@ -39,7 +39,7 @@ Octubre, 2025.
     <th colspan="5">Descripción de Modificaciones</td>
   <tr>
     <td colspan="3">1era</td>
-    <td colspan="3">19/9/2024</td>
+    <td colspan="3">19/9/2025</td>
     <td colspan="10">Marcelo Rentería Puga, Diego Alonso Garay, Fabricio Apaza Morales, Daiki Oshiiro Yamashita, Piero Miranda Sinarahua.</td>
     <td colspan="5">
      - Primera versión<br>
@@ -48,12 +48,21 @@ Octubre, 2025.
   </tr>
     <tr>
     <td colspan="3">2da</td>
-    <td colspan="3">8/10/2024</td>
+    <td colspan="3">8/10/2025</td>
     <td colspan="10">Marcelo Rentería Puga, Diego Alonso Garay, Fabricio Apaza Morales, Daiki Oshiiro Yamashita, Piero Miranda Sinarahua.</td>
     <td colspan="5">
      - Segunda versión<br>
      - Correcciones del informe<br>
      - Capítulo 5 al 6<br>
+  </tr>
+    <tr>
+    <td colspan="3">3ra</td>
+    <td colspan="3">14/11/2025</td>
+    <td colspan="10">Marcelo Rentería Puga, Diego Alonso Garay, Fabricio Apaza Morales, Daiki Oshiiro Yamashita, Piero Miranda Sinarahua.</td>
+    <td colspan="5">
+     - Tercera versión<br>
+     - Sprint 2<br>
+     - Entrevistas de Validación<br>
   </tr>
   </table>
 
@@ -120,7 +129,7 @@ Capítulo I: Introducción<br>
 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.<br>
 4.2.1.6.2. Bounded Context Database Design Diagram.](https://github.com/pet-love-health/final-report/blob/chapter-iv/docs/chapter-iv.md)
 
-[Capítulo V: Solution UI/UX Design<br>
+[Capítulo V: Solution UI/UX Design.<br>
 5.1. Style Guidelines.<br>
 5.1.1. General Style Guidelines.<br>
 5.1.2. Web, Mobile and IoT Style Guidelines.<br>
@@ -140,7 +149,7 @@ Capítulo I: Introducción<br>
 5.4.3. Applications User Flow Diagrams.<br>
 5.5. Applications Prototyping.](https://github.com/pet-love-health/final-report/blob/chapter-v/docs/chapter-v.md)
 
-[Capítulo VI: Product Implementation, Validation & Deployment<br>
+[Capítulo VI: Product Implementation, Validation & Deployment.<br>
 6.1. Software Configuration Management.<br>
 6.1.1. Software Development Environment Configuration.<br>
 6.1.2. Source Code Management.<br>
@@ -148,7 +157,7 @@ Capítulo I: Introducción<br>
 6.1.4. Software Deployment Configuration.<br>
 6.2. Landing Page, Services & Applications Implementation.<br>
 6.2.1. Sprint 1<br>
-6.2.1.1. Sprint Planning 1.<br>
+6.2.1.1. Sprint Planning 1. <br>
 6.2.1.2. Aspect Leaders and Collaborators.<br>
 6.2.1.3. Sprint Backlog 1.<br>
 6.2.1.4. Development Evidence for Sprint Review.<br>
@@ -157,9 +166,23 @@ Capítulo I: Introducción<br>
 6.2.1.7. Services Documentation Evidence for Sprint Review.<br>
 6.2.1.8. Software Deployment Evidence for Sprint Review.<br>
 6.2.1.9. Team Collaboration Insights during Sprint.<br>
-Capítulo VII: Conclusiones<br>
-Capítulo VIII: Referencias Bibliográficas<br>
-Capítulo IX: Anexos](https://github.com/pet-love-health/final-report/blob/chapter-vi/docs/chapter-vi.md)
+6.2.2. Sprint 2<br>
+6.2.2.1. Sprint Planning 2.<br>
+6.2.2.2. Aspect Leaders and Collaborators.<br>
+6.2.2.3. Sprint Backlog 2.<br>
+6.2.2.4. Development Evidence for Sprint Review.<br>
+6.2.2.5. Testing Suite Evidence for Sprint Review.<br>
+6.2.2.6. Execution Evidence for Sprint Review.<br>
+6.2.2.7. Services Documentation Evidence for Sprint Review.<br>
+6.2.2.8. Software Deployment Evidence for Sprint Review.<br>
+6.2.2.9. Team Collaboration Insights during Sprint.<br>
+6.3. Validation Interviews.<br>
+6.3.1. Diseño de Entrevistas.<br>
+6.3.2. Registro de Entrevistas.<br>
+6.3.3. Evaluaciones según heurísticas.<br>
+Capítulo VII: Conclusiones.<br> 
+Capítulo VIII: Bibliografía.<br>
+Capítulo IX: Anexos.](https://github.com/pet-love-health/final-report/blob/chapter-vi/docs/chapter-vi.md)
 
 ## Project Report Collaboration Insights
 
@@ -181,6 +204,7 @@ A continuación se presentan los gráficos de colaboración de los integrantes d
 
 ![contributions1](assets/img/contribution-report.png)
 ![contributions2](https://i.postimg.cc/j5J8XDZh/Captura-de-pantalla-2025-10-08-101811.png)
+![contributions3](assets/img/contribution-report3.png)
 
 # Student Outcome
 
@@ -188,6 +212,7 @@ A continuación se presentan los gráficos de colaboración de los integrantes d
     <tr> <td colspan="2">Trabaja en equipo para proporcionar liderazgo en forma conjunta</td> <td colspan="10">
         <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en liderar a mi equipo para avanzar equitativamente cada parte necesaria para cubrir las bases del proyecto. Mantuve comunicación constante y gestioné el tiempo adecuadamente.<br>
         TP: En este avance del proyecto, me enfoqué en liderar las correcciones y avances correspondientes, mientras organizaba cada acción para entregar un producto coherente.<br>
+        TB2: En este avance del proyecto, me enfoqué en liderar los avances correspondientes, mientras preparaba los desplegables para entregar un producto coherente.<br>
         <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         TP: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos.<br><br>TP1: En este avance del proyecto, participé activamente en el trabajo en equipo, cumpliendo mis tareas y apoyando a mis compañeros. La comunicación constante y el intercambio de ideas permitieron un progreso coordinado hacia los objetivos planteados.<br>
@@ -197,6 +222,7 @@ A continuación se presentan los gráficos de colaboración de los integrantes d
     </tr> <tr> <td colspan="2">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td> <td colspan="10">
         <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos. <br>
         TP: En esta entrega, en enfoqué en colaborar con mi equipo para que nuestras partes puedan avanzar de forma organizada, asegurando que la parte de uno no se adelante o atrase a la de otros.<br>
+        TP: En esta entrega, en enfoqué en colaborar con mi equipo para que nuestras partes puedan avanzar de forma organizada, asegurando que las partes necesarias sean cumplidas a tiempo.<br>
         <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         TP: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1:En este avance del proyecto, me enfoqué en contribuir a un entorno de trabajo colaborativo, compartiendo ideas y respetando las opiniones de todos los miembros del equipo. Participé en la planificación de tareas y en el establecimiento de metas claras, asegurándome de cumplir con mis responsabilidades para que el equipo lograra los objetivos de manera organizada y eficiente.<br><br>TP1: En este avance del proyecto, promoví un entorno colaborativo al compartir ideas y respetar las opiniones del equipo. Participé en la planificación de tareas y en la definición de metas, cumpliendo mis responsabilidades para contribuir al logro eficiente de los objetivos.<br>
