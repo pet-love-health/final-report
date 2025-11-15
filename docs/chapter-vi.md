@@ -2069,3 +2069,4 @@ El proyecto fomenta el uso de tecnología en un contexto cotidiano, demostrando 
 - **Web Frontend:** [Enlace al proyecto web](https://upet-frontend.netlify.app/)
 - **Backend:** [Enlace al backend]([https://upetbackendapi.onrender.com/docs#/](https://web-production-b53d4.up.railway.app/docs))
 - **Vídeo TP:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/ETu139i30A9Is8IdPikgjE0BkkmvLc8zLRFu8ohGY_0zbA?e=lfIeiZ)
+- **Vídeo TB2:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/IQA-6FGu7TIDRZH2F74e74txAZLaOycsiQP-tswYA0KTUxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=S2xaJ7)
