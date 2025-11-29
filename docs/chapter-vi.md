@@ -2052,42 +2052,262 @@ Entrevistas: Propietarios de mascotas
   <!---------------------------------------------------------------------- -->
   <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2"> .</td>
-    <td rowspan="2"> .</td>
-    <td> .</td>
-    <td> . </td>
-    <td> .</td>
-    <td>  .</td>
-    <td>  . </td>
-    <td> .</td>
+    <td rowspan="2"> US-030</td>
+    <td rowspan="2"> Confirmar cita</td>
+    <td> TA01</td>
+    <td> Diseño de opcion </td>
+    <td> Implementar el diseño para la opcion cancelar cita</td>
+    <td> 2 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
   </tr>
   <tr>
-    <td> . </td>
-    <td> .</td>
-    <td> . </td>
-    <td>.  </td>
-    <td>  . </td>
-    <td>. </td>
+    <td> TA02 </td>
+    <td> Conectar cancelacion con backend</td>
+    <td> Realizar la conexion con backend al cancelar cita </td>
+    <td> 2 </td>
+    <td> Fabricio Apaza </td>
+    <td> Done </td>
   </tr>
    <!---------------------------------------------------------------------- -->
    <tr>
     <!--rowspan="number of rows for the tasks (2)" -->
-    <td rowspan="2"> .</td>
-    <td rowspan="2"> . </td>
-    <td> .</td>
-    <td> . </td>
-    <td> . </td>
-    <td> .</td>
-    <td> . </td>
-    <td>  .</td>
+    <td rowspan="2"> US-034</td>
+    <td rowspan="2"> Recordatorio de cita </td>
+    <td> TA01</td>
+    <td> Implementar recordatorios </td>
+    <td> Desarrollar seccion de recordarios en app </td>
+    <td> 2 </td>
+    <td> Daiki Oshiro</td>
+    <td> Done</td>
   </tr>
   <tr>
-    <td> .</td>
-    <td>. </td>
-    <td>. </td>
-    <td> . </td>
-    <td> . </td>
-    <td>. </td>
+    <td> TA02</td>
+    <td> Conectar recordatorios  </td>
+    <td> Realizar la conexion de los recordatorios agregados con base de datos </td>
+    <td> 2 </td>
+    <td> Piero Miranda </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> TS-002</td>
+    <td rowspan="2"> Endpoint Pet</td>
+    <td> TA01</td>
+    <td> Agregar endpoint Pet </td>
+    <td> Recibir datos IoT desde endpoint Pet </td>
+    <td> 3 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Agregar documentacion </td>
+    <td> Realizar documentacion  para endpoint</td>
+    <td> 1 </td>
+    <td> Fabricio Apaza </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> TS-005</td>
+    <td rowspan="2"> Implementar Seguridad al Iniciar Sesión </td>
+    <td> TA01</td>
+    <td> Diseño de opcion </td>
+    <td> Diseñar metodo de seguridad al iniciar sesion </td>
+    <td> 3 </td>
+    <td> Diego Alonso</td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td> Validar seguridad</td>
+    <td> Validacion de metodo de seguridad en app </td>
+    <td> 2 </td>
+    <td> Piero Miranda </td>
+    <td> Done</td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> TS-006</td>
+    <td rowspan="2"> Implementación de la API de monitoreo de ubicación</td>
+    <td> TA01</td>
+    <td> Conexion con Google Maps </td>
+    <td> Agregar conexion con mapa de servicio externo de google. </td>
+    <td> 4</td>
+    <td> Fabricio Apaza </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02 </td>
+    <td> Agregar parametros de ubicacion</td>
+    <td> Conectar datos de ubicacion con mapa. </td>
+    <td> 3 </td>
+    <td> Diego Alonso </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-035</td>
+    <td rowspan="2"> Vincular el collar IoT con el perfil de la mascota </td>
+    <td> TA01</td>
+    <td> Conexion con mascota</td>
+    <td> Conectar mascota a collar independiente </td>
+    <td> 2 </td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02 </td>
+    <td> Visualizar en app</td>
+    <td> Opcion en app que confirme collar vinculado</td>
+    <td> 3 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-036</td>
+    <td rowspan="2"> Visualizar signos vitales en tiempo real</td>
+    <td> TA01</td>
+    <td> Visualizacion de datos en app </td>
+    <td> Opcion para ver datos recolectados de collar en app.</td>
+    <td> 3</td>
+    <td> Piero Miranda </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Conexion con datos  </td>
+    <td> Realizar conexcion con datos provenientes de servidor Edge</td>
+    <td> 4 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-037</td>
+    <td rowspan="2"> Recibir alertas por anomalías</td>
+    <td>TA01</td>
+    <td> Seccion alertas </td>
+    <td> Recibir alertas por anomalias </td>
+    <td> 3</td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Procesar informacion </td>
+    <td> Recibir datos que confirmen anomalia </td>
+    <td> 3 </td>
+    <td> Fabricio Apaza</td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-038</td>
+    <td rowspan="2"> Monitorear ubicación de la mascota</td>
+    <td> TA01</td>
+    <td> Opcion de GPS </td>
+    <td> Agregar opcion para GPS </td>
+    <td> 3 </td>
+    <td> Diego Alonso</td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Parametros de ubicacion</td>
+    <td> Enviar longitud y latitud como ubicacion</td>
+    <td> 3 </td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-039</td>
+    <td rowspan="2"> Sincronizar datos con el servidor edge </td>
+    <td> TA01</td>
+    <td> Crear servidor Edge </td>
+    <td> Servidor edge local </td>
+    <td> 4</td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Enviar datos IOT</td>
+    <td> Envio de datos provenientes de ESP32 </td>
+    <td> 4 </td>
+    <td> Fabricio Apaza</td>
+    <td> Done</td>
+  </tr>
+       <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-040</td>
+    <td rowspan="2"> Consultar histórico de signos vitales</td>
+    <td> TA01</td>
+    <td> Opcion de historial de signos recibidos </td>
+    <td> Visualizar historial en app </td>
+    <td> 3 </td>
+    <td> Piero Miranda</td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Guardar informacion de signos recibidos </td>
+    <td> Almacenar datos recibidos en base de datos </td>
+    <td> 3 </td>
+    <td> Diego Alonso </td>
+    <td> Done </td>
+  </tr>
+       <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-041</td>
+    <td rowspan="2"> Alertas automáticas al veterinario</td>
+    <td> TA01</td>
+    <td> Enviar alertas </td>
+    <td> Envio de informacion a perfil veterinario </td>
+    <td> 3</td>
+    <td> Fabricio Apaza </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Seccion alertas </td>
+    <td> Seccion de alertas recibidas en app </td>
+    <td> 3 </td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+       <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-042</td>
+    <td rowspan="2"> Ver nivel de batería del collar </td>
+    <td> TA01</td>
+    <td> Opcion de visualizar collar </td>
+    <td> Visualizar estado de collar en app </td>
+    <td> 2</td>
+    <td> Marcelo Renteria </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02 </td>
+    <td> Conectar nivel de collar </td>
+    <td> Realizar conexion de collar en app </td>
+    <td> 3 </td>
+    <td> Fabricio Apaza </td>
+    <td> Done</td>
   </tr>
 </table>
 
@@ -2277,3 +2497,5 @@ El proyecto fomenta el uso de tecnología en un contexto cotidiano, demostrando 
 - **Backend:** [Enlace al backend]([https://upetbackendapi.onrender.com/docs#/](https://web-production-b53d4.up.railway.app/docs))
 - **Vídeo TP:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/ETu139i30A9Is8IdPikgjE0BkkmvLc8zLRFu8ohGY_0zbA?e=lfIeiZ)
 - **Vídeo TB2:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/IQA-6FGu7TIDRZH2F74e74txAZLaOycsiQP-tswYA0KTUxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=S2xaJ7)
+  
+- **About the product** [Enlace al Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181g752_upc_edu_pe/IQCrjtI7ZVV0RrIxsg6CVzRhAaK7xdaimTcmsP5-pUPWBmk?e=VzNOjh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
