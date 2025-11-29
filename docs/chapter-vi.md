@@ -1931,6 +1931,44 @@ Entrevistas: Propietarios de mascotas
         </tbody>
 </table>
 
+**Entrevista: Veterinarios**
+
+<table>
+        <thead>
+            <tr>
+                <th>Entrevistado</th>
+                <th>Maria Jose Gutierrez</th>
+            </tr>
+            <tr>
+                <th>Entrevistador</th>
+                <th>Fabricio Apaza </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edad</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Distrito</td>
+                <td>Chorrillos</td>
+            </tr>
+            <tr>
+                <td><img width="300" src="https://i.postimg.cc/CLqGy7Kw/Captura-de-pantalla-2025-11-29-160937.png" alt="imagen-2024-09-06-005207237"></td>
+                <td><strong>Resumen:</strong><br>
+                En la entrevista, María José Gutiérrez, estudiante de veterinaria de 23 años y usuaria frecuente de apps para servicios de mascotas, comentó que generalmente utiliza plataformas para buscar clínicas y programar chequeos para su hámster, aunque a veces encuentra información desactualizada. Tras ver la demo de la aplicación desarrollada, señaló que le resultaría útil porque centraliza el historial clínico y agiliza el acceso a información del paciente. Destacó como función más valiosa el acceso rápido al historial médico y consideró que la información es suficiente siempre que el dueño registre bien los datos. Como mejoras, sugirió incorporar un chat para comunicarse con los dueños y enviar fotos o videos, además de recordatorios de medicación.        
+                </td>
+            </tr>
+            <tr>
+                <td>Timing de la entrevista</td>
+                <td> 06:35 minutos </td>
+            </tr>
+            <tr>
+                <td>URL de la entrevista</td>
+                <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u201922146_upc_edu_pe/IQBBUxD6pcdrSKe7NaFnw9zLAQtV1F9nQtj8H-t0em6YdCg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6FIg8T</td>
+            </tr>
+        </tbody>
+</table>
 
 #### 6.3.3 Evaluaciones según heurísticas
 
