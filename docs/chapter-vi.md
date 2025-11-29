@@ -1610,7 +1610,7 @@ Durante el sprint 1, el equipo trabajo activamente en la implementación de la l
 </table>
 
 
-#### 6.2.1.4. Development Evidence for Sprint Review.
+#### 6.2.2.4. Development Evidence for Sprint Review.
 
 En la siguientes tablas se muestran el historial de commits realizados durante el Sprint 2 en el repositorio relacionado al proyecto del dispositivo embebido en wokwi y su primera versión. Además de los repositorios de la aplicación móvil.
 
@@ -1931,6 +1931,213 @@ Entrevistas: Propietarios de mascotas
         </tbody>
 </table>
 
+### 6.2.3. Sprint 3
+
+#### 6.2.3.1. Sprint Planning 3.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center">Sprint #</th>
+      <th style="text-align:center">Sprint 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Date</td>
+      <td style="text-align:center">15-11-2025</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Time</td>
+      <td style="text-align:center">05:00 pm</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Location</td>
+      <td style="text-align:center">Google Meet</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Prepared By</td>
+      <td style="text-align:center">Marcelo Renteria</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Attendees</td>
+      <td style="text-align:center">Marcelo Rentería, Fabricio Apaza, Daiki Oshiro, Diego Alonso y Piero Miranda</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 2 Review Summary</td>
+      <td style="text-align:center">Se logro implementar correctamente la nueva version del backend, aplicativo movil y quedaron tareas pendientes  </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 2 Retrospective Summary</td>
+      <td style="text-align:center">El trabajo en equipo y la delegacion de tareas asignadas a los miembros del equipo nos permitio desarrollar las actividades del sprint de manera optima.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Sprint Goal & User Stories</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 3 Goal</td>
+      <td style="text-align:center"> Concluir los features restantes de la apps desarrolladas, terminar el codigo embebido para el microcontrolador, desarrollar el Edge Service y mostrar datos IoT en el frontend. </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 3 Velocity</td>
+      <td style="text-align:center">.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sum of Story Points</td>
+      <td style="text-align:center"> . </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.3.2. Aspect Leaders and Collaborators.
+
+<table>
+  <tr>
+    <td> <strong>Team Member </td>
+    <td> <strong>Github Username </td>
+    <td> <strong>Sprint 1 Leader (L) / Collaborator (C) </td> 
+  </tr>
+  <tr>
+    <td> Marcelo Renteria </td>
+    <td> MarceloRenteriaUPC </td>
+    <td> Leader (L) </td>
+  </tr>
+  <tr>
+    <td> Fabricio Apaza </td>
+    <td> Fabricio011001 </td>
+    <td> Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Daiki Oshiro </td>
+    <td> DaikiOY </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Diego Alonso </td>
+    <td> DiegoAlonso04 </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Piero Miranda </td>
+    <td> PieroMiranda </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+</table>
+
+#### 6.2.3.3. Sprint Backlog 3.
+
+
+<table>
+  <tr>
+    <td> <strong>Sprint #</strong></td>
+    <td   colspan="7"> <strong>Sprint 3</strong> </td>
+  </tr>
+   <tr>
+    <td   colspan="2"> <strong>User Story</strong></td>
+    <td   colspan="6"> <strong>Work-item/Task</strong></td>
+  </tr>
+  <tr>
+    <td  > <strong>ID</strong> </td>
+    <td  > <strong>Title</strong></td>
+    <td  > <strong>ID</strong> </td>
+    <td  > <strong>Title</strong></td>
+    <td  > <strong>Description</strong></td>
+    <td  > <strong>Estimation (Hours)</strong></td>
+    <td  > <strong>Assigned To</strong></td>
+    <td  > <strong> Status (To-do/In-Process/To-Review/Done) </strong></td>
+  </tr>
+  <!---------------------------------------------------------------------- -->
+  <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> .</td>
+    <td rowspan="2"> .</td>
+    <td> .</td>
+    <td> . </td>
+    <td> .</td>
+    <td>  .</td>
+    <td>  . </td>
+    <td> .</td>
+  </tr>
+  <tr>
+    <td> . </td>
+    <td> .</td>
+    <td> . </td>
+    <td>.  </td>
+    <td>  . </td>
+    <td>. </td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> .</td>
+    <td rowspan="2"> . </td>
+    <td> .</td>
+    <td> . </td>
+    <td> . </td>
+    <td> .</td>
+    <td> . </td>
+    <td>  .</td>
+  </tr>
+  <tr>
+    <td> .</td>
+    <td>. </td>
+    <td>. </td>
+    <td> . </td>
+    <td> . </td>
+    <td>. </td>
+  </tr>
+</table>
+
+#### 6.2.3.4. Development Evidence for Sprint Review.
+
+En la siguientes tablas se muestran el historial de commits realizados durante el Sprint 3 en el repositorio relacionado al proyecto del dispositivo embebido en wokwi. Además de los repositorios de la aplicación móvil.
+
+**Wokwi**
+
+
+
+
+
+**Mobile application**
+
+
+
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review.
+
+- **Funcionamiento de endpoints del backend de UPet:**
+
+
+
+#### 6.2.3.6. Execution Evidence for Sprint Review.
+
+- **Backend:**
+
+
+
+- **Aplicacion movil:**
+
+
+
+- **Prototipo Wokwi:**
+
+
+
+#### 6.2.3.7 Services Documentation Evidence for Sprint Review.
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review.
+
+- Backend Desplegado: https://upet-backend-production.up.railway.app/docs 
+- Landing Page: https://pet-love-health.github.io/Landing-page-upet/
+- Web Application: https://upet-frontend.netlify.app/
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint.
+
+
+
 
 #### 6.3.3 Evaluaciones según heurísticas
 
@@ -1938,7 +2145,7 @@ Entrevistas: Propietarios de mascotas
 
 **Usabilidad – Diseño Inclusivo – Arquitectura de la Información**
 
----
+
 
 ## Tareas a evaluar:
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas relacionadas con la gestión de citas veterinarias con IoT:
