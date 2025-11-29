@@ -2357,7 +2357,471 @@ En la siguientes tablas se muestran el historial de commits realizados durante e
 #### 6.2.3.9. Team Collaboration Insights during Sprint.
 
 
+### 6.2.3. Sprint 3
 
+#### 6.2.3.1. Sprint Planning 3.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center">Sprint #</th>
+      <th style="text-align:center">Sprint 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Date</td>
+      <td style="text-align:center">15-11-2025</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Time</td>
+      <td style="text-align:center">05:00 pm</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Location</td>
+      <td style="text-align:center">Google Meet</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Prepared By</td>
+      <td style="text-align:center">Marcelo Renteria</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Attendees</td>
+      <td style="text-align:center">Marcelo Rentería, Fabricio Apaza, Daiki Oshiro, Diego Alonso y Piero Miranda</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 2 Review Summary</td>
+      <td style="text-align:center">Se logro implementar correctamente la nueva version del backend, aplicativo movil y quedaron tareas pendientes  </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 2 Retrospective Summary</td>
+      <td style="text-align:center">El trabajo en equipo y la delegacion de tareas asignadas a los miembros del equipo nos permitio desarrollar las actividades del sprint de manera optima.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Sprint Goal & User Stories</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 3 Goal</td>
+      <td style="text-align:center"> Concluir los features restantes de la apps desarrolladas, terminar el codigo embebido para el microcontrolador, desarrollar el Edge Service y mostrar datos IoT en el frontend. </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sprint 3 Velocity</td>
+      <td style="text-align:center">.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Sum of Story Points</td>
+      <td style="text-align:center"> . </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.3.2. Aspect Leaders and Collaborators.
+
+<table>
+  <tr>
+    <td> <strong>Team Member </td>
+    <td> <strong>Github Username </td>
+    <td> <strong>Sprint 1 Leader (L) / Collaborator (C) </td> 
+  </tr>
+  <tr>
+    <td> Marcelo Renteria </td>
+    <td> MarceloRenteriaUPC </td>
+    <td> Leader (L) </td>
+  </tr>
+  <tr>
+    <td> Fabricio Apaza </td>
+    <td> Fabricio011001 </td>
+    <td> Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Daiki Oshiro </td>
+    <td> DaikiOY </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Diego Alonso </td>
+    <td> DiegoAlonso04 </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+  <tr>
+    <td> Piero Miranda </td>
+    <td> PieroMiranda </td>
+    <td>  Collaborator (C) </td>
+  </tr>
+</table>
+
+#### 6.2.3.3. Sprint Backlog 3.
+
+
+<table>
+  <tr>
+    <td> <strong>Sprint #</strong></td>
+    <td   colspan="7"> <strong>Sprint 3</strong> </td>
+  </tr>
+   <tr>
+    <td   colspan="2"> <strong>User Story</strong></td>
+    <td   colspan="6"> <strong>Work-item/Task</strong></td>
+  </tr>
+  <tr>
+    <td  > <strong>ID</strong> </td>
+    <td  > <strong>Title</strong></td>
+    <td  > <strong>ID</strong> </td>
+    <td  > <strong>Title</strong></td>
+    <td  > <strong>Description</strong></td>
+    <td  > <strong>Estimation (Hours)</strong></td>
+    <td  > <strong>Assigned To</strong></td>
+    <td  > <strong> Status (To-do/In-Process/To-Review/Done) </strong></td>
+  </tr>
+  <!---------------------------------------------------------------------- -->
+  <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-030</td>
+    <td rowspan="2"> Confirmar cita</td>
+    <td> TA01</td>
+    <td> Diseño de opcion </td>
+    <td> Implementar el diseño para la opcion cancelar cita</td>
+    <td> 2 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02 </td>
+    <td> Conectar cancelacion con backend</td>
+    <td> Realizar la conexion con backend al cancelar cita </td>
+    <td> 2 </td>
+    <td> Fabricio Apaza </td>
+    <td> Done </td>
+  </tr>
+   <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-034</td>
+    <td rowspan="2"> Recordatorio de cita </td>
+    <td> TA01</td>
+    <td> Implementar recordatorios </td>
+    <td> Desarrollar seccion de recordarios en app </td>
+    <td> 2 </td>
+    <td> Daiki Oshiro</td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Conectar recordatorios  </td>
+    <td> Realizar la conexion de los recordatorios agregados con base de datos </td>
+    <td> 2 </td>
+    <td> Piero Miranda </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> TS-002</td>
+    <td rowspan="2"> Endpoint Pet</td>
+    <td> TA01</td>
+    <td> Agregar endpoint Pet </td>
+    <td> Recibir datos IoT desde endpoint Pet </td>
+    <td> 3 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Agregar documentacion </td>
+    <td> Realizar documentacion  para endpoint</td>
+    <td> 1 </td>
+    <td> Fabricio Apaza </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> TS-005</td>
+    <td rowspan="2"> Implementar Seguridad al Iniciar Sesión </td>
+    <td> TA01</td>
+    <td> Diseño de opcion </td>
+    <td> Diseñar metodo de seguridad al iniciar sesion </td>
+    <td> 3 </td>
+    <td> Diego Alonso</td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td>TA02</td>
+    <td> Validar seguridad</td>
+    <td> Validacion de metodo de seguridad en app </td>
+    <td> 2 </td>
+    <td> Piero Miranda </td>
+    <td> Done</td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> TS-006</td>
+    <td rowspan="2"> Implementación de la API de monitoreo de ubicación</td>
+    <td> TA01</td>
+    <td> Conexion con Google Maps </td>
+    <td> Agregar conexion con mapa de servicio externo de google. </td>
+    <td> 4</td>
+    <td> Fabricio Apaza </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02 </td>
+    <td> Agregar parametros de ubicacion</td>
+    <td> Conectar datos de ubicacion con mapa. </td>
+    <td> 3 </td>
+    <td> Diego Alonso </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-035</td>
+    <td rowspan="2"> Vincular el collar IoT con el perfil de la mascota </td>
+    <td> TA01</td>
+    <td> Conexion con mascota</td>
+    <td> Conectar mascota a collar independiente </td>
+    <td> 2 </td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02 </td>
+    <td> Visualizar en app</td>
+    <td> Opcion en app que confirme collar vinculado</td>
+    <td> 3 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-036</td>
+    <td rowspan="2"> Visualizar signos vitales en tiempo real</td>
+    <td> TA01</td>
+    <td> Visualizacion de datos en app </td>
+    <td> Opcion para ver datos recolectados de collar en app.</td>
+    <td> 3</td>
+    <td> Piero Miranda </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Conexion con datos  </td>
+    <td> Realizar conexcion con datos provenientes de servidor Edge</td>
+    <td> 4 </td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-037</td>
+    <td rowspan="2"> Recibir alertas por anomalías</td>
+    <td>TA01</td>
+    <td> Seccion alertas </td>
+    <td> Recibir alertas por anomalias </td>
+    <td> 3</td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Procesar informacion </td>
+    <td> Recibir datos que confirmen anomalia </td>
+    <td> 3 </td>
+    <td> Fabricio Apaza</td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-038</td>
+    <td rowspan="2"> Monitorear ubicación de la mascota</td>
+    <td> TA01</td>
+    <td> Opcion de GPS </td>
+    <td> Agregar opcion para GPS </td>
+    <td> 3 </td>
+    <td> Diego Alonso</td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Parametros de ubicacion</td>
+    <td> Enviar longitud y latitud como ubicacion</td>
+    <td> 3 </td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+     <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-039</td>
+    <td rowspan="2"> Sincronizar datos con el servidor edge </td>
+    <td> TA01</td>
+    <td> Crear servidor Edge </td>
+    <td> Servidor edge local </td>
+    <td> 4</td>
+    <td> Marcelo Renteria </td>
+    <td> Done </td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Enviar datos IOT</td>
+    <td> Envio de datos provenientes de ESP32 </td>
+    <td> 4 </td>
+    <td> Fabricio Apaza</td>
+    <td> Done</td>
+  </tr>
+       <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-040</td>
+    <td rowspan="2"> Consultar histórico de signos vitales</td>
+    <td> TA01</td>
+    <td> Opcion de historial de signos recibidos </td>
+    <td> Visualizar historial en app </td>
+    <td> 3 </td>
+    <td> Piero Miranda</td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Guardar informacion de signos recibidos </td>
+    <td> Almacenar datos recibidos en base de datos </td>
+    <td> 3 </td>
+    <td> Diego Alonso </td>
+    <td> Done </td>
+  </tr>
+       <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-041</td>
+    <td rowspan="2"> Alertas automáticas al veterinario</td>
+    <td> TA01</td>
+    <td> Enviar alertas </td>
+    <td> Envio de informacion a perfil veterinario </td>
+    <td> 3</td>
+    <td> Fabricio Apaza </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02</td>
+    <td> Seccion alertas </td>
+    <td> Seccion de alertas recibidas en app </td>
+    <td> 3 </td>
+    <td> Daiki Oshiro </td>
+    <td> Done </td>
+  </tr>
+       <!---------------------------------------------------------------------- -->
+   <tr>
+    <!--rowspan="number of rows for the tasks (2)" -->
+    <td rowspan="2"> US-042</td>
+    <td rowspan="2"> Ver nivel de batería del collar </td>
+    <td> TA01</td>
+    <td> Opcion de visualizar collar </td>
+    <td> Visualizar estado de collar en app </td>
+    <td> 2</td>
+    <td> Marcelo Renteria </td>
+    <td> Done</td>
+  </tr>
+  <tr>
+    <td> TA02 </td>
+    <td> Conectar nivel de collar </td>
+    <td> Realizar conexion de collar en app </td>
+    <td> 3 </td>
+    <td> Fabricio Apaza </td>
+    <td> Done</td>
+  </tr>
+</table>
+
+#### 6.2.3.4. Development Evidence for Sprint Review.
+
+En la siguientes tablas se muestran el historial de commits realizados durante el Sprint 3 en el repositorio relacionado al proyecto del dispositivo embebido en wokwi. Además de los repositorios de la aplicación móvil.
+
+**Wokwi**
+
+
+
+
+
+**Mobile application**
+
+
+
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review.
+
+- **Funcionamiento de endpoints del backend de UPet:**
+
+
+
+#### 6.2.3.6. Execution Evidence for Sprint Review.
+
+- **Backend:**
+
+
+
+- **Aplicacion movil:**
+
+
+
+- **Prototipo Wokwi:**
+
+
+
+#### 6.2.3.7 Services Documentation Evidence for Sprint Review.
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review.
+
+- Backend Desplegado: https://upet-backend-production.up.railway.app/docs 
+- Landing Page: https://pet-love-health.github.io/Landing-page-upet/
+- Web Application: https://upet-frontend.netlify.app/
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint.
+
+
+
+**Entrevista: Veterinarios**
+
+<table>
+        <thead>
+            <tr>
+                <th>Entrevistado</th>
+                <th>Maria Jose Gutierrez</th>
+            </tr>
+            <tr>
+                <th>Entrevistador</th>
+                <th>Fabricio Apaza </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edad</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Distrito</td>
+                <td>Chorrillos</td>
+            </tr>
+            <tr>
+                <td><img width="300" src="https://i.postimg.cc/CLqGy7Kw/Captura-de-pantalla-2025-11-29-160937.png" alt="imagen-2024-09-06-005207237"></td>
+                <td><strong>Resumen:</strong><br>
+                En la entrevista, María José Gutiérrez, estudiante de veterinaria de 23 años y usuaria frecuente de apps para servicios de mascotas, comentó que generalmente utiliza plataformas para buscar clínicas y programar chequeos para su hámster, aunque a veces encuentra información desactualizada. Tras ver la demo de la aplicación desarrollada, señaló que le resultaría útil porque centraliza el historial clínico y agiliza el acceso a información del paciente. Destacó como función más valiosa el acceso rápido al historial médico y consideró que la información es suficiente siempre que el dueño registre bien los datos. Como mejoras, sugirió incorporar un chat para comunicarse con los dueños y enviar fotos o videos, además de recordatorios de medicación.        
+                </td>
+            </tr>
+            <tr>
+                <td>Timing de la entrevista</td>
+                <td> 06:35 minutos </td>
+            </tr>
+            <tr>
+                <td>URL de la entrevista</td>
+                <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u201922146_upc_edu_pe/IQBBUxD6pcdrSKe7NaFnw9zLAQtV1F9nQtj8H-t0em6YdCg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6FIg8T</td>
+            </tr>
+        </tbody>
+</table>
 
 #### 6.3.3 Evaluaciones según heurísticas
 
