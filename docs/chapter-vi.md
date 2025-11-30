@@ -2309,7 +2309,7 @@ Documentacion final de todos los endpoints del backend de UPet:
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint.
 
-![Insights 3](../assets/img/insights3.png)
+![Insights 3](../assets/insights3.png)
 
 ### 6.3. Validation Interviews
 
