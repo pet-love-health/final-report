@@ -1821,11 +1821,11 @@ Para el sprint 2, el equipo trabajo en la implementación de la nueva version de
     </tr>
     <tr>
       <td style="text-align:center">Sprint 3 Velocity</td>
-      <td style="text-align:center">.</td>
+      <td style="text-align:center">40</td>
     </tr>
     <tr>
       <td style="text-align:center">Sum of Story Points</td>
-      <td style="text-align:center"> . </td>
+      <td style="text-align:center"> 40 </td>
     </tr>
   </tbody>
 </table>
@@ -2155,42 +2155,149 @@ En la siguientes tablas se muestran el historial de commits realizados durante e
 
 **Wokwi**
 
+| Repository                                   | Branch | Commit Id                                | Commit Message                             | Committed on (Date) |
+|----------------------------------------------|--------|------------------------------------------|--------------------------------------------|---------------------|
+| https://github.com/pet-love-health/Prototype-Wokwi                                    | main | d7360f1a45dd142dc8341229d2452165d933b7f3 | initial commit   | 12/11/2025  |
+|                                              | main| 71073ca87823e644215a62d1066d6f42b7116153 |  Refactor IoT collar code to use MQTT |    28/12/2025       |
+|                                              | main | 092b11e03d0fd1c9aedb836840900cf9c3b10681 | Create gpsneo6m.chip.c    | 28/12/2025          |
+|                                              | main | 32739733ac116a1cf00f236035dc8999d44d8a48 | Create max30102.chip.c | 28/12/2025    |
 
 
 
+**Edge Service**
 
-**Mobile application**
+| Repository                                   | Branch | Commit Id                                | Commit Message                             | Committed on (Date) |
+|----------------------------------------------|--------|------------------------------------------|--------------------------------------------|---------------------|
+| https://github.com/pet-love-health/petlovehealth-edge                                   | main | c1eba0d0fd0c6821e8e3369b4b720a71a73363a7 | initial commit   | 27/12/2025  |
 
 
 
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review.
 
-- **Funcionamiento de endpoints del backend de UPet:**
+- **Datos recibidos en prototipo wokwi**
 
+![Wokwi Data](https://i.postimg.cc/JhTQwyKB/wokwi_terminal.png)
+
+- **Datos recibidos en arduino IDE**
+
+![Wokwi Data](https://i.postimg.cc/DyrG1W9x/arduino_ide_terminal.jpg)
+
+- **Servidor MQTT**
+
+![Wokwi Data](https://i.postimg.cc/jdHfyWp8/mqtt_server.jpg)
 
 
 #### 6.2.3.6. Execution Evidence for Sprint Review.
 
 - **Backend:**
 
+![backend](https://i.postimg.cc/HLstrWBX/Captura_de_pantalla_2025_11_13_002759.png)
 
+- **Web app con IoT information**
 
-- **Aplicacion movil:**
+![Frontend](https://i.postimg.cc/MGsYkctB/iot_info_front.png)
 
+- **Prototipo Final Wokwi:**
 
+![Wokwi](https://i.postimg.cc/R0PTr3GH/wokwi_final_prototype.png)
 
-- **Prototipo Wokwi:**
+- **Componentes fisicos**
 
+![Components](https://i.postimg.cc/g0MK9w4R/components.jpg)
+
+- **Landing page**
+
+![landing-picture](https://i.postimg.cc/bJpCW7Mf/landing-picture1.png)
+
+- **Mobile App**
+
+![mobile_app](https://i.postimg.cc/qq8KmW13/Captura_de_pantalla_2025_11_12_185714.png)
+
+- **Embedded Code**
+
+![Embedded_Code](https://i.postimg.cc/BvhCW8Nx/embbeded_code.jpg)
 
 
 #### 6.2.3.7 Services Documentation Evidence for Sprint Review.
+
+Documentacion final de todos los endpoints del backend de UPet: 
+
+| Endpoint                                        | Verbo HTTP | Parámetros        | Ejemplo de Llamada                           |
+|-------------------------------------------------|------------|-------------------|----------------------------------------------|
+| /api/v1/auth/sign-up                           | POST       | -                 | /api/v1/auth/sign-up                        |
+| /api/v1/auth/sign-in                           | POST       | -                 | /api/v1/auth/sign-in                        |
+| /api/v1/auth/forgot-password                  | POST        | -                 | /api/v1/auth/forgot-password                   |
+| /api/v1/auth/verify_code                     | POST        | -                 | /api/v1/auth/verify_code                               |
+| /api/v1/auth/change-password/{user_id}        | PUT       | {user_id}                 | /api/v1/auth/change-password/{user_id}                       |
+| /api/v1/auth/change-password-by-role/{role_id}  | PUT       | {role_id}            | /api/v1/auth/change-password-by-role/{role_id}                   |
+| /api/v1/users                         | GET        | -                 | /api/v1/users                   |
+| /api/v1/users/{user_id}                         | GET        | -                 | /api/v1/users/{user_id}                   |
+| /api/v1/users/{role_id}                    | PUT        | -                 | /api/v1/users/{role_id}                   |
+| /api/v1/veterinary_clinics                    | GET        | -                 | /api/v1/veterinary_clinics                 |
+| /api/v1/veterinary_clinics                    | POST       | -                 | /api/v1/veterinary_clinics                 |
+| /api/v1/veterinary_clinics/generate_password/{clinic_id}   | GET  |{clinic_id}   | /api/v1/veterinary_clinics/generate_password/{clinic_id}|
+| /api/v1/veterinary_clinics/{clinic_id}  | GET       |{clinic_id}   | /api/v1/veterinary_clinics/{clinic_id}                |
+| /api/v1/pets/{petowner_id}                    | POST       | petowner_id       | /api/v1/pets/{petowner_id}                 |
+| /api/v1/pets/{petowner_id}                    | GET        | petowner_id       | /api/v1/pets/{petowner_id}                 |
+| /api/v1/pets/{pet_id}                                    | PUT        | {pet_id}  | /api/v1/pets/{pet_id}       |
+| /api/v1/pets/{pet_id}                 | DELETE        |{pet_id}         | /api/v1/pets/{pet_id}              |
+| /api/v1/pets                                    | GET        |          | /api/v1/pets                                |
+| /api/v1/appointments                           | GET        | -                 | /api/v1/appointments                        |
+| /api/v1/appointments                           | POST       | -                 | /api/v1/appointments                        |
+| /api/v1/appointments/pet/{pet_id}             | GET        | pet_id            | /api/v1/appointments/pet/{pet_id}          |
+| /api/v1/appointments/veterinarian/{veterinarian_id} | GET    | veterinarian_id   | /api/v1/appointments/veterinarian/{veterinarian_id} |
+| /api/v1/appointments/owner/{owner_id}         | GET        | owner_id  | /api/v1/appointments/owner/{owner_id}                     |
+| /api/v1/appointments/{apointment_id}    | GET        | {apointment_id} | /api/v1/appointments/{apointment_id}                       |
+| /api/v1/appointments/{apointment_id}          | PUT        | {apointment_id} | /api/v1/appointments/{apointment_id}                        |
+| /api/v1/appointments/owner/{owner_id}/upcoming    | GET        | {owner_id}  | /api/v1/appointments/owner/{owner_id}/upcoming                      |
+| /api/v1/appointments/owner/{owner_id}/past     | GET        | {owner_id}  | /api/v1/appointments/owner/{owner_id}/past                       |
+| /api/v1/appointments/owner/{owner_id}/cancelled     | GET        | {owner_id}  | /api/v1/appointments/owner/{owner_id}/cancelled                       |
+| /api/v1/appointments/veterinarian/{veterinarian_id}/upcoming| GET  | -     | /api/v1/appointments/veterinarian/{veterinarian_id}/upcoming |
+| /api/v1/appointments/{veterinarian_id}/past    | GET  |{veterinarian_id}|  /api/v1/appointments/{veterinarian_id}/past                       |
+| /api/v1/appointments/{veterinarian_id}/cancelled      | GET        | {veterinarian_id}| /api/v1/appointments/{veterinarian_id}/cancelled  |
+| /api/v1/appointments/{apointment_id}/cancel         | PUT        | -         | /api/v1/appointments/{apointment_id}                       |
+| /api/v1/notifications                    | GET        | -            | /api/v1/notifications                       |
+| /api/v1/notifications/veterinarian/{veterenarian_id}    | POST |   {veterenarian_id}| /api/v1/notifications/veterinarian/{veterenarian_id}     |
+| /api/v1/notifications/petowner/{petowner_id} | GET   | petowner_id       | /api/v1/notifications/petowner/{petowner_id} |
+| /api/v1/medical_historys                       | GET        | -                 | /api/v1/medical_historys                    |
+| /api/v1/medical_historys                       | POST       | -                 | /api/v1/medical_historys                    |
+| /api/v1/medical_historys/{medical_history_id}/diseases/ | GET | medical_history_id | /api/v1/medical_historys/{medical_history_id}/diseases/ |
+| /api/v1/medical_historys/{medicalHistory_id}  | POST       | medicalHistory_id  | /api/v1/medical_historys/{medicalHistory_id} |
+| /api/v1/medical_historys/{medical_history_id}/vaccinations/ | GET | medical_history_id | /api/v1/medical_historys/{medical_history_id}/vaccinations/ |
+| /api/v1/medical_historys/{medicalHistoryId}   | PUT        | medicalHistory_id  | /api/v1/medical_historys/{medicalHistoryId} |
+| /api/v1/petowner/{user_id}     | POST       | user_id           | /api/v1/users/petowner/{user_id}           |
+| /api/v1/petowners                | GET        | -                 | /api/v1/users/petowner                      |
+| /api/v1/petowners/users/{user_id}      | GET       | user_id           | /api/v1/users/veterinarians/{user_id}      |
+| /api/v1/petowners/{petowner_id}       | GET        | {petowner_id}  | /api/v1/users/veterinarians                 |
+| /api/v1/petowners/{petowner_id}    | PUT        |{petowner_id}  | /api/v1/users/veterinarians                 |
+| /api/v1/veterinarians/{user_id}               | POST        |{user_id}     | /api/v1/veterinarians/{user_id}                       |
+| /api/v1/veterinarians             | GET        | -                 | /api/v1/veterinarians                      |
+| /api/v1/veterinarians/users/{vet_id}     | GET        |{vet_id}  |/api/v1/veterinarians/users/{vet_id}          |
+| /api/v1/veterinarians/{vet_id}             | GET        | {vet_id}  | /api/v1/veterinarians/{vet_id}            |
+| /api/v1/veterinarians/{vet_id}             | PUT        | {vet_id}  | /api/v1/veterinarians/{vet_id}       |
+| /api/v1/veterinarians/vets/{clinic_id}   | GET        | {clinic_id}  |/api/v1/veterinarians/vets/{clinic_id}     |
+| /api/v1/veterinarians/reviews/{vet_id}   | GET        | {vet_id}   |/api/v1/veterinarians/reviwes/{vet_id}   |
+| /api/v1/veterinarians/{vet_id}/available-items   | POST        | {vet_id}   |/api/v1/veterinarians/{vet_id}/available-items  |
+| /api/v1/reviews/{petowner_id}    | POST   |  | /api/v1/reviews/{petowner_id}         |
+| /api/v1/reviews   | POST   |  | /api/v1/reviews        |
+| /api/v1/reviews/{vet_id}    | GET   |  | /api/v1/reviews/{vet_id}          |
+| /api/v1/availabilities   | GET   |  | /api/v1/availabilities        |
+| /api/v1/pets/{pet_id}/medical-report   | GET   |  | /api/v1/pets/{pet_id}/medical-report   |
+| /api/v1/pets/{pet_id}/medical-report/preview   | GET   |  | /api/v1/pets/{pet_id}/medical-report/preview   |
+| /api/v1/favoriteClinics/userId/{user_id}/clinicId/{clinic_id}  | POST   |  | /api/v1/favoriteClinics/userId/{user_id}/clinicId/{clinic_id}|
+| /api/v1/favoriteClinics/userId/{user_id}  | GET   |  | /api/v1/favoriteClinics/userId/{user_id}|
+| /api/v1/reminders  | GET   |  | /api/v1/reminders |
+| /api/v1/reminders  | POST   |  | /api/v1/reminders |
+| /api/v1/reminders/userId/{user_id}  | GET   |  | /api/v1/reminders/userId/{user_id} |
+
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review.
 
 - Backend Desplegado: https://upet-backend-production.up.railway.app/docs 
 - Landing Page: https://pet-love-health.github.io/Landing-page-upet/
 - Web Application: https://upet-frontend.netlify.app/
+- Prototipo en Wokwi: https://wokwi.com/projects/448827352387816449 
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint.
 
