@@ -86,6 +86,14 @@ A continuación se describe la gestión del código fuente, también conocida po
 
 * **URL del repositorio del Back-End:** https://github.com/pet-love-health/upet-backend
 
+* * **URL del repositorio del Mobile:** https://github.com/pet-love-health/Mobile-app-upet
+ 
+* * **URL del repositorio del Prototipo Wokwi:** https://github.com/pet-love-health/Prototype-Wokwi
+
+* * **URL del repositorio del Edge:** https://github.com/pet-love-health/petlovehealth-edge
+ 
+* * **URL del repositorio del Embedded:** https://github.com/pet-love-health/upet-esp32
+
 ### 6.1.3. Source Code Style Guide & Conventions.
 
 En esta sección, se presentarán las pautas, convenciones, estilos y principios que se aplicarán a cada uno de los lenguajes utilizados en la creación de nuestra aplicación. La observancia de este conjunto de directrices reviste una importancia fundamental, ya que tiene el propósito de mantener la calidad estructural del software, mejorar la legibilidad del código fuente y simplificar el mantenimiento del mismo.
@@ -2301,7 +2309,7 @@ Documentacion final de todos los endpoints del backend de UPet:
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint.
 
-
+![Insights 3](../assets/img/insights3.png)
 
 ### 6.3. Validation Interviews
 
@@ -2676,8 +2684,9 @@ El proyecto fomenta el uso de tecnología en un contexto cotidiano, demostrando 
 
 - **Landing Page:** [Enlace al landing page](https://pet-love-health.github.io/Landing-page-upet/)
 - **Web Frontend:** [Enlace al proyecto web](https://upet-frontend.netlify.app/)
-- **Backend:** [Enlace al backend]([https://upetbackendapi.onrender.com/docs#/](https://web-production-b53d4.up.railway.app/docs))
+- **Backend:** [Enlace al backend](https://upet-backend-production.up.railway.app/docs#/)
 - **Vídeo TP:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/ETu139i30A9Is8IdPikgjE0BkkmvLc8zLRFu8ohGY_0zbA?e=lfIeiZ)
 - **Vídeo TB2:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/IQA-6FGu7TIDRZH2F74e74txAZLaOycsiQP-tswYA0KTUxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=S2xaJ7)
+- **Vídeo TF:** [Enlace al vídeo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216558_upc_edu_pe/IQDhKLYThj3DRJpttvWLfeR1Afkbptra7ir_73pM3u0Nj7I?e=GDJ4pG)
   
 - **About the product** [Enlace al Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181g752_upc_edu_pe/IQCrjtI7ZVV0RrIxsg6CVzRhAaK7xdaimTcmsP5-pUPWBmk?e=VzNOjh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
