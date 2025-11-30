@@ -29,13 +29,13 @@
             </th>
             <th>
                 <div style="text-align: center;">
-                    <img src="../assets/petpace.png" width="100" alt="petpace">
+                    <img src="../assets/img/petpace.png" width="100" alt="petpace">
                     <div style="font-size: 14px; color: #666;">PetPace</div>
                 </div>
             </th>
             <th>
                 <div style="text-align: center;">
-                    <img src="../assets/whistle.png" width="100" alt="whistle">
+                    <img src="../assets/img/whistle.png" width="100" alt="whistle">
                     <div style="font-size: 14px; color: #666;">Whistle</div>
                 </div>
             </th>
@@ -838,7 +838,7 @@ Entrevistas: Veterinarias
         </div>
     <li><strong>Segmento 2: </strong> Veterinarios</li>
     <div>
-            <img src="../assets/dueño-journey.jpeg" alt="vet journey map"/>
+            <img src="../assets/img/dueño-journey.jpeg" alt="vet journey map"/>
         </div>
 </ul>
 
