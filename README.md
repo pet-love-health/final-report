@@ -6,7 +6,7 @@
 
 ### INGENIERÍA DE SOFTWARE
 
-### CICLO 2025-02
+### CICLO 2025-20
 
 Código del curso: 1ASI0572
 Nombre del curso: Desarrollo de Soluciones IOT<br>
@@ -62,6 +62,16 @@ Noviembre, 2025.
     <td colspan="5">
      - Tercera versión<br>
      - Sprint 2<br>
+     - Entrevistas de Validación<br>
+  </tr>
+     <tr>
+    <td colspan="3">3ra</td>
+    <td colspan="3">14/11/2025</td>
+    <td colspan="10">Marcelo Rentería Puga, Diego Alonso Garay, Fabricio Apaza Morales, Daiki Oshiiro Yamashita, Piero Miranda Sinarahua.</td>
+    <td colspan="5">
+     - Cuarta versión<br>
+     - Sprint 3<br>
+    - Embedded y Edge<br>
      - Entrevistas de Validación<br>
   </tr>
   </table>
@@ -176,6 +186,16 @@ Capítulo I: Introducción<br>
 6.2.2.7. Services Documentation Evidence for Sprint Review.<br>
 6.2.2.8. Software Deployment Evidence for Sprint Review.<br>
 6.2.2.9. Team Collaboration Insights during Sprint.<br>
+6.2.3. Sprint 3<br>
+6.2.3.1. Sprint Planning 3.<br>
+6.2.3.2. Aspect Leaders and Collaborators.<br>
+6.2.3.3. Sprint Backlog 3.<br>
+6.2.3.4. Development Evidence for Sprint Review.<br>
+6.2.3.5. Testing Suite Evidence for Sprint Review.<br>
+6.2.3.6. Execution Evidence for Sprint Review.<br>
+6.2.3.7. Services Documentation Evidence for Sprint Review.<br>
+6.2.3.8. Software Deployment Evidence for Sprint Review.<br>
+6.2.3.9. Team Collaboration Insights during Sprint.<br>
 6.3. Validation Interviews.<br>
 6.3.1. Diseño de Entrevistas.<br>
 6.3.2. Registro de Entrevistas.<br>
@@ -205,6 +225,7 @@ A continuación se presentan los gráficos de colaboración de los integrantes d
 ![contributions1](assets/img/contribution-report.png)
 ![contributions2](https://i.postimg.cc/j5J8XDZh/Captura-de-pantalla-2025-10-08-101811.png)
 ![contributions3](assets/img/contribution-report3.png)
+![contributions4](assets/img/contributions4.png)
 
 # Student Outcome
 
@@ -213,6 +234,7 @@ A continuación se presentan los gráficos de colaboración de los integrantes d
         <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en liderar a mi equipo para avanzar equitativamente cada parte necesaria para cubrir las bases del proyecto. Mantuve comunicación constante y gestioné el tiempo adecuadamente.<br>
         TP: En este avance del proyecto, me enfoqué en liderar las correcciones y avances correspondientes, mientras organizaba cada acción para entregar un producto coherente.<br>
         TB2: En este avance del proyecto, me enfoqué en liderar los avances correspondientes, mientras preparaba los desplegables para entregar un producto coherente.<br>
+        TF: En este avance del proyecto, me enfoqué en liderar los avances correspondientes, mientras preparaba todos los entregables para entregar un producto coherente.<br>
         <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         TP: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos.<br><br>TP1: En este avance del proyecto, participé activamente en el trabajo en equipo, cumpliendo mis tareas y apoyando a mis compañeros. La comunicación constante y el intercambio de ideas permitieron un progreso coordinado hacia los objetivos planteados.<br><br>TB2: En este avance del proyecto, trabajé en equipo por medio del liderazgo en forma conjunta con los demás integrantes del equipo, y por eso mismo logramos cumplir con las metas asignadas para el avance.<br><br>TF1: En este avance final del proyecto, participé activamente en el trabajo en equipo, cumpliendo mis tareas y apoyando a mis compañeros. La comunicación constante y el intercambio de ideas permitieron un progreso coordinado hacia los objetivos planteados.<br>
@@ -222,7 +244,8 @@ A continuación se presentan los gráficos de colaboración de los integrantes d
     </tr> <tr> <td colspan="2">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td> <td colspan="10">
         <b>Héctor Marcelo Rentería Puga</b> <br>TB1: En este avance del proyecto, me enfoqué en colaborar activamente con mi equipo, asegurándome de cumplir con las tareas asignadas y apoyar a mis compañeros cuando era necesario. Mantener una comunicación constante y compartir ideas fue fundamental para garantizar que el equipo avanzara de manera coordinada y eficiente, logrando los objetivos propuestos. <br>
         TP: En esta entrega, en enfoqué en colaborar con mi equipo para que nuestras partes puedan avanzar de forma organizada, asegurando que la parte de uno no se adelante o atrase a la de otros.<br>
-        TP: En esta entrega, en enfoqué en colaborar con mi equipo para que nuestras partes puedan avanzar de forma organizada, asegurando que las partes necesarias sean cumplidas a tiempo.<br>
+        TB2: En esta entrega, en enfoqué en colaborar con mi equipo para que nuestras partes puedan avanzar de forma organizada, asegurando que las partes necesarias sean cumplidas a tiempo.<br>
+        TF: En este avance del proyecto, me enfoqué en colaborar en los avances correspondientes, asegurando los entregables para entregar un producto coherente.<br>
         <b>Diego Alonso Garay</b><br>TB1: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         TP: En esta entrega, me enfoqué en avanzar mi parte designada en colaboración con mi equipo, manteniendo comunicación constante para participar en los momentos necesarios.<br>
         <b>Daiki Oshiiro Yamashita</b><br>TB1:En este avance del proyecto, me enfoqué en contribuir a un entorno de trabajo colaborativo, compartiendo ideas y respetando las opiniones de todos los miembros del equipo. Participé en la planificación de tareas y en el establecimiento de metas claras, asegurándome de cumplir con mis responsabilidades para que el equipo lograra los objetivos de manera organizada y eficiente.<br><br>TP1: En este avance del proyecto, promoví un entorno colaborativo al compartir ideas y respetar las opiniones del equipo. Participé en la planificación de tareas y en la definición de metas, cumpliendo mis responsabilidades para contribuir al logro eficiente de los objetivos.<br><br>TB2: En este avance del proyecto, participé en la colaboración del equipo de manera activa para así poder lograr una buena comunicación y por esto musmo la ejecución de tareas contribuyeron al logro de los objetivos planteados para el trabajo.<br><br>TF1: En este avance final del proyecto, promoví un entorno colaborativo al compartir ideas y respetar las opiniones del equipo. Participé en la planificación de tareas y en la definición de metas, cumpliendo mis responsabilidades para contribuir al logro eficiente de los objetivos.<br>
