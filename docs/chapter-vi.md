@@ -1970,6 +1970,43 @@ Entrevistas: Propietarios de mascotas
         </tbody>
 </table>
 
+<table>
+        <thead>
+            <tr>
+                <th>Entrevistado</th>
+                <th>Eduardo Pacheco </th>
+            </tr>
+            <tr>
+                <th>Entrevistador</th>
+                <th>Fabricio Apaza </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edad</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Distrito</td>
+                <td>Chorrillos</td>
+            </tr>
+            <tr>
+                <td><img width="300" src="https://i.postimg.cc/vB68hbfM/Captura-de-pantalla-2025-11-29-202558.png" alt="imagen-2024-09-06-005207237"></td>
+                <td><strong>Resumen:</strong><br>
+                En la entrevista, Eduardo Pacheco, estudiante de Veterinaria de 24 años y dueño de un gato, comentó que rara vez usa aplicaciones específicas para servicios de mascotas, guiándose más por Google Maps o recomendaciones de influencers. Tras ver la aplicación presentada, señaló que tendría potencial para facilitar el trabajo veterinario al centralizar información básica como vacunas, cirugías y datos del paciente, aunque consideró que sería útil ampliar secciones para animales exóticos. Además, mencionó que sería importante contar con herramientas para comunicarse directamente con los dueños luego de una cita, como mensajes o llamadas dentro de la plataforma. Como funcionalidades adicionales, sugirió un espacio de publicidad, testimonios y contenido tipo reels o recomendaciones para mejorar la visibilidad de los veterinarios y educar a los usuarios.        
+                </td>
+            </tr>
+            <tr>
+                <td>Timing de la entrevista</td>
+                <td> 09:36 minutos </td>
+            </tr>
+            <tr>
+                <td>URL de la entrevista</td>
+                <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u201922146_upc_edu_pe/IQANXC2OZe0cQ4s2jCVywIp-Aa73qbGvy6v6gdxKmuHMuik?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=DCrcRb</td>
+            </tr>
+        </tbody>
+</table>
+
 #### 6.3.3 Evaluaciones según heurísticas
 
 ## Evaluación de Heurísticas y Principios de UX
