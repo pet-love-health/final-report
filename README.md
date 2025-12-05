@@ -25,7 +25,7 @@ Relación de Integrantes:
 - U20201f846 - Oshiiro Yamashita, Daiki Oscar
 - u20181g752 - Miranda Sinarahua, Piero Stephano
 
-Noviembre, 2025.
+Diciembre, 2025.
 
 <br pagebreak="always">
 
